@@ -1,135 +1,224 @@
-
 <!DOCTYPE html>
-<html lang="nl-NL">
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
+<!--[if lt IE 7]>
+<html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en"><![endif]-->
+<!--[if IE 9]>
+<html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html lang="en"><!--<![endif]-->
 
-    <title> Conduction | Developers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon" href="/uno/components/favicon/ro-favicon-wit-0xffffff.png">
+<head>
 
-    <link rel="stylesheet" href="/uno/core/base.css">
-    <link rel="stylesheet" href="/uno/core/grid.css">
-    <link rel="stylesheet" href="/uno/components/lists/lists.css">
-    <link rel="stylesheet" href="/uno/components/header/header.css">
-    <link rel="stylesheet" href="/uno/components/collapse/collapse.css">
-    <link rel="stylesheet" href="/uno/components/navigation/breadcrumbs.css">
-    <link rel="stylesheet" href="/uno/components/navigation/backlink.css">
-    <link rel="stylesheet" href="/uno/components/navigation/sidenav.css">
-    <link rel="stylesheet" href="/uno/components/form/form.css">
-    <link rel="stylesheet" href="/uno/components/form/input.css">
-    <link rel="stylesheet" href="/uno/components/button/button.css">
-    <link rel="stylesheet" href="/uno/components/skiplink/skiplink.css">
-    <link rel="stylesheet" href="/uno/components/tabs/tabs.css">
-    <link rel="stylesheet" href="/uno/components/footer/footer.css">
-    <link rel="stylesheet" href="/uno/components/navigation/navigation.css">
-    <link rel="stylesheet" href="/css/main.css">
-
-
-    <link rel="stylesheet" href="/uno/components/button/button.css">
-    <link rel="stylesheet" href="/uno/components/card/card.css">
-    <link rel="stylesheet" href="/uno/components/collapse/collapse.css">
-    <link rel="stylesheet" href="/uno/components/form/checkbox.css">
-    <link rel="stylesheet" href="/uno/components/form/filter.css">
-    <link rel="stylesheet" href="/uno/components/form/form.css">
-    <link rel="stylesheet" href="/uno/components/form/input.css">
-    <link rel="stylesheet" href="/uno/components/form/radio.css">
-    <link rel="stylesheet" href="/uno/components/hint/hint.css">
-    <link rel="stylesheet" href="/uno/components/label/label.css">
-    <link rel="stylesheet" href="/uno/components/list/definition-list.css">
-    <link rel="stylesheet" href="/uno/components/list/list-card.css">
-    <link rel="stylesheet" href="/uno/components/list/list-grid.css">
-    <link rel="stylesheet" href="/uno/components/list/list-files.css">
-    <link rel="stylesheet" href="/uno/components/list/list-notification.css">
-    <link rel="stylesheet" href="/uno/components/list/list-subject.css">
-    <link rel="stylesheet" href="/uno/components/list/list-search.css">
-    <link rel="stylesheet" href="/uno/components/list/list-timeline.css">
-    <link rel="stylesheet" href="/uno/components/list/list-filter.css">
-    <link rel="stylesheet" href="/uno/components/meta/meta.css">
-    <link rel="stylesheet" href="/uno/components/navigation/inpage.css">
-    <link rel="stylesheet" href="/uno/components/notification/notification.css">
-    <link rel="stylesheet" href="/uno/components/pagination/pagination.css">
-    <link rel="stylesheet" href="/uno/components/quote/quote.css">
-    <link rel="stylesheet" href="/uno/components/section/edit-section.css">
-    <link rel="stylesheet" href="/uno/components/section/inner-section.css">
-    <link rel="stylesheet" href="/uno/components/table/table.css">
-
-
-
-
-    <script src="/uno/vendor/js/Promise.min.js"></script>
-    <script src="/uno/vendor/js/system.js"></script>
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143369164-1"></script>
     <script>
-        System.config({
-            packages: {
-                '/': {
-                    defaultExtension: 'js'
-                }
-            }
-        });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-143369164-1');
     </script>
 
+
+    <!-- Your Basic Site Informations -->
+    <title>{% block title %}Conduction{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen techniek waarbij mens en community centraal staan. Graag dragen we dan ook bij het aan het ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken">
+    <meta name="keywords" content="Public Tech, Common Ground, Commonground">
+    <meta name="author" content="Conduction">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css"
+          integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/conduction.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <!-- Custom Colors -->
+    <link rel="stylesheet" href="/css/colors/conduction.css">
+    <!--<link rel="stylesheet" href="css/colors/green.css">-->
+    <!--<link rel="stylesheet" href="css/colors/orange.css">-->
+    <!--<link rel="stylesheet" href="css/colors/pink.css">-->
+    <!--<link rel="stylesheet" href="css/colors/purple.css">-->
+    <!--<link rel="stylesheet" href="css/colors/yellow.css">-->
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/ie-older.css">
+    <![endif]-->
+
+    <noscript>
+        <link rel="stylesheet" href="css/no-js.css">
+    </noscript>
+
+    {#<!-- Favicons -->#}
+    {#<link rel="shortcut icon" href="/images/favicon.ico">#}
+    {#<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">#}
+    {#<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">#}
+    {#<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">#}
+
+    <link style="background: transparent" rel="apple-touch-icon" sizes="180x180" href="{{ asset('/favicon/apple-touch-icon.png') }}">
+    <link style="background: transparent" rel="icon" type="image/png" sizes="32x32" href="{{ asset('/favicon/favicon-32x32.png') }}">
+    <link style="background: transparent" rel="icon" type="image/png" sizes="16x16" href="{{ asset('/favicon/favicon-16x16.png') }}">
+
     <style>
+        /* Round bootstrap buttons*/
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 24px;
+            line-height: 1.33;
+        }
 
-    .header {
-    	height: auto;
-    	background-color: #fff;
-    }
-
-    .btn--block{
-    	width:100%;
-    }
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            padding: 6px 0px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.42857;
+        }
     </style>
+
+    <base href="/">
 </head>
-</html>
+
 <body>
+<!-- #header -->
+<header id="header">
 
-<div class="wrapper">
-    <a class="skiplink" href="#content">
-    	<span class="skiplink__text">Ga direct naar inhoud</span>
-	</a>
+    <!-- #navigation -->
+    <nav id="navigation" class="navbar">
 
-	{% include "header.html.twig" %}
-
-	{% include "menu.html.twig" %}
-
-    <main class="skiplink-target main" id="content" tabindex="-1">
+        <!-- .container -->
         <div class="container">
-          {% block content %}
 
-          {% endblock %}
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu-collapse-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand"><a href="/"><img src="images/logo.png" alt="Logo"/></a></div>
+                <!-- site logo -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/" class="smooth-scroll">Home</a></li>
+                    <li><a href="/team" class="smooth-scroll">Wie</a></li>
+                    <li><a href="/projecten" class="smooth-scroll">Wat</a></li>
+                    <li><a href="/partners" class="smooth-scroll">Hoe</a></li>
+                    <li><a href="/common-ground" class="smooth-scroll">Common Ground</a></li>
+                    <li><a href="/buzz" class="smooth-scroll">Buzz</a></li>
+                    <li><a href="/contact" class="smooth-scroll">Contact</a></li>
+                    <!--
+                           <li><a href="/beveiliging" class="smooth-scroll">Beveiliging</a></li>
+                           <li><a href="https://www.conduction.nl/#features" class="smooth-scroll">Features</a></li> -->
+                </ul>
+            </div>
 
         </div>
-    </main>
+        <!-- .container end -->
 
-	{% include "footer.html.twig" %}
+    </nav>
+    <!-- #navigation end -->
 
-<script src="/js/highlight.pack.js"></script>
+    {% block headercontent %}test{% endblock %}
+
+</header>
+<!-- #header end -->
+{#include('header.html.twig') #}
+
+{% block body %}{% endblock %}
+
+{# include('contact.html.twig') #}
+
+{{ include('footer.html.twig') }}
+
+
+<!--[if lt IE 8]>
+<div class="browser-notice">
+    <div class="container">
+        <div class="text">
+            <h1>Internet Explorer Out To Date</h1>
+            <p>Please update your Internet Explorer browser with a newer version (Internet Explorer 8 above) now!</p>
+            <span>You can download it <a href="https://windows.microsoft.com/en-us/internet-explorer/download-ie"
+                                         target="blank">here....</a></span>
+        </div>
+    </div>
+</div>
+<![endif]-->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/response.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.imgpreload.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/parallax.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 <script>
-    // Load collapse component
-    System['import']('/uno/components/collapse/collapse.js').then(function (m) {
-
-        //gebruikt unieke id van de nav om te voorkomen dat example collapses ook automatisch geactiveerd worden.
-        new m.Collapse(document.querySelector('#search-trigger'));
-    });
-    // Load nav component
-    System.import('/uno/components/navigation/navigation.js').then(function (module) {
-        var navs = document.querySelectorAll('.top-nav-autoresize');
-        // Initialize all navs
-        for (var i = 0; i < navs.length; i++) {
-            new module.AutoResizeNavigation(navs.item(i));
-        }
-        var submenus = document.querySelectorAll('.nav--submenu');
-        // Initialize all submenus
-        for (var i = 0; i < submenus.length; i++) {
-            new module.SubMenuNavigation(submenus.item(i));
-        }
-    });
+    /**
+     * Functie die een klik op een uitgaande link vastlegt in Google Analytics.
+     * Deze functie vereist een geldige URL-tekenreeks als argument en gebruikt deze
+     * als gebeurtenislabel. Wanneer de methode 'transport' wordt ingesteld op 'beacon', wordt de hit verzonden
+     * bij gebruik van 'navigator.sendBeacon' in een browser die dat ondersteunt.
+     */
+    var captureOutboundLink = function (url, action) {
+        ga('send', 'event', 'outbound', action, url, {
+            'transport': 'beacon',
+            'hitCallback': function () {
+                document.location = url;
+            }
+        });
+    }
 </script>
 
-</div>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6108438.js"></script>
+<!-- End of HubSpot Embed Code -->
+
 </body>
 </html>

@@ -1,47 +1,21 @@
-    <footer class="footer">
-        <div class="{% if application is defined and application.defaultConfiguration.configuration.colorScheme is defined  %}{{ application.defaultConfiguration.configuration.colorScheme }}{% else %}background--donkerblauw{% endif %} " style="padding: 30px 0;padding: 3rem 0;">
-            <div class="container">
-                <div class="row">
-                    {% if application is defined and application.defaultConfiguration.configuration is defined and application.defaultConfiguration.configuration.footer1 is defined and application.defaultConfiguration.configuration.footer1 is not empty  %}
-                        {% set menu = commonground_resource(application.defaultConfiguration.configuration.footer1) %}
-                    <div class="col-xs-4">
-                        <span class="footer__header"  >{{ menu.name }}</span>
+	<!-- #footer -->
+    <footer id="footer">
 
-                        <ul class="list list--links footer__nav" >
-                            {% for item in menu.menuItems %}
-                            <li><a href="{{ item.href }}">{{ item.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-
-                    {% if application is defined and application.defaultConfiguration.configuration is defined and application.defaultConfiguration.configuration.footer2 is defined and application.defaultConfiguration.configuration.footer2 is not empty  %}
-                    {% set footer2 = commonground_resource(application.defaultConfiguration.configuration.footer2) %}
-                    <div class="col-xs-4">
-                        <span class="footer__header"  > {{ menu.name }}</span>
-
-                        <ul class="list list--links footer__nav" >
-                            {% for item in menu.menuItems %}
-                            <li><a href="{{ item.href }}">{{ item.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-
-                    {% if application is defined and application.defaultConfiguration.configuration is defined and application.defaultConfiguration.configuration.footer3 is defined and application.defaultConfiguration.configuration.footer3 is not empty  %}
-                    {% set menu = commonground_resource(application.defaultConfiguration.configuration.footer3) %}
-                    <div class="col-xs-4">
-                        <span class="footer__header" >{{ menu.name }}</span>
-
-                        <ul class="list list--links footer__nav" >
-                            {% for item in menu.menuItems %}
-                            <li><a href="{{ item.href }}">{{ item.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-
-                </div>
+        <div class="footer-socials">
+        	<div class="container">
+            	<a onclick="captureOutboundLink('http://www.twitter.com','visit'); return false;" href="https://twitter.com/conduction_nl" title="Twitter" class="animation" data-animation="animation-bounce-in"><i class="fab fa-twitter"></i></a>
+                <a onclick="captureOutboundLink('http://www.facebook.com','visit'); return false;" href="https://www.facebook.com/conductionnl/" title="Facebook" class="animation" data-animation="animation-bounce-in" data-delay="200"><i class="fab fa-facebook-f"></i></a>
+                <a onclick="captureOutboundLink('http://www.instagram.com','visit'); return false;" href="https://www.instagram.com/conduction_nl" title="Instagram" class="animation" data-animation="animation-bounce-in" data-delay="800"><i class="fab fa-instagram"></i></a>
+                <a onclick="captureOutboundLink('http://www.linkedin.com','visit'); return false;" href="https://www.linkedin.com/company/conduction/about/" title="LinkedIn" class="animation" data-animation="animation-bounce-in" data-delay="1000"><i class="fab fa-linkedin"></i></a>
+                <a onclick="captureOutboundLink('http://www.github.com','visit'); return false;" href="https://github.com/ConductionNL" title="Github" class="animation" data-animation="animation-bounce-in" data-delay="1200"><i class="fab fa-github"></i></a>
             </div>
         </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+            	<p>&copy; 2018 Copyright. All Rights Reserved. Made with love by <a href="https://www.conduction.nl" target="_blank">Conduction</a>.</p>
+            </div>
+        </div>
+
     </footer>
+    <!-- #footer end -->

@@ -1,7 +1,53 @@
-	<header class="header header--transparent"  role="banner">
-        <div class="header-logo header-logo--bzk">
-            <a href="/" title="Logo Ministerie van Onderwijs, Cultuur en Wetenschap">
-                <span class="screenreader-only">ministerie van onderwijs, cultuur en wetenschap, naar de homepage</span>
-            </a>
+
+<!-- #header -->
+<header id="header">
+
+    <!-- #navigation -->
+    <nav id="navigation" class="navbar">
+
+        <!-- .container -->
+        <div class="container">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu-collapse-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand"><a href="/"><img src="images/logo.png" alt="Logo"/></a></div>
+                <!-- site logo -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/" class="smooth-scroll">Home</a></li>
+                    <li><a href="/team" class="smooth-scroll">Wie</a></li>
+                    <li><a href="/projecten" class="smooth-scroll">Wat</a></li>
+                    <li><a href="/partners" class="smooth-scroll">Hoe</a></li>
+                    <li><a href="/common-ground" class="smooth-scroll">Common Ground</a></li>
+                    <li><a href="/buzz" class="smooth-scroll">Buzz</a></li>
+                    <li><a href="/contact" class="smooth-scroll">Contact</a></li>
+                    <!--
+                           <li><a href="/beveiliging" class="smooth-scroll">Beveiliging</a></li>
+                           <li><a href="https://www.conduction.nl/#features" class="smooth-scroll">Features</a></li> -->
+                </ul>
+            </div>
+
         </div>
-    </header>
+        <!-- .container end -->
+
+    </nav>
+    <!-- #navigation end -->
+
+    {% block headercontent %}{% endblock %}
+
+</header>
+<!-- #header end -->
+
+
+
+

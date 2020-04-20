@@ -1,0 +1,24 @@
+.pt-30px {
+    padding-top: 30px;
+}
+
+.pb-40px {
+    padding-bottom: 40px;
+}
+
+.mt-125px {
+    margin-top: 125px;
+}
+
+.max-w-500px {
+    max-width: 500px;
+}
+
+.clr-blue {
+    color: #4376FC;
+}
+
+.custom-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}

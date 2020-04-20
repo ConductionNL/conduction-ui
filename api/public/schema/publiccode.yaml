@@ -1,13 +1,13 @@
 publiccodeYmlVersion: "0.2"
 
-name: pan
+name: conduction-ui
 applicationSuite: commonground
-url: "https://github.com/ConductionNL/pan"
-landingURL: "pan.huwelijksplanner.online" 
+url: "https://github.com/ConductionNL/conduction-ui"
+landingURL: "www.conduction.nl" 
 isBasedOn: "https://github.com/ConductionNL/Proto-component-commonground.git" 
 softwareVersion: "V.0.1"
-releaseDate: "2020-04-04"
-logo: pan.zaakonline.nl 
+releaseDate: "2020-20-04"
+logo: www.conduction.nl 
 monochromeLogo: img/logo-mono.svg
 
 inputTypes:
@@ -37,7 +37,7 @@ usedBy:
   - Gemeente Hoorn
   
 
-roadmap: "https://github.com/ConductionNL/pan/blob/master/ROADMAP.md"
+roadmap: "https://github.com/ConductionNL/conduction-ui/blob/master/ROADMAP.md"
 
 developmentStatus: development
 
@@ -66,8 +66,8 @@ description:
 #          on multiple rows. You should note what the software
 #          is and why one should need it.
 
-    documentation: "https://github.com/ConductionNL/pan/blob/master/README.md"
-    apiDocumentation: "pan.huwelijksplanner.online"
+    documentation: "https://github.com/ConductionNL/conduction-ui/blob/master/README.md"
+    apiDocumentation: "www.conduction.nl"
 #
 #    features:
 #       - Very important feature
