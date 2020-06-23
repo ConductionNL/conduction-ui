@@ -112,23 +112,23 @@ $ helm dependency update ./api/helm
 
 If you want to create a new instance
 ```CLI
-$ helm install --name conduction-ui-dev ./api/helm  --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=dev  --set settings.env=dev,settings.debug=1
-$ helm install --name conduction-ui-stag ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=stag --set settings.env=stag,settings.debug=0
-$ helm install --name conduction-ui-prod ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=prod --set settings.env=prod,settings.debug=0
+$ helm install --name conweb-dev ./api/helm  --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=dev  --set settings.env=dev,settings.debug=1
+$ helm install --name conweb-stag ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=stag --set settings.env=stag,settings.debug=0
+$ helm install --name conweb-prod ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=prod --set settings.env=prod,settings.debug=0
 ```
 
 Or update if you want to update an existing one
 ```CLI
-$ helm upgrade conduction-ui-dev ./api/helm  --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=dev  --set settings.env=dev,settings.debug=1
-$ helm upgrade conduction-ui-stag ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=stag --set settings.env=stag,settings.debug=0
-$ helm upgrade conduction-ui-prod ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=prod --set settings.env=prod,settings.debug=0
+$ helm upgrade conweb-dev ./api/helm  --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=dev  --set settings.env=dev,settings.debug=1
+$ helm upgrade conweb-stag ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=stag --set settings.env=stag,settings.debug=0
+$ helm upgrade conweb-prod ./api/helm --kubeconfig="api/helm/conduction-kubeconfig.yaml" --namespace=prod --set settings.env=prod,settings.debug=0
 ```
 
 Or del if you want to delete an existing  one
 ```CLI
-$ helm del conduction-ui-dev  --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
-$ helm del conduction-ui-stag --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
-$ helm del conduction-ui-prod --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
+$ helm delconweb-dev  --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
+$ helm del conweb-stag --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
+$ helm del conweb-prod --purge --kubeconfig="api/helm/conduction-kubeconfig.yaml" 
 ```
 
 Note that you can replace common ground with the namespace that you want to use (normally the name of your component).

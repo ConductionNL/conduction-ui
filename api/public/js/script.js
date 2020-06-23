@@ -287,37 +287,7 @@
 					status = false;
 				}
 				
-				if (status) {
-					$name.attr('disabled', 'disabled');
-					$email.attr('disabled', 'disabled');
-					$message.attr('disabled', 'disabled');
-					$submit.attr('disabled', 'disabled');
-					
-					$.ajax({
-						type: 'POST',
-						url: 'process-contact.php',
-						data: submitData + '&action=add',
-						dataType: 'html',
-						success: function(msg) {
-							if (parseInt(msg, 0) !== 0) {
-								var msg_split = msg.split('|');
-								if (msg_split[0] === 'success') {
-									$name.val('').removeAttr('disabled').removeClass('error');
-									$email.val('').removeAttr('disabled').removeClass('error');
-									$message.val('').removeAttr('disabled').removeClass('error');
-									$submit.removeAttr('disabled');
-									$form.find('.submit-status').html('<div class="submit-status-text"><span class="success"><i class="fa fa-check-circle"></i> ' + msg_split[1] + '</span></div>').fadeIn(300).delay(3000).fadeOut(300);
-								} else {
-									$name.removeAttr('disabled').removeClass('error');
-									$email.removeAttr('disabled').removeClass('error');
-									$message.removeAttr('disabled').removeClass('error');
-									$submit.removeAttr('disabled').removeClass('error');
-									$form.find('.submit-status').html('<div class="submit-status-text"><span class="error"><i class="fa fa-exclamation-circle"></i> ' + msg_split[1] + '</span></div>').fadeIn(300).delay(3000).fadeOut(300);
-								}
-							}
-						}
-					});
-				}
+				window.location.href = 'https://www.conduction.nl/bedankt';
 				
 				status = true;
 				
