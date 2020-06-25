@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  conduction-ui:
+  - apiVersion: v1
+    appVersion: V.0.1
+    created: "2020-06-25T11:06:44.0685689Z"
+    description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql)
+      interface beschikbaar.&#039;'
+    digest: a13ece0e1dd24155eaff747041277b83fca2bceacf8f8e7458f781290d4d962b
+    home: www.conduction.nl
+    icon: www.conduction.nl
+    name: conduction-ui
+    urls:
+    - conduction-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-25T11:06:44.0626568Z"
