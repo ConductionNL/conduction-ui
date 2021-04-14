@@ -1,16 +1,63 @@
 apiVersion: v1
 entries:
-  conduction-ui:
-  - apiVersion: v1
-    appVersion: V.0.1
-    created: "2020-06-25T11:06:44.0685689Z"
-    description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql)
-      interface beschikbaar.&#039;'
-    digest: a13ece0e1dd24155eaff747041277b83fca2bceacf8f8e7458f781290d4d962b
-    home: www.conduction.nl
-    icon: www.conduction.nl
-    name: conduction-ui
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.10.0
+    created: "2021-03-01T22:16:47.3299497Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: eebe8f456cf98d5927a35666d1d899174dc4d3e09f26788033f761527bc90749
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
     urls:
-    - conduction-ui-0.1.0.tgz
+    - charts/postgresql-10.1.1.tgz
+    version: 10.1.1
+  proto-component-commonground:
+  - apiVersion: v1
+    appVersion: V1.0
+    created: "2021-03-01T22:16:47.3009644Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: 0bc1e12e48b3cbc72a0438f163683da47ffda2e162f4e6723b48f3b130b43a8f
+    home: https://www.conduction.nl
+    icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
+    keywords:
+    - commonground
+    - haven
+    - nlx
+    - component
+    maintainers:
+    - email: ruben@conduction.nl
+      name: Ruben van der Linde
+    - email: info@conduction.nl
+      name: Conduction
+    name: proto-component-commonground
+    sources:
+    - https://commonground.conduction.nl/
+    - https://www.commonground.nl/
+    urls:
+    - proto-component-commonground-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-25T11:06:44.0626568Z"
+generated: "2021-03-01T22:16:47.2719026Z"
