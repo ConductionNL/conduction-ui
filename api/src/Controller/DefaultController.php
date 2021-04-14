@@ -15,8 +15,6 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
-use App\Service\CommonGroundService;
-
 /**
  * Class DeveloperController
  * @package App\Controller
@@ -29,29 +27,9 @@ class DefaultController extends AbstractController
 	 * @Route("/{slug}", requirements={"slug"=".+"})
 	 * @Template
 	 */
-    public function indexAction(Session $session, string $slug = 'home',Request $httpRequest, CommonGroundService $commonGroundService, ApplicationService $applicationService, ParameterBagInterface $params)
+    public function indexAction(Session $session, string $slug = 'home',Request $httpRequest, ParameterBagInterface $params)
     {
-        $variables = $applicationService->getVariables();
 
-        // Lets find an appoptiate slug
-        $slugs = $commonGroundService->getResourceList(['component'=>'wrc','type'=>'slugs'],['application.id'=>$variables['application']['id'],'slug'=>$slug])["hydra:member"];
-
-        if(count($slugs) != 0){
-            $content = $slugs[0]['template']['content'];
-        }
-        else{
-            // Throw not found
-        }
-
-        // Create the template
-        $template = $this->get('twig')->createTemplate($content);
-        $template = $template->render($variables);
-
-        return $response = new Response(
-            $template,
-            Response::HTTP_OK,
-            ['content-type' => 'text/html']
-        );
     }
 
 }

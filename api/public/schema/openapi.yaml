@@ -5,15 +5,14 @@ info:
   description: |
     API Details
     - Component: 
-    - Reference: proto-component-commonground
+    - Reference: conduction-ui
     - Enviroment: dev
     - Version: V1.0
-    - Repository: [online](https://github.com/ConductionNL/Proto-component-commonground) / [zip](https://github.com/ConductionNL/Proto-component-commonground/archive/master.zip)
+    - Repository: [online](https://github.com/ConductionNL/conduction-ui) / [zip](https://github.com/ConductionNL/conduction-ui/archive/master.zip)
     - Docker Image: [online]() 
-    - Datamodel: [postman](schema/proto-component-commonground.postman_collection.json) / [oas](schema/openapi.yaml) / [pdf](schema/datamodel.pdf) / [modelio (zip)](schema/Datamodel_Modelio.zip) 
-    
+    - Datamodel: [postman](schema/conduction-ui.postman_collection.json) / [oas](schema/openapi.yaml) / [pdf](schema/datamodel.pdf) / [modelio (zip)](schema/Datamodel_Modelio.zip) 
+
     Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.         
-    
 paths:
   /audit_trails:
     get:
@@ -2439,12 +2438,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2021-03-01 22:16:24'
+        example: '2021-04-14 07:29:22'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2021-03-01 22:16:24'
+        example: '2021-04-14 07:29:22'
     required: []
   AuditTrail-write:
     properties:
@@ -2492,12 +2491,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2021-03-01 22:16:24'
+        example: '2021-04-14 07:29:22'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2021-03-01 22:16:24'
+        example: '2021-04-14 07:29:22'
     required: []
   ChangeLog-write:
     properties:
@@ -2510,15 +2509,15 @@ definitions:
 tags:
   -
     name: AuditTrail
-    description: |
+    description: |-
       An resource representing a log line.
-      
+
       This entity represents a product that can be ordered via the OrderRegistratieComponent.
   -
     name: ChangeLog
-    description: |
+    description: |-
       An resource representing a log line.
-      
+
       This entity represents a product that can be ordered via the OrderRegistratieComponent.
 securityDefinitions:
   JWT-Oauth:
@@ -2539,7 +2538,7 @@ host: irc.zaakonline.nl
 servers:
   -
     name: conduction.nl
-    url: proto-component-commonground.dev.conduction.nl
+    url: conduction-ui.dev.conduction.nl
 externalDocs:
   -
     description: 'OAS Documentatie'

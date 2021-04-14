@@ -1,11 +1,37 @@
 apiVersion: v1
 entries:
+  conduction-ui:
+  - apiVersion: v1
+    appVersion: V1.0
+    created: "2021-04-14T07:26:30.0870319Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: 426bc5ab18b2577121cf9b40d0e7d0894c06a1e73c820b2063b68dcf37faddd3
+    home: https://www.conduction.nl
+    icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
+    keywords:
+    - commonground
+    - haven
+    - nlx
+    - component
+    maintainers:
+    - email: ruben@conduction.nl
+      name: Ruben van der Linde
+    - email: info@conduction.nl
+      name: Conduction
+    name: conduction-ui
+    sources:
+    - https://commonground.conduction.nl/
+    - https://www.commonground.nl/
+    urls:
+    - conduction-ui-0.1.0.tgz
+    version: 0.1.0
   postgresql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-03-01T22:16:47.3299497Z"
+    created: "2021-04-14T07:26:30.1972802Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -37,10 +63,10 @@ entries:
   proto-component-commonground:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-03-01T22:16:47.3009644Z"
+    created: "2021-04-14T07:26:30.1252063Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: 0bc1e12e48b3cbc72a0438f163683da47ffda2e162f4e6723b48f3b130b43a8f
+    digest: cc07524ab4af9e43343950ce9f5792ae977a5f7c71090e6abfce5f678d03f1f7
     home: https://www.conduction.nl
     icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
     keywords:
@@ -60,4 +86,38 @@ entries:
     urls:
     - proto-component-commonground-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-01T22:16:47.2719026Z"
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.0.11
+    created: "2021-04-14T07:26:30.2180007Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 2d70861d16fc410ed6d6c818b97f7b0d519031147e5c7b42c5691d4c38742c44
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - charts/redis-12.7.7.tgz
+    version: 12.7.7
+generated: "2021-04-14T07:26:30.0663377Z"

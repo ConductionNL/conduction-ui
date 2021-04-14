@@ -4,16 +4,16 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: proto-component-commonground
-  name: proto-component-commonground
+  projectName: conduction-ui
+  name: conduction-ui
   version: V1.0
   majorVersion: v1
   description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
-  repro: https://github.com/ConductionNL/Proto-component-commonground
-  demo: pc.zaakonline.nl
+  repro: https://github.com/ConductionNL/conduction-ui
+  demo: dev.waardepapieren-gemeentehoorn.commonground.nu
   domain: conduction.nl
-  subdomain: proto-component-commonground
-  subpath: proto-component-commonground
+  subdomain: conduction-ui
+  subpath: 
   subpathRouting: true
   env: dev
   web: false
@@ -40,7 +40,7 @@ settings:
   archiveEnabled: false
 
 security:
-  applicationKey: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
+  applicationKey: "47e971de-2272-4e09-a141-134612e46a22"
 
 
 php:
@@ -55,10 +55,9 @@ php:
 redis:
   cluster:
     enabled: false
-  enabled: false
   redisPort: 6379
   usePassword: false
-
+  enabled: false
 commonground:
   eherkenning:
     location: https://conduction.nl/eherkenning
