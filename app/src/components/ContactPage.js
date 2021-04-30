@@ -29,11 +29,9 @@ export default class ContactPage extends Component {
               <h2 className="color-bright-blue">Contact</h2>
               <br/>
                 <br/>
-                  <h5>Conduction is een ICT bedrijf met een sterke idealistische en sociale inslag :) Daarom worden wij
-                    ook erg blij van de co-working space waar wij kantoor houden, daar wemelt het van de creatievelingen
-                    en wereldverbeteraars. We zitten ook nog op een geweldige plek: Emmalaan 7 in Amsterdam.
+                  <h5>Conduction is een ICT bedrijf met een sterke idealistische en sociale inslag. Daarom worden wij ook erg blij van de co-working space waar wij kantoor houden, daar wemelt het van de creatievelingen en wereldverbeteraars.<br/> We zitten ook nog op een geweldige plek: Lauriergracht 14h in Amsterdam.
+                    <br/><br/>Een keer langskomen of koffie drinken? Mail of bel ons!
                   </h5>
-                  <p>Een keer langskomen of koffie drinken? Mail ons!</p>
                   <br/>
                     <a href="mailto:  info@conduction.nl"
                         className="custom-button color-bright-blue"><i
