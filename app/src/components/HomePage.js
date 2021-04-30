@@ -38,10 +38,11 @@ export default class HomePage extends Component {
                     techniek waarbij mens en community centraal staan. Graag dragen we dan ook bij het aan het
                     ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p><br/>
                   <p><b>‘Tech to serve people’.</b></p>
+                  <p>Meer weten over ons bedrijf? Plan een afspraak.</p>
                   <br/>
-                    <a href="/contact"
+                    <Link to="/contact"
                        style={{fontWeight: 'bold', textTransform: 'uppercase', fontSize: '15px',color: 'white', padding: '7.5px 15px 7.5px 15px', borderRadius: '25px', border: '2.5px solid white'}}>
-                      Contact</a>
+                      Maak kennis met het bedrijf</Link>
                 </div>
               </div>
               <div className="col-sm-6">
