@@ -6,39 +6,33 @@ settings:
   registryBase: docker.io/conduction
   projectName: conduction-ui
   name: conduction-ui
-  title: The new and improved conduciton website
-  version: V.0.1
-  id: 7a5e1617-815a-4630-bbb6-994f1c850c28
-  description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
-  type: application
+  version: V1.0
+  majorVersion: v1
+  description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
   repro: https://github.com/ConductionNL/conduction-ui
-  demo: www.conduction.nl
-  container: https://hub.docker.com/repository/docker/conduction/conduction-ui-php
+  demo: dev.waardepapieren-gemeentehoorn.commonground.nu
   domain: conduction.nl
-  subdomain: www
-  organisationName: Conduction
-  email: info@conduction.nl
-  country: Netherlands
-  state: Noord-Holland
-  locality: Amsterdam
-  unit: Common-Ground
+  subdomain: conduction-ui
+  subpath: 
+  subpathRouting: true
   env: dev
+  web: false
   debug: 1
-  cache: 1
+  cache: false
+  type: component
+  id: 
   replicaCount: 1
   corsAllowOrigin: ['*']
-  trustedHosts: '^localhost$|^127.0.0.1$|^(.+\.)?conduction\.nl$'
+  trustedHosts: '^.+$'
   pullPolicy: Always
   # You will need these proxies on kubernetes
   trustedProxies:
     - 10.0.0.0/8
     - 172.16.0.0/12
     - 192.168.0.0/16
-  # If you are runnig a single component on a kubernetes cluster you can just easaliy enable the load balancer, if not you need to set up a multi component load balancer
+  # If you are running a single component on a kubernetes cluster you can just easily enable the load balancer, if not you need to set up a multi component load balancer
   loadbalancerEnabled: false
-  # If you want to enable NLX you are requered to add the appropreate certificates to you nlx-settings folder (located in the /api folder)
-  nlxInwayEnabled: false
-  # If you are runnig a single component on a kubernetes cluster you can just easaliy enable the load balancer, if not you need to set up a multi component load balancer
+  # If you are running a single component on a kubernetes cluster you can just easily enable the load balancer, if not you need to set up a multi component load balancer
   notificationEnabled: false
   audittrailEnabled: false
   authorisationEnabled: false
@@ -46,12 +40,7 @@ settings:
   archiveEnabled: false
 
 security:
-  commongroundId: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
-  commongroundKey: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
-  applicationKey: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
-  userKey: "45c1a4b6-59d3-4a6e-86bf-88a872f35845"
-  authorisationProviderUser: https://uc.conduction.nl
-  authorisationProviderApplication: https://uc.conduction.nl
+  applicationKey: "47e971de-2272-4e09-a141-134612e46a22"
 
 
 php:
@@ -61,12 +50,25 @@ php:
     jwtSecret: ""
   env: prod
   secret: ""
+  replicaCount: 2
+
+redis:
+  cluster:
+    enabled: false
+  redisPort: 6379
+  usePassword: false
+  enabled: false
+commonground:
+  eherkenning:
+    location: https://conduction.nl/eherkenning
+  digispoof:
+    location: https://conduction.nl/digispoof
 
 nginx:
   repository: docker.io/conduction/protocomponent-nginx
   tag: latest
   pullPolicy: Always
-  replicaCount: 1
+  replicaCount: 2
 
 varnish:
   enabled: true
