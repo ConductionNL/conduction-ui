@@ -45,9 +45,10 @@ export default class ProjectenPage extends Component {
                   <img src="/images/gemeentewestfrieslandblauw.png" width="110px"/>
                   <img src="/images/gemeenterotterdam.png" width="110px"/>
                   <br/>
+                  <p>Nieuwsgierig wat Conduction voor jou kan betekenen?</p>
                   <br/>
-                  <a href="/contact" className="custom-button">
-                    Contact</a>
+                  <Link to="/contact" className="custom-button">
+                    Neem contact op</Link>
                 </div>
               </div>
 
