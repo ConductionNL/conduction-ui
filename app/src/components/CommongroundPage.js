@@ -51,6 +51,11 @@ export default class CommongroundPage extends Component {
                     Common Ground werd geboren, waarbij hervorming van de huidige gemeentelijke
                     informatievoorziening,
                     deelbaarheid, data bij de bron en vooral de burger centraal staat.</p>
+                  <br/>
+                  <p>Meer weten wat Conduction voor jouw gemeente kan betekenen? </p>
+                  <br/>
+                  <Link to="/contact"
+                        className="custom-button color-vivid-orange">Maak hier een afspraak</Link>
                 </div>
               </div>
             </div>
@@ -199,6 +204,11 @@ export default class CommongroundPage extends Component {
                     is er
                     behoefte aan meer praktische, inhoudelijke of langdurige ondersteuning,
                     dan behoort dat zeker ook tot de mogelijkheden!.</p>
+                  <br/>
+                  <p>Een afspraak voor een vrijblijvend gesprek is altijd mogelijk.</p>
+                  <br/>
+                  <Link to="/contact"
+                        className="custom-button color-bright-blue">Plan een afspraak</Link>
                 </div>
                 <br/>
                 <div className="post-heading-left">
