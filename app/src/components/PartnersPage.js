@@ -39,7 +39,9 @@ export default class ProjectenPage extends Component {
                   <br/>
                   <p>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
                   <br/>
-                  <a href="/contact"
+                  <p>enieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
+                  <br/>
+                  <Link to="/contact"
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
@@ -49,7 +51,7 @@ export default class ProjectenPage extends Component {
                        borderRadius: '25px',
                        border: '2.5px solid white'
                      }}>
-                    Contact</a>
+                    Ga naar contactpagina</Link>
                 </div>
               </div>
 

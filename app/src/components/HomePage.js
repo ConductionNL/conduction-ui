@@ -40,9 +40,17 @@ export default class HomePage extends Component {
                   <p><b>‘Tech to serve people’.</b></p>
                   <p>Meer weten over ons bedrijf? Plan een afspraak.</p>
                   <br/>
-                    <Link to="/contact"
-                       style={{fontWeight: 'bold', textTransform: 'uppercase', fontSize: '15px',color: 'white', padding: '7.5px 15px 7.5px 15px', borderRadius: '25px', border: '2.5px solid white'}}>
-                      Maak kennis met het bedrijf</Link>
+                  <Link to="/contact"
+                        style={{
+                          fontWeight: 'bold',
+                          textTransform: 'uppercase',
+                          fontSize: '15px',
+                          color: 'white',
+                          padding: '7.5px 15px 7.5px 15px',
+                          borderRadius: '25px',
+                          border: '2.5px solid white'
+                        }}>
+                    Maak kennis met het bedrijf</Link>
                 </div>
               </div>
               <div className="col-sm-6">
@@ -101,18 +109,12 @@ export default class HomePage extends Component {
               </div>
             </div>
           </div>
-
         </div>
 
-
         <div id="features3" className="wrap-container8040 ">
-
           <div className="container">
-
             <div className="post-heading-left">
               <h2 style={{color: "#4386FB"}}>Hoe doen we dat</h2>
-
-
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
                 <img src="images/samen.png" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
@@ -122,8 +124,6 @@ export default class HomePage extends Component {
                     ideaal op de beste manier vorm te kunnen geven.</p>
                 </div>
               </div>
-
-
               <div className=" col-sm-12 col-md-6" style={{textAlign: "left"}}>
                 <img src="images/Conduction_HOME_0005_afb6.png" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
@@ -133,7 +133,6 @@ export default class HomePage extends Component {
                     kunnen ontwikkelen.</p>
                 </div>
               </div>
-
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
                 <img src="images/Conduction_HOME_0006_afb7.png" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
@@ -143,7 +142,6 @@ export default class HomePage extends Component {
                     zeggen: flexibel genoeg om mee te gaan op bewegingen (on- en offline) van de toekomst. </p>
                 </div>
               </div>
-
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
                 <img src="images/Conduction_HOME_0007_afb8.png" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
@@ -153,22 +151,24 @@ export default class HomePage extends Component {
                     Transparantie en eerlijkheid zijn daarbij key, dus daar houden wij ons aan :)</p>
                 </div>
               </div>
+
+              <div className="col-xs-12" style={{textAlign: "left", marginTop: '30px'}}>
+                <p className='color-bright-blue'><b>Meer weten over wat wij doen?</b></p>
+                <br/>
+                <Link to="/contact" className="custom-button color-bright-blue">Neem contact op</Link>
+              </div>
             </div>
           </div>
         </div>
 
         <div id="features2" className="wrap-container8040">
-
           <div className="container">
-
             <div className="margin-bottom40">
               <div className="post-heading-left text-center-sm text-center-xs">
                 <div className="post-heading-left">
                   <h2 style={{color: "#4386FB"}}>Met wie doen we dat</h2>
                 </div>
               </div>
-
-
               <div className="row">
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
@@ -177,7 +177,6 @@ export default class HomePage extends Component {
                     </a>
                   </div>
                 </div>
-
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.almere.nl/">
@@ -185,7 +184,6 @@ export default class HomePage extends Component {
                     </a>
                   </div>
                 </div>
-
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.s-hertogenbosch.nl/">
@@ -295,8 +293,13 @@ export default class HomePage extends Component {
 
         <div id="features3" className="wrap-container8040 bg-grey">
           <div className="container">
-            <div className="post-heading-left">
-              <h2 style={{color: "#4386FB"}}>Met wie doen we wat</h2>
+            <div className="post-heading-left"
+                 style={{display: "inline !important", verticalAlign: 'top', lineHeight: '22px'}}>
+              <h2 style={{color: "#4386FB", display: "inline"}}>Met wie doen we wat, </h2>
+              <p style={{display: "inline"}} className="color-bright-blue"><b>namelijk; Meer weten over onze producten en
+                wat dit voor jou kan betekenen? </b></p>
+                <Link to="/contact"
+                      className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
             </div>
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-4">

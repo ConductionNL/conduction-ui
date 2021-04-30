@@ -41,7 +41,9 @@ export default class TeamPage extends Component {
                     Het bedenken en ontwikkelen van vernieuwende online platformen-communities en deze
                     vervolgens uitrollen, ‘that’s what makes us tick’.</p>
                   <br/>
-                  <a href="/contact"
+                  <p>Wil je weten wat ons team voor jou kan betekenen?</p>
+                  <br/>
+                  <Link to="/contact"
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
@@ -51,7 +53,7 @@ export default class TeamPage extends Component {
                        borderRadius: '25px',
                        border: '2.5px solid white'
                      }}>
-                    Contact</a>
+                    Maak een afspraak</Link>
                 </div>
               </div>
 
