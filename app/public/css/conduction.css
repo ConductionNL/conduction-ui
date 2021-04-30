@@ -295,7 +295,7 @@ input[type="email"]:disabled:-ms-input-placeholder, input[type="password"]:disab
 
 .btn-custom2, input[type="button"], input[type="submit"], input[type="reset"], button {
 	font-family:Montserrat, Arial, sans-serif;
-	color:#4395e8 !important;
+	color:#4395e8;
 	font-size:15px;
 	line-height:52px;
 	font-weight:700;
@@ -1861,4 +1861,24 @@ background-color: white;
 .flex-s-b {
     display: flex;
     justify-content: space-between;
+}
+
+.custom-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white !important;
+    padding: 7.5px 15px 7.5px 15px;
+    border-radius: 25px;
+    border: 2.5px solid white;
+}
+
+.color-bright-blue {
+    color: #4386FB !important;
+    border-color: #4386FB;
+}
+
+.color-vivid-orange {
+    color: #FAB702 !important;
+    border-color: #FAB702;
 }

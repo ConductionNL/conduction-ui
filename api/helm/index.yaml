@@ -3,10 +3,10 @@ entries:
   conduction-ui:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-04-14T07:26:30.0870319Z"
+    created: "2021-04-30T07:53:38.6499413Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: 426bc5ab18b2577121cf9b40d0e7d0894c06a1e73c820b2063b68dcf37faddd3
+    digest: 9ed6efe745cad1a071f149e3fae026f5e8e51a2d7ba471bebdce2f74243b8714
     home: https://www.conduction.nl
     icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
     keywords:
@@ -31,7 +31,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-04-14T07:26:30.1972802Z"
+    created: "2021-04-30T07:53:38.6989768Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -63,7 +63,7 @@ entries:
   proto-component-commonground:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-04-14T07:26:30.1252063Z"
+    created: "2021-04-30T07:53:38.679577Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
     digest: cc07524ab4af9e43343950ce9f5792ae977a5f7c71090e6abfce5f678d03f1f7
@@ -91,7 +91,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.11
-    created: "2021-04-14T07:26:30.2180007Z"
+    created: "2021-04-30T07:53:38.7217605Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -120,4 +120,4 @@ entries:
     urls:
     - charts/redis-12.7.7.tgz
     version: 12.7.7
-generated: "2021-04-14T07:26:30.0663377Z"
+generated: "2021-04-30T07:53:38.6173315Z"
