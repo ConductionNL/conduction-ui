@@ -13,7 +13,7 @@ settings:
   demo: dev.waardepapieren-gemeentehoorn.commonground.nu
   domain: conduction.nl
   subdomain: conduction-ui
-  subpath: 
+  subpath: test
   subpathRouting: true
   env: dev
   web: false
