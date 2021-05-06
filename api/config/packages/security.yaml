@@ -7,13 +7,16 @@ security:
             id: Conduction\CommonGroundBundle\Security\User\CommongroundProvider
     firewalls:
         dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js|docs)/
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         # The mollie webhook does not have our API key
         webhook:
             anonymous: true
             pattern: ^/payments/mollie_webhook
             methods: [POST]
+        api:
+            anonymous: true
+            pattern: ^/api
         main:
             anonymous: ~
             pattern: ^/
@@ -22,7 +25,7 @@ security:
                 check_path: app_user_login
             logout:
                 path: app_user_logout
-                target: app_default_index
+                target: app_default_login
             stateless: false
             provider: commongroundProvider
             guard:
@@ -32,8 +35,11 @@ security:
                     - Conduction\CommonGroundBundle\Security\CommongroundUserAuthenticator
                     - Conduction\CommonGroundBundle\Security\CommongroundDigispoofAuthenticator
                     - Conduction\CommonGroundBundle\Security\CommongroundIdinAuthenticator
+                    - Conduction\CommonGroundBundle\Security\CommongroundIdinLoginAuthenticator
                     - Conduction\CommonGroundBundle\Security\CommongroundFacebookAuthenticator
                     - Conduction\CommonGroundBundle\Security\CommongroundGmailAuthenticator
+                    - Conduction\CommonGroundBundle\Security\CommongroundGithubAuthenticator
+                    - Conduction\CommonGroundBundle\Security\CommongroundLinkedInAuthenticator
                 entry_point: Conduction\CommonGroundBundle\Security\CommongroundApplicationAuthenticator
 
             # activate different ways to authenticate
@@ -46,3 +52,4 @@ security:
     # Note: Only the *first* access control that matches will be used
     access_control:
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api, roles: IS_AUTHENTICATED_ANONYMOUSLY }

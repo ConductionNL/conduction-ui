@@ -13,12 +13,14 @@ import CommongroundPage from "./components/CommongroundPage";
 import CaasPage from "./components/CaasPage";
 import OdysseyPage from "./components/OdysseyPage";
 import ContactPage from "./components/ContactPage";
-
+import ComponentenPage from "./components/ComponentenPage";
+import ComponentPage from "./components/ComponentPage";
 
 export default class App extends Component {
 
   constructor(props) {
     super();
+
     let api = null;
     let url = null;
 
@@ -38,14 +40,19 @@ export default class App extends Component {
     document.getElementsByTagName("body")[0].style.overflow = "auto";
   }
 
+  componentDidMount() {
+
+  }
+
   render() {
     return (
-      <>
         <ConfigContext.Provider value={this.state}>
           <Router>
             <HomeCss/>
             <Header/>
             <Switch>
+              <Route path="/component/:name" component={ComponentPage}/>
+              <Route path="/componenten" component={ComponentenPage}/>
               <Route path="/team" component={TeamPage}/>
               <Route path="/odyssey" component={OdysseyPage}/>
               <Route path="/projecten" component={ProjectenPage}/>
@@ -58,7 +65,6 @@ export default class App extends Component {
             <Footer/>
           </Router>
         </ConfigContext.Provider>
-      </>
     );
   }
 }
