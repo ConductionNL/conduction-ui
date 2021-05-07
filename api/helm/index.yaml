@@ -3,10 +3,10 @@ entries:
   conduction-ui:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-05-06T18:30:51.6306918Z"
+    created: "2021-05-07T06:26:35.642539Z"
     description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
       beschikbaar.
-    digest: 22f7ca79b0f89a03d3c8b1ecea84295a319e88019292f8451458c4b60ca9bf19
+    digest: 2f63cb49c90d152243add83c020f9b31afdf2443a60664bca211f0057db145bc
     home: https://www.conduction.nl
     icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
     keywords:
@@ -31,7 +31,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-05-06T18:30:51.6989204Z"
+    created: "2021-05-07T06:26:35.7741398Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -60,38 +60,12 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
-  proto-component-commonground:
-  - apiVersion: v1
-    appVersion: V1.0
-    created: "2021-05-06T18:30:51.6799756Z"
-    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
-      beschikbaar.
-    digest: cc07524ab4af9e43343950ce9f5792ae977a5f7c71090e6abfce5f678d03f1f7
-    home: https://www.conduction.nl
-    icon: https://conductionnl.github.io/images/conduction_avatar_blue_on_transparant.svg
-    keywords:
-    - commonground
-    - haven
-    - nlx
-    - component
-    maintainers:
-    - email: ruben@conduction.nl
-      name: Ruben van der Linde
-    - email: info@conduction.nl
-      name: Conduction
-    name: proto-component-commonground
-    sources:
-    - https://commonground.conduction.nl/
-    - https://www.commonground.nl/
-    urls:
-    - proto-component-commonground-0.1.0.tgz
-    version: 0.1.0
   redis:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 6.0.11
-    created: "2021-05-06T18:30:51.7507856Z"
+    created: "2021-05-07T06:26:35.8304294Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -120,4 +94,4 @@ entries:
     urls:
     - charts/redis-12.7.7.tgz
     version: 12.7.7
-generated: "2021-05-06T18:30:51.595757Z"
+generated: "2021-05-07T06:26:35.5315441Z"
