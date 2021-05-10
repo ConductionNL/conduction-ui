@@ -11,6 +11,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
