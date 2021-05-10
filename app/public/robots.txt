@@ -1,4 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: https://www.conduction.nl/sitemap.xml
+
 User-agent: *
 Disallow: /src/components/TeamPage.js
 Disallow: /src/components/widgets/TwitterFeed.js
