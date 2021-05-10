@@ -28,8 +28,8 @@ export default class App extends Component {
       url = 'http://localhost:3000';
       api = 'http://localhost:83/api';
     } else {
-      url = 'https://www.dashkube.com';
-      api = 'https://www.dashkube.com/api';
+      url = 'https://www.conduction.nl';
+      api = 'https://www.conduction.nl/api';
     }
 
     this.state = {

@@ -114,7 +114,7 @@ export default class ComponentPage extends Component {
                              target="_blank"> Bekijk repository</a>
                           <a href={this.state.component['documentation']}
                              style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
-                             target="_blank"> bekijk documentatie</a>
+                             target="_blank"> Bekijk documentatie</a>
                         </div>
                       </div>
                     </div>
