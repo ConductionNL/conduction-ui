@@ -7,6 +7,7 @@ import CookieConsent from "react-cookie-consent";
 import {
   BrowserRouter as Router, Link, Route, Switch,
 } from "react-router-dom";
+import {LangSwitch} from "./utility/LangSwitch";
 
 // Import the context
 import ConfigContext from "./Context/Config";
@@ -17,6 +18,8 @@ export default class TeamPage extends Component {
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
 
   // componentDidMount() {
@@ -26,7 +29,7 @@ export default class TeamPage extends Component {
 
     return (
       <>
-        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white'}}>
+        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white', paddingBottom: '40px'}}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">

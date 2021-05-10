@@ -3,6 +3,7 @@ import {getCookie, setCookie} from "./utility/CookieHandler";
 import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
+import {LangSwitch} from "./utility/LangSwitch";
 
 import {
   BrowserRouter as Router, Link, Route, Switch,
@@ -17,13 +18,15 @@ export default class ProjectenPage extends Component {
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
 
   render() {
 
     return (
       <>
-        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white'}}>
+        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white', paddingBottom: '40px'}}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
