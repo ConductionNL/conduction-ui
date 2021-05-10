@@ -13,7 +13,7 @@ import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import ComponentenPageItem from "./ComponentenPageItem";
 import {HashLoader} from "react-spinners";
-import { css } from "@emotion/core";
+import { css } from "@emotion/css";
 
 export default class ComponentenPage extends Component {
   static contextType = ConfigContext;

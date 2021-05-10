@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {HashLoader} from "react-spinners";
-import { css } from "@emotion/core";
+import { css } from "@emotion/css";
 
 export default class ComponentPage extends Component {
   static contextType = ConfigContext;

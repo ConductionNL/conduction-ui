@@ -13,8 +13,12 @@ export default class Menu extends Component {
       <>
         <header id="header">
 
+          {/*For the sticky navbar*/}
+          <div style={{display: 'block',  height: "120px", width: "100%"}} ></div>
+
+
         {/*#navigation*/}
-        <nav id="navigation" className="navbar">
+        <nav id="navigation" className="navbar navbar-fixed-top" style={{backgroundColor: 'rgb(67, 118, 252)'}}>
 
           {/*.container*/}
           <div className="container">

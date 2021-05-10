@@ -303,10 +303,9 @@ export default class ProjectenPage extends Component {
                     <br/>
 
                       <br/>
-                        <a href="/odyssey"
-                            className="custom-button">
-                          Read more</a>
-
+                        <Link to="/odyssey"
+                            className="custom-button color-bright-blue">
+                          Read more</Link>
 
                   </div>
                 </div>

@@ -26,7 +26,7 @@ export default class TeamPage extends Component {
 
     return (
       <>
-        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white'}}>
+        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white', paddingBottom: '40px'}}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
