@@ -3,6 +3,7 @@ import {getCookie, setCookie} from "./utility/CookieHandler";
 import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
+import {LangSwitch} from "./utility/LangSwitch";
 
 import {
   BrowserRouter as Router, Link, Route, Switch,
@@ -17,6 +18,8 @@ export default class ProjectenPage extends Component {
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
   render() {
 

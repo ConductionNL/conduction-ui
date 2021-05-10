@@ -11,12 +11,15 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import {TwitterTimelineEmbed} from "react-twitter-embed";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
 
   // componentDidMount() {
@@ -35,7 +38,7 @@ export default class HomePage extends Component {
                     <p>Conduction faciliteert digitale ecosystemen </p>
                     <h1 style={{color: 'white'}}>Public Tech.</h1>
                   </div>
-                  <p style={{marginTop: '60px'}}>Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen
+                  <p>Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen
                     techniek waarbij mens en community centraal staan. Graag dragen we dan ook bij het aan het
                     ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p><br/>
                   <p><b>‘Tech to serve people’.</b></p>

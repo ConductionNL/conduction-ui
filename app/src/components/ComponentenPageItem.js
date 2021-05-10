@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ConfigContext from "./Context/Config";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class ComponentenPageItem extends Component {
   static contextType = ConfigContext;
@@ -7,6 +8,8 @@ export default class ComponentenPageItem extends Component {
   constructor(props) {
     super(props);
     console.log(this.props.component);
+
+    LangSwitch('nl');
   }
 
 

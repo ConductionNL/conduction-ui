@@ -5,6 +5,7 @@ import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {HashLoader} from "react-spinners";
 import { css } from "@emotion/css";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class ComponentPage extends Component {
   static contextType = ConfigContext;
@@ -20,6 +21,8 @@ export default class ComponentPage extends Component {
         margin-right: auto;
       `
     }
+
+    LangSwitch('nl');
   }
 
   componentDidMount() {
