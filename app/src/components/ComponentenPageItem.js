@@ -49,15 +49,15 @@ export default class ComponentenPageItem extends Component {
                             }
                             {
                               item === 'trouwen' &&
-                              <img alt={""} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de trouwen applicatie"} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                             {
                               item === 'verhuizen' &&
-                              <img alt={""} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de verhuizem applicatie"} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                             {
                               item === 'overlijden' &&
-                              <img alt={""} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de overlijden applicatie"} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                           </>
                           ))

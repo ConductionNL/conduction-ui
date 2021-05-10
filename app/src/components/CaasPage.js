@@ -38,9 +38,13 @@ export default class ProjectenPage extends Component {
                     Common Ground applicaties? Geen probleem, we ontzorgen u van A tot Z en verzorgen zowel het beheer
                     van uw omgevingen, certificaten als het installeren en onderhouden van componenten en applicaties.
                     Zo bent u snel online zonder de zorgen. Wilt u later de omgeving in eigen beheer? Geen probleem,
-                    wij dragen de omgeving graag aan u over. In de onderstaande punten gaan we dieper in op wat de
-                    CAAS is en waarom het u ontzorgt.</p>
+                    wij dragen de omgeving graag aan u over.</p>
+                  <p style={{marginBottom: '15px'}}>Wil je weten of de CAAS iets voor jouw gemeente is?</p>
+                  <Link to="/contact" className="custom-button">
+                    Maak hier een vrijblijvende afspraak</Link>
                   <br/>
+                  <p style={{marginTop: '10px'}}>In de onderstaande punten gaan we dieper in op wat de
+                    CAAS is en waarom het u ontzorgt.</p>
                 </div>
               </div>
               <div className="col-sm-6">
@@ -216,6 +220,8 @@ export default class ProjectenPage extends Component {
                       maatwerk om het passend te maken. We zullen samen met u een intake doen om te kijken hoe en ’óf de
                       “non” Common Ground applicatie past binnen de CAAS. Mogelijk zijn hier dan ook andere beheer
                       afspraken voor nodig.</p>
+                    <Link to="/contact" className="custom-button">
+                      Plan een intake</Link>
                   </div>
                 </div>
               </div>

@@ -61,7 +61,7 @@ export default class TeamPage extends Component {
                 <div className="header-img">
                   <figure className="animation animated animation-fade-in-right"
                           data-animation="animation-fade-in-right">
-                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png"/>
+                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png" alt="Maak kennis met het team"/>
                   </figure>
                 </div>
                 <br/>

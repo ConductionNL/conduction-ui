@@ -315,7 +315,7 @@ export default class ProjectenPage extends Component {
               </div>
               <div className="col-sm-10 col-md-5 col-lg-5">
                 <figure className="animation animated animation-fade-in-right" data-animation="animation-fade-in-right">
-                  <img src="/images/Conduction-website_losgeknipt_0023_afb24.png"/>
+                  <img src="/images/Conduction-website_losgeknipt_0023_afb24.png" alt="Open source software ontwikkelen voor digitale ecosytemen"/>
                 </figure>
               </div>
             </div>
