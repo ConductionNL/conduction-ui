@@ -33,7 +33,7 @@ export default class OdysseyPage extends Component {
                 <div className="header-img">
                   <figure className="animation animated animation-fade-in-right"
                           data-animation="animation-fade-in-right">
-                    <img src="/images/Conduction-website_losgeknipt_0023_afb24.png"/>
+                    <img src="/images/Conduction-website_losgeknipt_0023_afb24.png" alt="Open source software ontwikkelen voor digitale ecosytemen"/>
                   </figure>
                 </div>
                 <br/>
@@ -50,8 +50,10 @@ export default class OdysseyPage extends Component {
                     <br/>
                       <br/>
                         All building blocks listed below are open source available. The building blocks shown here are
-                        commonly used in the world of municipalities. If you are looking for something specific drop us
-                        an email, we can probably help you!</p>
+                        commonly used in the world of municipalities.</p>
+                  <p style={{marginBottom: '15px'}}>If you are looking for something specific drop us an email, we can probably help you!</p>
+                  <Link to="/contact" className="custom-button">
+                    Get in touch</Link>
                   <br/>
                 </div>
               </div>

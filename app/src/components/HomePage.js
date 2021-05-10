@@ -10,8 +10,7 @@ import {
 
 // Import the context
 import ConfigContext from "./Context/Config";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
-import {LangSwitch} from "./utility/LangSwitch";
+import TwitterFeed from "./widgets/TwitterFeed";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
@@ -60,7 +59,7 @@ export default class HomePage extends Component {
               <div className="col-sm-6">
                 <div className="hovereffect">
                   <div className="header-img">
-                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png"/></div>
+                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png" alt="Maak kennis met het team"/></div>
                   <div className="overlay">
                     <h5>Het team</h5>
                     <a className="info2" href="/team">Maak kennis met het team</a>
@@ -78,7 +77,7 @@ export default class HomePage extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-6">
-                <img src="images/Conduction-website_losgeknipt_0023_afb24.png" width="100%"/>
+                <img src="images/Conduction-website_losgeknipt_0023_afb24.png" alt="Open source software ontwikkelen voor digitale ecosytemen" width="100%"/>
               </div>
               <div className="col-sm-12 col-md-6">
                 <div className="col-text20 margin-bottom20">
@@ -120,7 +119,7 @@ export default class HomePage extends Component {
             <div className="post-heading-left">
               <h2 style={{color: "#4386FB"}}>Hoe doen we dat</h2>
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
-                <img src="images/samen.png" width="100%"/>
+                <img src="images/samen.png" alt="Samen organiseren" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Samen</h5>
                   <p>Wij geloven in de kracht van samen, daarom ontwikkelen wij het liefst samen. Om zo een idee,
@@ -129,7 +128,7 @@ export default class HomePage extends Component {
                 </div>
               </div>
               <div className=" col-sm-12 col-md-6" style={{textAlign: "left"}}>
-                <img src="images/Conduction_HOME_0005_afb6.png" width="100%"/>
+                <img src="images/Conduction_HOME_0005_afb6.png" alt="Open source community" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Open</h5>
                   <p>Alles wat wij ontwikkelen is open source, voor iedereen te gebruiken. Wij geven (onze techniek)
@@ -138,7 +137,7 @@ export default class HomePage extends Component {
                 </div>
               </div>
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
-                <img src="images/Conduction_HOME_0006_afb7.png" width="100%"/>
+                <img src="images/Conduction_HOME_0006_afb7.png" alt="Duurzame en innovatieve software ontwikkeling" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Duurzaam en innovatief</h5>
                   <p>Alles wat wij maken sluit aan op de behoefte van nu, maar is voorbereid op de toekomst, dat
@@ -147,7 +146,7 @@ export default class HomePage extends Component {
                 </div>
               </div>
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
-                <img src="images/Conduction_HOME_0007_afb8.png" width="100%"/>
+                <img src="images/Conduction_HOME_0007_afb8.png" alt="Verantwoord ondernemen" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Verantwoord</h5>
                   <p>Op een bewuste en verantwoorde wijze ontwikkelen en ondernemen staat bij ons hoog in het
@@ -177,21 +176,21 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://vng.nl/">
-                      <img src="images/VNG.png"/>
+                      <img src="images/VNG.png" alt="VNG logo"/>
                     </a>
                   </div>
                 </div>
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.almere.nl/">
-                      <img src="images/gemeentealmere.png"/>
+                      <img src="images/gemeentealmere.png" alt="Gemeente Almere logo"/>
                     </a>
                   </div>
                 </div>
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.s-hertogenbosch.nl/">
-                      <img src="images/Gemeentedenbosch.png"/>
+                      <img src="images/Gemeentedenbosch.png" alt="Gemeente Den Bosch logo"/>
                     </a>
                   </div>
                 </div>
@@ -199,7 +198,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.eindhoven.nl/">
-                      <img src="images/gemeenteeindhoven.png"/>
+                      <img src="images/gemeenteeindhoven.png" alt="Gemeente Eindhoven logo"/>
                     </a>
                   </div>
                 </div>
@@ -209,7 +208,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.hoorn.nl/">
-                      <img src="images/gemeentehoorn.png"/>
+                      <img src="images/gemeentehoorn.png" alt="Gemeente Hoorn logo"/>
                     </a>
                   </div>
                 </div>
@@ -217,7 +216,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.rotterdam.nl/">
-                      <img src="images/gemeenterotterdam.png"/>
+                      <img src="images/gemeenterotterdam.png" alt="Gemeente Rotterdam logo"/>
                     </a>
                   </div>
                 </div>
@@ -225,7 +224,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.tilburg.nl/">
-                      <img src="images/gemeentetilburg.png"/>
+                      <img src="images/gemeentetilburg.png" alt="Gemeente Tilburg logo"/>
                     </a>
                   </div>
                 </div>
@@ -233,7 +232,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.utrecht.nl/">
-                      <img src="images/gemeenteutrecht.png"/>
+                      <img src="images/gemeenteutrecht.png" alt="Gemeente Utrecht logo"/>
                     </a>
                   </div>
                 </div>
@@ -243,7 +242,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://regiowestfriesland.nl/index.php/nl">
-                      <img src="images/gemeentewestfriesland.png"/>
+                      <img src="images/gemeentewestfriesland.png" alt="Gemeente West-Friesland logo"/>
                     </a>
                   </div>
                 </div>
@@ -251,7 +250,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.solviteers.nl/">
-                      <img src="images/solviteers.png"/>
+                      <img src="images/solviteers.png" alt="Solviteers logo"/>
                     </a>
                   </div>
 
@@ -260,7 +259,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://ritense.com/">
-                      <img src="images/ritense.png"/>
+                      <img src="images/ritense.png" alt="Ritense logo"/>
                     </a>
                   </div>
                 </div>
@@ -268,7 +267,7 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.htasoftware.eu/">
-                      <img src="images/018-Logo-HTA.png"/>
+                      <img src="images/018-Logo-HTA.png" alt="HTA software logo"/>
                     </a>
                   </div>
                 </div>
@@ -277,14 +276,14 @@ export default class HomePage extends Component {
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.rocvanflevoland.nl/#">
-                      <img src="images/logo-rocvf.png"/>
+                      <img src="images/logo-rocvf.png" alt="ROC van Flevoland logo"/>
                     </a>
                   </div>
                 </div>
                 <div className="col-sm-3">
                   <div className="affa-feature-img">
                     <a href="https://www.sidnfonds.nl/">
-                      <img src="images/SIDN_Logo.png"/>
+                      <img src="images/SIDN_Logo.png" alt="SIDN fond"/>
                     </a>
                   </div>
                 </div>
@@ -307,17 +306,17 @@ export default class HomePage extends Component {
             </div>
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-4">
-                <a href="/projecten"> <img style={{maxWidth: "300px;"}} src="images/trouwen.png"
+                <a href="/projecten"> <img style={{maxWidth: "300px;"}} src="images/trouwen.png" alt="Wat doet de trouwen applicatie"
                                            height="300px"
                                            width="100%"/></a>
               </div>
               <div className="col-xs-12 col-sm-6 col-md-4">
-                <a href="/projecten#verhuizen"> <img style={{maxWidth: "300px"}}
+                <a href="/projecten#verhuizen"> <img style={{maxWidth: "300px"}} alt="Wat doet de verhuizen applicatie"
                                                      src="images/verhuizen.png" height="300px"
                                                      width="100%"/></a>
               </div>
               <div className="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-4">
-                <a href="/projecten#overlijden"> <img style={{maxWidth: "300px"}}
+                <a href="/projecten#overlijden"> <img style={{maxWidth: "300px"}} alt="Wat doet de overlijden applicatie"
                                                       src="images/overlijden.png"
                                                       height="300px"
                                                       width="100%"/>
@@ -327,26 +326,7 @@ export default class HomePage extends Component {
           </div>
         </div>
 
-        <div className="wrap-container8040 ">
-          <div className="container">
-            <div className="post-heading-left">
-              <h2 style={{color: "#4386FB"}}>Buzz</h2>
-            </div>
-            <div className="col-md-6 col-md-offset-3">
-              {/*<iframe id="twitter-widget-0" scrolling="no" frameBorder="0" allowTransparency="true"*/}
-              {/*        allowFullScreen="true" className="twitter-timeline twitter-timeline-rendered"*/}
-              {/*        style={{position: 'static', visibility: 'visible', display: 'inline-block', width: '866px', height: '1020px', padding: '0px', border: 'none', maxWidth: '100%', minWidth: '180px', marginTop: '0px', marginBottom: '0px', minHeight: '200px'}}*/}
-              {/*        data-widget-id="profile:conduction_nl" title="Twitter Timeline"></iframe>*/}
-              {/*<script async="" src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>*/}
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="conduction_nl"
-                theme="dark"
-                options={{height: 800}}
-              />
-            </div>
-          </div>
-        </div>
+        <TwitterFeed />
 
         <div id="features3" className="wrap-container8040 hidden">
           <div className="container">
