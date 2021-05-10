@@ -7,15 +7,15 @@ framework:
     # Remove or comment this section to explicitly disable session support.
     session:
         handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\RedisSessionHandler
-        #        handler_id: ~
+#        handler_id: ~
         cookie_secure: auto
         cookie_samesite: lax
         gc_maxlifetime: '%env(APP_SESSION_DURATION)%'
-
+        
     #esi: true
     #fragments: true
     php_errors:
         log: true
-
+        
     assets:
         base_path: "%env(APP_SUBPATH)%"
