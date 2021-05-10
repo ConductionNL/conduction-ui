@@ -11,6 +11,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import TwitterFeed from "./widgets/TwitterFeed";
 
 export default class ContactPage extends Component {
   static contextType = ConfigContext;
@@ -42,34 +43,7 @@ export default class ContactPage extends Component {
           </div>
         </div>
 
-        <div className="wrap-container8040 " style={{paddingTop: '0px'}}>
-          <div className="container">
-            <div className="post-heading-left">
-              <h2 className="color-bright-blue">Buzz</h2>
-            </div>
-            <div className="col">
-              <div className="col-md-6">
-                <iframe id="twitter-widget-0" scrolling="no" frameBorder="0" allowTransparency="true"
-                        allowFullScreen="true" className="twitter-timeline twitter-timeline-rendered"
-                        style={{position: 'static', visibility: 'visible', display: 'inline-block', width: '866px', height: '1020px', padding: '0px', border: 'none', maxWidth: '100%', minWidth: '180px', marginTop: '0px', marginBottom: '0px', minHeight: '200px'}}
-                        data-widget-id="profile:conduction_nl" title="Twitter Timeline"></iframe>
-                <script async="" src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
-              </div>
-            </div>
-            <div className="col">
-              <div className="col-md-6">
-                <div className="iframely-embed">
-                  <div></div>
-                </div>
-                <script async="" src="//cdn.iframe.ly/embed.js" charSet="utf-8"></script>
-                <div className="iframely-embed">
-                  <div></div>
-                </div>
-                <script async="" src="//cdn.iframe.ly/embed.js" charSet="utf-8"></script>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TwitterFeed />
 
         <ContactForm />
       </>
