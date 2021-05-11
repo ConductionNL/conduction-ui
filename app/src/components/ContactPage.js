@@ -13,13 +13,14 @@ import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import TwitterFeed from "./widgets/TwitterFeed";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class ContactPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Contact')
     LangSwitch('nl');
   }
 

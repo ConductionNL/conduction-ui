@@ -51,7 +51,7 @@ export default class OdysseyPage extends Component {
                       <br/>
                         All building blocks listed below are open source available. The building blocks shown here are
                         commonly used in the world of municipalities.</p>
-                  <p style={{marginBottom: '15px'}}>If you are looking for something specific drop us an email, we can probably help you!</p>
+                  <p style={{marginBottom: '15px'}}>If you are looking for something specific make an appointment, we can probably help you!</p>
                   <Link to="/contact" className="custom-button">
                     Get in touch</Link>
                   <br/>

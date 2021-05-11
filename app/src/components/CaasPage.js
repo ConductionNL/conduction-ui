@@ -224,7 +224,8 @@ export default class ProjectenPage extends Component {
                       maatwerk om het passend te maken. We zullen samen met u een intake doen om te kijken hoe en ’óf de
                       “non” Common Ground applicatie past binnen de CAAS. Mogelijk zijn hier dan ook andere beheer
                       afspraken voor nodig.</p>
-                    <Link to="/contact" className="custom-button">
+                    <br/>
+                    <Link to="/contact" className="custom-button color-bright-blue">
                       Plan een intake</Link>
                   </div>
                 </div>
