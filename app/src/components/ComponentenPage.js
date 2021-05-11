@@ -61,19 +61,11 @@ export default class ComponentenPage extends Component {
                     <h1 style={{color: 'white'}}>Componenten</h1>
                   </div>
                   <p style={{color: 'white'}}>
-                    De kracht van de architecturale principes van Common Ground zit hem in kleine microservices verdeeld
-                    over vijf lagen.
-                    Hierbij is herbruikbaarheid en schaalbaarheid een belangrijk uitgangspunt.
-                    Dit leidt ertoe dat er sprake is van een steep dependency curve.
-                    Kleine applicaties hebben van start af aan een divers ecosysteem aan componenten nodig om te kunnen
-                    functioneren,
-                    maar het toevoegen van extra applicaties leidt niet tot een sterke toename van componenten.
-                    Dit beeld zien we terug bij de melding verhuizen en huwelijksplanner.
-                    Afhankelijk van de inrichtings- en functionaliteit keuzes worden voor deze processen tussen de 12 en
-                    26 componenten gebruikt.
-                    Waarbij alle componenten vanuit verhuizen worden hergebruikt bij de melding huwelijk.
-                    Hieronder een overzicht van de componenten die voor beide applicaties worden gebruikt en hun doel
-                    binnen het ecosysteem.
+                    De kracht van de architecturale principes van Common Ground zit hem in kleine microservices verdeeld over vijf lagen.
+                    Hierbij is herbruikbaarheid en schaalbaarheid een belangrijk uitgangspunt. Dit leidt ertoe dat er sprake is van een steep dependency curve.
+                    Kleine applicaties hebben van start af aan een divers ecosysteem aan componenten nodig om te kunnen functioneren, maar het toevoegen van extra applicaties leidt niet tot een sterke toename van componenten.
+                    Dit beeld zien we terug bij de melding verhuizen en huwelijksplanner. Afhankelijk van de inrichtings- en functionaliteit keuzes worden voor deze processen tussen de 12 en 26 componenten gebruikt.
+                    Waarbij alle componenten vanuit verhuizen worden hergebruikt bij de melding huwelijk. Hieronder een overzicht van de componenten die voor beide applicaties worden gebruikt en hun doel binnen het ecosysteem.
                   </p>
                 </div>
               </div>

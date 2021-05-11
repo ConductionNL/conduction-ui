@@ -69,18 +69,14 @@ export default class OdysseyPage extends Component {
                   <div className="post-heading-left">
                     <h1 className="color-bright-blue">"BRP" Basic Registration of Persons</h1>
                     <h4 className="color-bright-blue">A data source/registration for all inhabitants in the Netherlands</h4>
-                    <p> The "BRP" or Basic Registration of Persons is a collection of all inhabitants in the
-                      Netherlands.
-                      This is the core data source which most dutch governmental organisations make use of. <br/>Do we
-                        have a database of all the people in the Netherlands?
-                        No of course not that would be a gross violation of the GDPR and some other very important laws.
-                        But what is this then, I hear you ask.
-                        This is an API that functions as the BRP api currently developed by the dutch government.
-                        It can be filled with test persons which you then can use to develop or test your own solutions.
+                    <p> The "BRP" or Basic Registration of Persons is a collection of all inhabitants in the Netherlands.
+                      This is the core data source that most Dutch governmental organizations make use of.
+                      Do we have a database of all the people in the Netherlands? No of course not that would be a gross violation of the GDPR and some other very important laws.
+                      But what is this then, I hear you ask. This is an API that functions as the BRP API currently developed by the Dutch government.
+                      It can be filled with test persons which you then can use to develop or test your own solutions.
                         <br/>
                           <br/>
-                            If there is enough interest we will host a test BRP with a simple interface where you can
-                            upload your own person that fits for your solutions at the hackathon.
+                      If there is enough interest we will host a test BRP with a simple interface where you can upload your own person that fits your solutions at the hackathon.
                     </p>
                     <br/>
                       <br/>
@@ -157,13 +153,12 @@ export default class OdysseyPage extends Component {
                     <h4 className="color-bright-blue">A service which formally facilitates assents asked and given.</h4>
 
 
-                    <p>The assent/consent service or “instemmingservice” in dutch handles the assent given by a person.
-                      Where would you use a service as this? To choose one example this service is used in a wedding
-                      scheduler in development by
-                      the municipality of Utrecht. The municipality must establish that assent is given by both parties
-                      of a wedding.
-                      But the assent service can be used for anything which requires an assent given by a party. A
-                      request for data to name one of them.
+                    <p>The assent/consent service or “instemmingservice” in Dutch handles the assent given by a person.
+                      Where would you use a service like this?
+                      To choose one example this service is used in a wedding scheduler in development by the municipality of Utrecht.
+                      The municipality must establish that assent is given by both parties of a wedding.
+                      But the assent service can be used for anything which requires an assent given by a party.
+                      A request for data to name one of them.
                     </p>
                     <br/>
                       <br/>
@@ -192,21 +187,18 @@ export default class OdysseyPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h1 className="color-bright-blue">Requests</h1>
-                    <p>If you want to arrange something with a (local) government you as an individual or organisation
-                      can send them a “request”.
-                      The (local) government will process your request and communicate the result back. The difficulty
-                      with this is that many municipalities have different
-                      systems to process requests which have limited interoperability. This method aims to tackle this
-                      problem by standardizing the collection of data.
+                    <p>If you want to arrange something with a (local) government you as an individual or organization can send them a “request”.
+                      The (local) government will process your request and communicate the result back.
+                      The difficulty with this is that many municipalities have different systems to process requests which have limited interoperability.
+                      This method aims to tackle this problem by standardizing the collection of data.
                       <br/>
-                        The method is a bit abstract, let’s use an example to illustrate this subject. You as a person
-                        would like to have a parking permit in your street.
-                        Usually you will fill out an application form (either digitally or physically) and send this to
-                        the department of the municipality that has jurisdiction
-                        over this application. As an individual you are sending a “request” for a parking permit.
-                        What is a request in this context? An request is a way to structure the dataset. The request
-                        type describes what information is needed in an abstract way.
-                        The request is self contains the data needed for the processing of the request.
+                      <br/>
+                      The method is a bit abstract, let’s use an example to illustrate this subject.
+                      You as a person would like to have a parking permit in your street.
+                      Usually, you will fill out an application form (either digitally or physically) and send this to the department of the municipality that has jurisdiction over this application.
+                      As an individual, you are sending a “request” for a parking permit.
+                      What is a request in this context? A request is a way to structure the dataset.
+                      The request type describes what information is needed in an abstract way. The request is self contains the data needed for the processing of the request.
                     </p>
                   </div>
                 </div>
@@ -218,13 +210,11 @@ export default class OdysseyPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h2 className="color-bright-blue">Request Type Catalogue (VTC)</h2>
-                    <p>The request type is a template of the dataset needed in an request. These templates are stored in
-                      a catalogue. The template is just a
-                      template and thus holds no data. It does describe what the requirement are for the data. For
-                      example a “date of birth” would have the type date and “name”
-                      would be a string. To maximize reusability of this building block there is no “business logic”
-                      within the request type. The business logic is stored in another
-                      component which we will release soon.
+                    <p>The request type is a template of the dataset needed in a request.
+                      These templates are stored in a catalogue. The template is just a template and thus holds no data.
+                      It does describe what the requirements are for the data. For example, a “date of birth” would have the type date and “name” would be a string.
+                      To maximize the reusability of this building block there is no “business logic” within the request type.
+                      The business logic is stored in another component which we will release soon.
                     </p>
                     <br/>
                       <br/>
@@ -252,13 +242,10 @@ export default class OdysseyPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h2 className="color-bright-blue">Request registration Component (VRC)</h2>
-                    <p>A request it self is stored in a registration, the VRC (verzoek registratie component in Dutch).
-                      The request uses the request type to determine
-                      the template of the data set and collects the data. It can be saved and continued at any point in
-                      time, tis creates flexibility for the user who in example starts the
-                      request on their phone but finishes the request on a laptop. When the request is complete the
-                      status is set to “submitted”. It is then ready to be picked up by the
-                      concerning department of the municipality to be processed.
+                    <p>A request itself is stored in a registration, the VRC (verzoek registratie component in Dutch).
+                      The request uses the request type to determine the template of the data set and collects the data.
+                      It can be saved and continued at any point in time, this creates flexibility for the user who for example starts the request on their phone but finishes the request on a laptop.
+                      When the request is complete the status is set to “submitted”. It is then ready to be picked up by the concerning department of the municipality to be processed.
                     </p>
                     <br/>
                       <br/>

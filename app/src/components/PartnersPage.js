@@ -264,11 +264,10 @@ export default class ProjectenPage extends Component {
                   <div className="post-heading-left">
                     <h2 id="overlijden" className="color-bright-blue">Containers in plaats van Servers</h2>
                     <p>
-                      Onze code is geschikt om op virtuele machines, in de vorm van containers,
-                      te draaien. Dat maakt de software onafhankelijk van hardware en stelt anderen
-                      is staat een breed scala aan componenten te kunnen draaien, zonder een heel
-                      serverpark in te richten. Key voor ons is: Het maken van ‘geschikte’ code en het
-                      aanleveren van deze containers, zodat de code plug and play zonder installatie te draaien is.
+                      Onze code is geschikt om op virtuele machines, in de vorm van containers, te draaien.
+                      Dat maakt de software onafhankelijk van hardware en stelt anderen in staat een breed scala aan componenten te kunnen draaien,
+                      zonder een heel serverpark in te richten.
+                      Key voor ons is: Het maken van ‘geschikte’ code en het aanleveren van deze containers, zodat de code plug and play zonder installatie te draaien is.
                     </p>
                   </div>
                 </div>
