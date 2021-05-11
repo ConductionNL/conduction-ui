@@ -42,7 +42,7 @@ export default class ProjectenPage extends Component {
                   <br/>
                   <p>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
                   <br/>
-                  <p>enieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
+                  <p>Benieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
                   <br/>
                   <Link to="/contact"
                      style={{
