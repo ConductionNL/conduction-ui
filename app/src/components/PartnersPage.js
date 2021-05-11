@@ -39,22 +39,22 @@ export default class ProjectenPage extends Component {
                     hergebruik van je product op de eerste plaats zetten. Dat klinkt natuurlijk logisch, maar in de
                     praktijk zien we dat open source te vaak neerkomt op het “over de schutting gooien” van een reeds
                     gemaakt (en vaak super specifiek) project.</p>
-                  <br/>
-                  <p>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
-                  <br/>
-                  <p>Benieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
-                  <br/>
+                  <p style={{marginBottom: 20}}>Benieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
+
                   <Link to="/contact"
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
                        fontSize: '15px',
                        color: 'white',
-                       padding: '7.5px 15px 7.5px 15px',
+                       padding: '7.5px 15px 10px 15px',
                        borderRadius: '25px',
                        border: '2.5px solid white'
                      }}>
                     Ga naar contactpagina</Link>
+                  <br/>
+
+                  <p style={{marginTop: 20}}>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
                 </div>
               </div>
 
