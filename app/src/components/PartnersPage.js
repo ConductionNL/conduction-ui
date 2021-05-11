@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
 import {LangSwitch} from "./utility/LangSwitch";
-
+import {metadata} from "./utility/Metadata";
 import {
   BrowserRouter as Router, Link, Route, Switch,
 } from "react-router-dom";
@@ -18,8 +18,8 @@ export default class ProjectenPage extends Component {
 
   constructor(props) {
     super(props);
-
     LangSwitch('nl');
+    metadata('Conduction | Open source | Microservices architectuur', 'Bij Conduction ontwikkelen wij Open Source Software voor de Community. Nieuwsgierig hoe wij dit doen? Bezoek dan onze website');
   }
 
   render() {

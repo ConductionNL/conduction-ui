@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
 import {LangSwitch} from "./utility/LangSwitch";
-
+import {metadata} from "./utility/Metadata";
 import {
   BrowserRouter as Router, Link, Route, Switch,
 } from "react-router-dom";
@@ -18,7 +18,7 @@ export default class OdysseyPage extends Component {
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit now our website');
     LangSwitch('en');
   }
 

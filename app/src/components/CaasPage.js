@@ -12,13 +12,14 @@ import {
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class ProjectenPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Common Ground as a Service | CAAS','Wilt u deelnemen aan Common Ground, maar heeft u nog geen ervaring? Dan is Common Ground as a service iets voor u! Benieuwd naar de voordelen? Neem contact op')
     LangSwitch('nl');
   }
 

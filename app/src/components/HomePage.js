@@ -12,13 +12,14 @@ import {
 import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen','Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
     LangSwitch('nl');
   }
 

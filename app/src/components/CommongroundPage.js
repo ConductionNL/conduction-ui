@@ -12,14 +12,15 @@ import {
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class CommongroundPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
     LangSwitch('nl');
+    metadata('Conduction | Common Ground | Open Source Componenten & Applicaties','Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus');
   }
 
   render() {
