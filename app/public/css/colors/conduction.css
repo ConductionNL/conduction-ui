@@ -52,8 +52,6 @@ a:hover { color:#4a4a4a; }
 	color: #F9B900;
 }
 
-
-
 .conduction-white {
 	background-color: white;
 
@@ -79,27 +77,16 @@ a:hover { color:#4a4a4a; }
 	background-color: #ffffff;
 }
 
-
-h5 {
-	margin-top: -35px;
-}
-
-
-
-
-
-
-
 body h5 {
 margin-bottom: 10px;
 	font-family: "Noto Sans", Arial, sans-serif;
 }
 
 @media (max-width: 767px) {
-	
+
 	#header .navbar, #header .nav > li > a { color:#a9a9a9; }
 	#header .navbar-toggle, #header .navbar-toggle.collapsed:hover { background-color:#3d8fe2; }
 	#header .navbar-toggle.collapsed { background-color:#4376FC; }
 	#header .nav > li > a:hover, #header .nav > li.active > a { color:#FFF; }
-	
+
 }

@@ -58,6 +58,11 @@ export default class Footer extends Component {
             cookie information banner when first visiting the page you consent to our use of cookies.
           </CookieConsent>
         }
+        2
+          {/*Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPDS5VD"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {/*End Google Tag Manager (noscript) */}
       </>
     );
   }

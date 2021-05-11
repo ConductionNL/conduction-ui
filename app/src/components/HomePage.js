@@ -11,12 +11,15 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
 
   // componentDidMount() {
@@ -26,7 +29,7 @@ export default class HomePage extends Component {
 
     return (
       <>
-        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white'}}>
+        <div className="header-content" style={{backgroundColor: '#4376FC', color: 'white', paddingBottom: '40px'}}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
@@ -35,7 +38,7 @@ export default class HomePage extends Component {
                     <p>Conduction faciliteert digitale ecosystemen </p>
                     <h1 style={{color: 'white'}}>Public Tech.</h1>
                   </div>
-                  <p style={{marginTop: '60px'}}>Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen
+                  <p>Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen
                     techniek waarbij mens en community centraal staan. Graag dragen we dan ook bij het aan het
                     ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p><br/>
                   <p><b>‘Tech to serve people’.</b></p>
@@ -296,11 +299,11 @@ export default class HomePage extends Component {
           <div className="container">
             <div className="post-heading-left"
                  style={{display: "inline !important", verticalAlign: 'top', lineHeight: '22px'}}>
-              <h2 style={{color: "#4386FB", display: "inline"}}>Met wie doen we wat, </h2>
-              <p style={{display: "inline"}} className="color-bright-blue"><b>namelijk; Meer weten over onze producten en
-                wat dit voor jou kan betekenen? </b></p>
-                <Link to="/contact"
-                      className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
+              <h2 style={{color: "#4386FB", display: "inline"}}>Met wie doen we wat</h2>
+              <p style={{display: "inline"}} className="color-bright-blue"><b>Meer weten over onze producten en
+                  wat dit voor jou kan betekenen? </b></p>
+                  <Link to="/contact"
+                        className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
             </div>
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-4">
@@ -724,260 +727,7 @@ export default class HomePage extends Component {
 
         <div className="sep-border"></div>
 
-        <div id="portfolios" className="wrap-container8040 hidden">
 
-          <div className="container">
-            <div className="post-heading-center">
-              <h2>Our's Latest Works</h2>
-              <p>Lorem ipsum dolor sit amet, consequat aute irure dolor in reprehenderit in voluptate
-                velit esse
-                cillum dolore eu fugiat nulla pariatur, sunt in culpa qui officia deserunt mollit anim
-                id est
-                laborum.</p>
-            </div>
-
-            <nav className="isotope-menu animation" data-animation="animation-fade-in-down">
-              <a href="#" className="active" data-filter="*">All Works</a>
-              <a href="#" data-filter=".creative">Creative</a>
-              <a href="#" data-filter=".entertainment">Entertainment</a>
-              <a href="#" data-filter=".mobile">Mobile</a>
-            </nav>
-
-            <div className="isotope-row animation" data-animation="animation-fade-in-up">
-              <div className="item entertainment mobile">
-                <a href="images/content/portfolios/full/1.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/1.jpg" alt="Portfolio Item 1"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 1</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item creative">
-                <a href="images/content/portfolios/full/2.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/2.jpg" alt="Portfolio Item 2"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 2</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item creative mobile">
-                <a href="images/content/portfolios/full/3.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/3.jpg" alt="Portfolio Item 3"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 3</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item entertainment">
-                <a href="images/content/portfolios/full/4.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/4.jpg" alt="Portfolio Item 4"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 4</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item creative mobile">
-                <a href="images/content/portfolios/full/5.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/5.jpg" alt="Portfolio Item 5"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 5</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item creative entertainment mobile">
-                <a href="images/content/portfolios/full/6.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/6.jpg" alt="Portfolio Item 6"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 6</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item creative entertainment">
-                <a href="images/content/portfolios/full/7.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/7.jpg" alt="Portfolio Item 7"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 7</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item mobile">
-                <a href="images/content/portfolios/full/8.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/8.jpg" alt="Portfolio Item 8"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 8</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-
-              <div className="item entertainment mobile">
-                <a href="images/content/portfolios/full/9.jpg" className="fancybox"
-                   data-fancybox-group="images_gallery">
-                  <figure className="img-overlay">
-                    <img src="images/content/portfolios/thumb/9.jpg" alt="Portfolio Item 9"/>
-                    <div className="overlay-masked">
-                      <span className="overlay-icon"></span>
-                      <p>Portfolio Item 9</p>
-                    </div>
-                  </figure>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="pricing" className="wrap-container8040 bg-grey hidden">
-
-          <div className="container">
-
-            <div className="post-heading-center">
-              <h2>Plans & Pricing Tables</h2>
-            </div>
-
-            <div className="tbl-pricing tbl-prc-recommended">
-
-              <div className="row">
-
-                <div className="col-sm-4 tbl-prc-col animation" data-animation="animation-fade-in-left">
-                  <div className="tbl-prc-wrap">
-                    <div className="tbl-prc-heading">
-                      <h4>Basic</h4>
-                    </div>
-                    <div className="tbl-prc-price">
-                      <h5>$19<i>/ mo</i></h5>
-                      <p>Billed annually or $10 month-to-month.</p>
-                    </div>
-                    <ul className="tbl-prc-list">
-                      <li>10GB Space Amount</li>
-                      <li>Unlimited Users</li>
-                      <li>30GB Bandwidth</li>
-                      <li>Enhanced Security</li>
-                      <li>20 MySQL Databases</li>
-                      <li>25 projects</li>
-                      <li>Unlimited Domain</li>
-                    </ul>
-                    <div className="tbl-prc-footer">
-                      <a href="#" className="btn-custom">Sign Up</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-4 tbl-prc-col tbl-prc-col-recommended animation"
-                     data-animation="animation-fade-in-down" data-delay="600">
-                  <div className="tbl-prc-wrap">
-                    <div className="tbl-prc-heading">
-                      <h4>Professional</h4>
-                    </div>
-                    <div className="tbl-prc-price">
-                      <h5>$49<i>/ mo</i></h5>
-                      <p>Billed annually or $10 month-to-month.</p>
-                    </div>
-                    <ul className="tbl-prc-list">
-                      <li>10GB Space Amount</li>
-                      <li>Unlimited Users</li>
-                      <li>30GB Bandwidth</li>
-                      <li>Enhanced Security</li>
-                      <li>20 MySQL Databases</li>
-                      <li>25 projects</li>
-                      <li>Unlimited Domain</li>
-                    </ul>
-                    <div className="tbl-prc-footer">
-                      <a href="#" className="btn-custom">Sign Up</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-4 tbl-prc-col animation" data-animation="animation-fade-in-right"
-                     data-delay="300">
-                  <div className="tbl-prc-wrap">
-                    <div className="tbl-prc-heading">
-                      <h4>Enterprise</h4>
-                    </div>
-                    <div className="tbl-prc-price">
-                      <h5>$64<i>/ mo</i></h5>
-                      <p>Billed annually or $10 month-to-month.</p>
-                    </div>
-                    <ul className="tbl-prc-list">
-                      <li>10GB Space Amount</li>
-                      <li>Unlimited Users</li>
-                      <li>30GB Bandwidth</li>
-                      <li>Enhanced Security</li>
-                      <li>20 MySQL Databases</li>
-                      <li>25 projects</li>
-                      <li>Unlimited Domain</li>
-                    </ul>
-                    <div className="tbl-prc-footer">
-                      <a href="#" className="btn-custom">Sign Up</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="download" className="bg-parallax hidden" data-parallax="scroll" data-speed="0.2"
-             data-natural-width="1920"
-             data-natural-height="1080" data-image-src="images/content/bg/2.jpg">
-          <div className="bg-overlay50 wrap-container120">
-            <div className="container">
-              <div className="post-heading-center">
-                <h2>Get Your App Now</h2>
-                <p>Lorem ipsum dolor sit amet, consequat aute irure dolor in reprehenderit in voluptate
-                  velit esse
-                  cillum dolore eu fugiat nulla pariatur, sunt in culpa qui officia deserunt mollit
-                  anim id est
-                  laborum.</p>
-              </div>
-
-              <div className="btn-section textcenter animation" data-animation="animation-fade-in-up">
-                <a href="#" className="btn-custom btn-icon"><i className="fa fa-apple"></i> Apple Store</a>
-                <a href="#" className="btn-custom btn-icon"><i className="fa fa-android"></i> Play Store</a>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
       </>
     );
   }

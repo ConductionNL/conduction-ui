@@ -4,7 +4,8 @@ import React, {Component} from 'react';
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {HashLoader} from "react-spinners";
-import { css } from "@emotion/core";
+import { css } from "@emotion/css";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class ComponentPage extends Component {
   static contextType = ConfigContext;
@@ -20,6 +21,8 @@ export default class ComponentPage extends Component {
         margin-right: auto;
       `
     }
+
+    LangSwitch('nl');
   }
 
   componentDidMount() {
@@ -114,7 +117,7 @@ export default class ComponentPage extends Component {
                              target="_blank"> Bekijk repository</a>
                           <a href={this.state.component['documentation']}
                              style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
-                             target="_blank"> bekijk documentatie</a>
+                             target="_blank"> Bekijk documentatie</a>
                         </div>
                       </div>
                     </div>

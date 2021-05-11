@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ConfigContext from "./Context/Config";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class ComponentenPageItem extends Component {
   static contextType = ConfigContext;
@@ -7,6 +8,8 @@ export default class ComponentenPageItem extends Component {
   constructor(props) {
     super(props);
     console.log(this.props.component);
+
+    LangSwitch('nl');
   }
 
 
@@ -64,7 +67,7 @@ export default class ComponentenPageItem extends Component {
                     }
                     <br />
                     <br />
-                      <a href=""
+                      <a href={this.context.url + '/component/' + this.props.component.name}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Lees meer</a>
                       <a href={this.props.component['repository']}
@@ -72,7 +75,7 @@ export default class ComponentenPageItem extends Component {
                          target="_blank"> Bekijk repository</a>
                       <a href={this.props.component['documentation']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
-                         target="_blank"> bekijk documentatie</a>
+                         target="_blank"> Bekijk documentatie</a>
                   </div>
                 </div>
               </div>

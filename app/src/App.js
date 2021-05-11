@@ -15,6 +15,7 @@ import OdysseyPage from "./components/OdysseyPage";
 import ContactPage from "./components/ContactPage";
 import ComponentenPage from "./components/ComponentenPage";
 import ComponentPage from "./components/ComponentPage";
+import ScrollToTop from "./components/utility/ScrollToTop";
 
 export default class App extends Component {
 
@@ -28,8 +29,8 @@ export default class App extends Component {
       url = 'http://localhost:3000';
       api = 'http://localhost:83/api';
     } else {
-      url = 'https://www.dashkube.com';
-      api = 'https://www.dashkube.com/api';
+      url = 'https://www.conduction.nl';
+      api = 'https://www.conduction.nl/api';
     }
 
     this.state = {
@@ -46,10 +47,11 @@ export default class App extends Component {
 
   render() {
     return (
-        <ConfigContext.Provider value={this.state}>
-          <Router>
-            <HomeCss/>
-            <Header/>
+      <ConfigContext.Provider value={this.state}>
+        <Router>
+          <ScrollToTop>
+          <HomeCss/>
+          <Header/>
             <Switch>
               <Route path="/component/:name" component={ComponentPage}/>
               <Route path="/componenten" component={ComponentenPage}/>
@@ -62,9 +64,10 @@ export default class App extends Component {
               <Route path="/caas" component={CaasPage}/>
               <Route path="/" component={HomePage}/>
             </Switch>
-            <Footer/>
-          </Router>
-        </ConfigContext.Provider>
+          </ScrollToTop>
+          <Footer/>
+        </Router>
+      </ConfigContext.Provider>
     );
   }
 }

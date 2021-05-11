@@ -1,11 +1,11 @@
 * { zoom:1; }
 
-html {
-	overflow:hidden;
-	height:100%;
-}
+/*html {*/
+/*	overflow:hidden;*/
+/*	height:100%;*/
+/*}*/
 
-body { height:100%; }
+/*body { height:100%; }*/
 
 .browser-notice {
 	position:absolute;
@@ -29,7 +29,7 @@ body { height:100%; }
 			color:#c14433;
 			font-size:30px;
 			line-height:38px;
-			margin:0px;	
+			margin:0px;
 		}
 		.browser-notice .text p {
 			font-size:16px;

@@ -11,12 +11,15 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {LangSwitch} from "./utility/LangSwitch";
 
 export default class CommongroundPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
+
+    LangSwitch('nl');
   }
 
   render() {
