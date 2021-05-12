@@ -12,14 +12,15 @@ import {
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class CommongroundPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
     LangSwitch('nl');
+    metadata('Conduction | Common Ground | Open Source Componenten & Applicaties','Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus');
   }
 
   render() {
@@ -84,17 +85,11 @@ export default class CommongroundPage extends Component {
                   </h2>
                 </div>
                 <div style={{color: 'white'}} className="margin-bottom40 post-heading-left">
-                  <p>Wij geloven in online gemeenschappen. Wij geloven in delen, duurzaamheid en transparantie.
-                    Vanuit deze gedachte zijn we ook toegetreden tot het Common Ground initiatief van de Nederlandse
-                    Gemeenten.
-                    Binnen dit initiatief staat samenwerking en publiek eigenaarschap centraal. Sinds 3 Juli 2019
-                    zijn
-                    wij
-                    ook toegetreden tot het groeipact Common Ground.
-                    Met het ondertekenen van dit convenant proberen wij een actieve bijdrage te leveren aan het
-                    succes
-                    van
-                    Common Ground.</p>
+                  <p>Wij geloven in online gemeenschappen en samen organiseren.
+                    Wij geloven in delen, duurzaamheid en transparantie. Vanuit deze gedachte zijn we ook toegetreden tot het Common Ground initiatief van de Nederlandse Gemeenten.
+                    Binnen dit initiatief staat samenwerking en publiek eigenaarschap centraal. Sinds 3 Juli 2019 zijn wij ook toegetreden tot het groeipact Common Ground.
+                    Met het ondertekenen van dit convenant proberen wij een actieve bijdrage te leveren aan het succes van Common Ground.
+                    Dit doen wij door onze techniek volgens de Common Ground principes te ontwikkelen.</p>
                 </div>
               </div>
             </div>
@@ -119,11 +114,10 @@ export default class CommongroundPage extends Component {
                   <h2>Onze componenten en successen</h2>
 
 
-                  <p>Het Afgelopen jaar is Conduction, in partnerschap met overheidsorganisaties, als ontwikkelpartij
-                    bezig geweest met het ontwikkelen van componenten en applicaties voor Common Ground. De
-                    huwelijksplanner samen met Utrecht en ‘verhuizen’ samen met ‘s Hertogenbosch, Eindhoven en de
-                    Solviteers, zijn onze eerste projecten en daar zijn wij reuze trots op. Alle componenten en
-                    applicaties zijn open source beschikbaar en deelbaar.
+                  <p>Het Afgelopen jaar is Conduction, in partnerschap met overheidsorganisaties,
+                    als ontwikkelpartij bezig geweest met het ontwikkelen van componenten en applicaties volgens de Common Ground principes.
+                    De huwelijksplanner samen met Utrecht en ‘verhuizen’ samen met ‘s Hertogenbosch, Eindhoven en de Solviteers, zijn onze eerste projecten en daar zijn wij reuze trots op.
+                    Alle componenten en applicaties zijn open source beschikbaar en deelbaar.
                     <br/>
                     <br/>
                     <br/>
@@ -199,14 +193,11 @@ export default class CommongroundPage extends Component {
 
                 <div className="post-heading-left">
                   <h4>Advies</h4>
-                  <p>Bij de ontwikkelingen van onze componenten, applicaties en diensten heeft Conduction
-                    veel
-                    ervaring
-                    opgedaan met het ontwikkelen en werken volgens het Common Ground principe.
-                    Deze ervaring delen wij uiteraard graag in de vorm van documentatie en tutorials, maar
-                    is er
-                    behoefte aan meer praktische, inhoudelijke of langdurige ondersteuning,
-                    dan behoort dat zeker ook tot de mogelijkheden!.</p>
+                  <p>Bij de ontwikkelingen van onze componenten, applicaties en diensten heeft Conduction veel ervaring opgedaan
+                    met het ontwikkelen en werken volgens het Common Ground principe.
+                    Deze ervaring delen wij uiteraard graag in de vorm van documentatie en tutorials,
+                    maar is er behoefte aan meer praktische, inhoudelijke of langdurige ondersteuning,
+                    dan behoort dat zeker ook tot de mogelijkheden, want samen organiseren staat natuurlijk centraal!</p>
                   <br/>
                   <p>Een afspraak voor een vrijblijvend gesprek is altijd mogelijk.</p>
                   <br/>

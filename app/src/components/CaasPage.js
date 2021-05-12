@@ -12,13 +12,14 @@ import {
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class ProjectenPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Common Ground as a Service | CAAS','Wilt u deelnemen aan Common Ground, maar heeft u nog geen ervaring? Dan is Common Ground as a service iets voor u! Benieuwd naar de voordelen? Neem contact op')
     LangSwitch('nl');
   }
 
@@ -70,11 +71,12 @@ export default class ProjectenPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h2 id="verhuizen" className="color-bright-blue">Uw eigen private cloud</h2>
-                    <p>Volgens het Haven principe, richten we voor u een eigen private cloud in. In deze cloud staat
-                      alles wat u nodig heeft. Dit is de fundering, ook wel laag 0 genoemd, waar we de componenten die u
-                      nodig heeft voor uw Common Ground applicatie op installeren. We ontzorgen u met de implementatie,
-                      ondersteuning en het onderhoud. Op deze manier heeft u de zekerheid van een support overeenkomst
-                      waarmee u het beheer van uw omgeving regelt.</p>
+                    <p>Volgens het Haven principe, richten wij voor u een eigen private cloud in.
+                      In deze cloud staat alles wat u nodig heeft. Dit is de fundering, ook wel laag 0 genoemd,
+                      waar wij de componenten die u nodig heeft voor uw Common Ground applicatie op installeren.
+                      Wij ontzorgen u met de implementatie, ondersteuning en het onderhoud.
+                      Op deze manier heeft u de zekerheid van een support overeenkomst waarmee u het beheer van uw omgeving regelt.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -192,11 +194,10 @@ export default class ProjectenPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h2 id="verhuizen" className="color-bright-blue">Welke applicaties kunt u draaien op de CAAS?</h2>
-                    <p>In principe kunt u alle Common Ground applicaties draaien op de CAAS zolang zij voldoen aan de
-                      standaarden uit Common Ground. Vaak zal hier overlap in componenten zijn, denk hierbij aan een
-                      component wat gebruikt wordt voor&nbsp; de “Verhuis-service”, maar ook gebruikt wordt voor de
-                      huwelijksplanner. Dit is een voordeel want we hanteren daar waar kan het principe van hergebruik.
-                      U hoeft dan de overlappende componenten niet 2 keer te installeren</p>
+                    <p>In principe kunt u alle Common Ground applicaties draaien op de CAAS, zolang deze voldoen aan de standaarden uit Common Ground.
+                      Vaak zal hier overlap in componenten zijn, denk hierbij aan een component wat gebruikt wordt voor  de “Verhuis-service”,
+                      maar ook gebruikt wordt voor de huwelijksplanner. Dit is een voordeel want wij hanteren, daar waar kan, het principe van hergebruik.
+                      U hoeft dan de overlappende componenten niet twee keer te installeren.</p>
                   </div>
                 </div>
               </div>
@@ -223,7 +224,8 @@ export default class ProjectenPage extends Component {
                       maatwerk om het passend te maken. We zullen samen met u een intake doen om te kijken hoe en ’óf de
                       “non” Common Ground applicatie past binnen de CAAS. Mogelijk zijn hier dan ook andere beheer
                       afspraken voor nodig.</p>
-                    <Link to="/contact" className="custom-button">
+                    <br/>
+                    <Link to="/contact" className="custom-button color-bright-blue">
                       Plan een intake</Link>
                   </div>
                 </div>
@@ -245,11 +247,9 @@ export default class ProjectenPage extends Component {
                 <div className="col-text20 margin-bottom20">
                   <div className="post-heading-left">
                     <h2 id="verhuizen" className="color-bright-blue">Cyso X Conduction</h2>
-                    <p>Wij bieden de CAAS aan samen met Cyso, zij hebben al ruim 20 jaar ervaring met het
-                      hosten van omgevingen. Dat is waar hun kracht ligt, onze kracht zit m veel meer
-                      in het ontwikkelen van (open source) software en het bedenken van slimme architecturele
-                      oplossingen, die digitale processen /ecosystemen kunnen versimpelen en verbeteren. Samen
-                      kunnen wij een compleet product aanbieden. Samen daar houden wij van 🙂</p>
+                    <p>Dat is waar hun kracht ligt, onze kracht ligt veel meer in het ontwikkelen van (open source)
+                      software en het bedenken van slimme architecturele oplossingen, die digitale processen/ ecosystemen kunnen versimpelen en verbeteren.
+                      Samen kunnen wij een compleet product aanbieden. Samen daar houden wij van 🙂</p>
                   </div>
                 </div>
               </div>

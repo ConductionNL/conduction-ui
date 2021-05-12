@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
 import {LangSwitch} from "./utility/LangSwitch";
-
+import {metadata} from "./utility/Metadata";
 import {
   BrowserRouter as Router, Link, Route, Switch,
 } from "react-router-dom";
@@ -18,8 +18,8 @@ export default class ProjectenPage extends Component {
 
   constructor(props) {
     super(props);
-
     LangSwitch('nl');
+    metadata('Conduction | Open source | Microservices architectuur', 'Bij Conduction ontwikkelen wij Open Source Software voor de Community. Nieuwsgierig hoe wij dit doen? Bezoek dan onze website');
   }
 
   render() {
@@ -39,22 +39,22 @@ export default class ProjectenPage extends Component {
                     hergebruik van je product op de eerste plaats zetten. Dat klinkt natuurlijk logisch, maar in de
                     praktijk zien we dat open source te vaak neerkomt op het “over de schutting gooien” van een reeds
                     gemaakt (en vaak super specifiek) project.</p>
-                  <br/>
-                  <p>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
-                  <br/>
-                  <p>enieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
-                  <br/>
+                  <p style={{marginBottom: 20}}>Benieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
+
                   <Link to="/contact"
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
                        fontSize: '15px',
                        color: 'white',
-                       padding: '7.5px 15px 7.5px 15px',
+                       padding: '7.5px 15px 10px 15px',
                        borderRadius: '25px',
                        border: '2.5px solid white'
                      }}>
                     Ga naar contactpagina</Link>
+                  <br/>
+
+                  <p style={{marginTop: 20}}>Om hier voor onze projecten invulling aan te geven, hebben we voor onszelf de volgende richtlijnen opgesteld.</p>
                 </div>
               </div>
 
@@ -264,11 +264,10 @@ export default class ProjectenPage extends Component {
                   <div className="post-heading-left">
                     <h2 id="overlijden" className="color-bright-blue">Containers in plaats van Servers</h2>
                     <p>
-                      Onze code is geschikt om op virtuele machines, in de vorm van containers,
-                      te draaien. Dat maakt de software onafhankelijk van hardware en stelt anderen
-                      is staat een breed scala aan componenten te kunnen draaien, zonder een heel
-                      serverpark in te richten. Key voor ons is: Het maken van ‘geschikte’ code en het
-                      aanleveren van deze containers, zodat de code plug and play zonder installatie te draaien is.
+                      Onze code is geschikt om op virtuele machines, in de vorm van containers, te draaien.
+                      Dat maakt de software onafhankelijk van hardware en stelt anderen in staat een breed scala aan componenten te kunnen draaien,
+                      zonder een heel serverpark in te richten.
+                      Key voor ons is: Het maken van ‘geschikte’ code en het aanleveren van deze containers, zodat de code plug and play zonder installatie te draaien is.
                     </p>
                   </div>
                 </div>

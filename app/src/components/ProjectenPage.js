@@ -4,6 +4,7 @@ import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import CookieConsent from "react-cookie-consent";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 import {
   BrowserRouter as Router, Link, Route, Switch,
@@ -18,7 +19,7 @@ export default class ProjectenPage extends Component {
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Onze prjecten')
     LangSwitch('nl');
   }
   render() {
@@ -107,14 +108,9 @@ export default class ProjectenPage extends Component {
                   <div className="post-heading-left">
                     <h2 id="overlijden"  className="color-bright-blue">Overlijden</h2>
 
-                    <p>Samen met de Westfriese gemeenten zijn wij aan het ontwikkelen op de gebeurtenis
-                      overlijden,
-                      daar komt een hoop bij kijken. Zoals bijvoorbeeld de totale cyclus van een graf, van het
-                      plannen
-                      van de begrafenis tot het ruimen van een graf. Wij ondersteunen op de digitale
-                      ontwikkeling van
-                      dit proces, weer volgens het common ground principe: Data bij de bron, deelbaar en
-                      schaalbaar.</p>
+                    <p>Samen met de Westfriese gemeenten zijn wij aan het ontwikkelen op de gebeurtenis overlijden.
+                      Daar komt een hoop bij kijken, bijvoorbeeld de totale cyclus van een graf, van het plannen van de begrafenis tot het ruimen van een graf.
+                      Wij ondersteunen op de digitale ontwikkeling van dit proces, weer volgens het common ground principe: Data bij de bron, deelbaar en schaalbaar.</p>
                     <br/>
                       <img src="/images/gemeentewestfriesland.png" width="110px"/>
                         <img src="/images/018-Logo-HTA.png" width="110px" style={{marginLeft: '30px'}}/>
