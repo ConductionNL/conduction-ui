@@ -47,7 +47,7 @@ export default class TeamPage extends Component {
                   <br/>
                   <p>Wil je weten wat ons team voor jou kan betekenen?</p>
                   <br/>
-                  <Link to="/contact"
+                  <Link to="/contact"  hrefLang='nl'
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
@@ -448,7 +448,7 @@ export default class TeamPage extends Component {
                       dingen.</p>
                     &nbsp; &nbsp; <br/>
                     <br/>
-                    <a target="_blank" href="https://www.linkedin.com/in/gino-kok-b0189512b/"
+                    <a target="_blank" hrefLang='en' href="https://www.linkedin.com/in/gino-kok-b0189512b/"
                        style={{
                          marginRight: '20px',
                          fontWeight: 'bold',

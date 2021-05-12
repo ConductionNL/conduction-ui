@@ -44,7 +44,7 @@ export default class ProjectenPage extends Component {
                     Zo bent u snel online zonder de zorgen. Wilt u later de omgeving in eigen beheer? Geen probleem,
                     wij dragen de omgeving graag aan u over.</p>
                   <p style={{marginBottom: '15px'}}>Wil je weten of de CAAS iets voor jouw gemeente is?</p>
-                  <Link to="/contact" className="custom-button">
+                  <Link to="/contact" hrefLang='nl' className="custom-button">
                     Maak hier een vrijblijvende afspraak</Link>
                   <br/>
                   <p style={{marginTop: '10px'}}>In de onderstaande punten gaan we dieper in op wat de
@@ -225,7 +225,7 @@ export default class ProjectenPage extends Component {
                       “non” Common Ground applicatie past binnen de CAAS. Mogelijk zijn hier dan ook andere beheer
                       afspraken voor nodig.</p>
                     <br/>
-                    <Link to="/contact" className="custom-button color-bright-blue">
+                    <Link to="/contact" hrefLang='nl' className="custom-button color-bright-blue">
                       Plan een intake</Link>
                   </div>
                 </div>
