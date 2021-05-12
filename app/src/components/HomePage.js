@@ -11,13 +11,15 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
+import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen','Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
     LangSwitch('nl');
   }
 
@@ -37,10 +39,10 @@ export default class HomePage extends Component {
                     <p>Conduction faciliteert digitale ecosystemen </p>
                     <h1 style={{color: 'white'}}>Public Tech.</h1>
                   </div>
-                  <p>Wij zijn wat je zou kunnen noemen Digital Socials, wij ontwikkelen
-                    techniek waarbij mens en community centraal staan. Graag dragen we dan ook bij het aan het
-                    ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p><br/>
-                  <p><b>‘Tech to serve people’.</b></p>
+                  <p>Wij zijn wat je zou kunnen noemen Digital Socials,
+                    wij ontwikkelen techniek volgens de Common Ground principes, waarbij mens en community centraal staan.
+                    Graag dragen we dan ook bij aan het ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p>
+                  <p style={{marginTop: 15}}><b>‘Tech to serve people’.</b></p>
                   <p>Meer weten over ons bedrijf? Plan een afspraak.</p>
                   <br/>
                   <Link to="/contact"
@@ -122,9 +124,8 @@ export default class HomePage extends Component {
                 <img src="images/samen.png" alt="Samen organiseren" width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Samen</h5>
-                  <p>Wij geloven in de kracht van samen, daarom ontwikkelen wij het liefst samen. Om zo een idee,
-                    droom of
-                    ideaal op de beste manier vorm te kunnen geven.</p>
+                  <p>Wij geloven in de kracht van samen organiseren, daarom ontwikkelen wij het liefst samen.
+                    Om zo een idee, droom of ideaal op de beste manier vorm te kunnen geven.</p>
                 </div>
               </div>
               <div className=" col-sm-12 col-md-6" style={{textAlign: "left"}}>

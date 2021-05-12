@@ -6,13 +6,14 @@ import ContactForm from "./widgets/ContactForm";
 import {HashLoader} from "react-spinners";
 import { css } from "@emotion/css";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class ComponentPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Onze Componenten');
     this.state = {
       component: null,
       override: css`

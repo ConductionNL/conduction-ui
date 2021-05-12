@@ -12,13 +12,14 @@ import {LangSwitch} from "./utility/LangSwitch";
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {metadata} from "./utility/Metadata";
 
 export default class TeamPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Team');
     LangSwitch('nl');
   }
 
@@ -540,8 +541,7 @@ export default class TeamPage extends Component {
                     <h4 style={{color: '#4386FB'}}>Teamplayer.</h4>
 
 
-                    <p>Wilco houdt van programmeren. oplossingen bedenken en van mensen (verder) helpen. Hij combineert
-                      die 2 dingen binnen het team als vanzelf.</p>
+                    <p>Wilco houdt van programmeren, oplossingen bedenken en van mensen (verder) helpen. Hij combineert die twee dingen binnen het team als vanzelf.</p>
                     &nbsp; &nbsp; <br/>
                     <br/>
                     <a target="_blank" href="https://www.linkedin.com/in/wilco-louwerse-ba81bb139/"
@@ -596,7 +596,7 @@ export default class TeamPage extends Component {
                     <h4 style={{color: '#4386FB'}}>Loyaal.</h4>
 
 
-                    <p>Mark weet wat hij wil, hij wil programmeren. dat is zijn passie. Trouw aan zijn droom, werkt hij
+                    <p>Mark weet wat hij wil, hij wil programmeren. Dat is zijn passie. Trouw aan zijn droom, werkt hij
                       vol enthousiasme aan zijn development skills.</p>
                     &nbsp; &nbsp; <br/>
                     <br/>

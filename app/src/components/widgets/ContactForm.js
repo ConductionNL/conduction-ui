@@ -32,8 +32,7 @@ export default class ContactForm extends Component {
                 <div className="post-heading-center">
                   <h4>Conduction blauw past bij jou!</h4>
                   <h2 style={{color: 'white'}}> Ook werken of stage bij Conduction?</h2>
-                  <p>Wij zijn altijd op zoek naar gedreven , originele vakfanaten, pioniers en creatievelingen (to
-                    be). Voel je je aangesproken? Neem vooral contact met ons op! :) </p>
+                  <p>Wij zijn altijd op zoek naar gedreven, originele vakfanaten, pioniers en creatievelingen (to be). Voel je je aangesproken? Neem vooral contact met ons op! :)</p>
 
                 </div>
               </div>
