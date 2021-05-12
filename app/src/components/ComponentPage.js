@@ -82,7 +82,7 @@ export default class ComponentPage extends Component {
                           }
                           <p>
                             {
-                              this.state.component['shortDescription']
+                              this.state.component['longDescription']
                             }
                           </p>
                           <br />
