@@ -12,6 +12,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class ProjectenPage extends Component {
   static contextType = ConfigContext;
@@ -20,6 +21,8 @@ export default class ProjectenPage extends Component {
     super(props);
     LangSwitch('nl');
     metadata('Conduction | Open source | Microservices architectuur', 'Bij Conduction ontwikkelen wij Open Source Software voor de Community. Nieuwsgierig hoe wij dit doen? Bezoek dan onze website');
+
+    registerAction('partners page visited', '/partners');
   }
 
   render() {
