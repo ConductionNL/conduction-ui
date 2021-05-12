@@ -13,6 +13,7 @@ import {LangSwitch} from "./utility/LangSwitch";
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
 import {metadata} from "./utility/Metadata";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class TeamPage extends Component {
   static contextType = ConfigContext;
@@ -21,6 +22,7 @@ export default class TeamPage extends Component {
     super(props);
     metadata('Conduction | Team');
     LangSwitch('nl');
+    registerAction('team page visited', '/team');
   }
 
   // componentDidMount() {

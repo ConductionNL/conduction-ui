@@ -13,6 +13,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class ProjectenPage extends Component {
   static contextType = ConfigContext;
@@ -21,6 +22,7 @@ export default class ProjectenPage extends Component {
     super(props);
     metadata('Conduction | Onze prjecten')
     LangSwitch('nl');
+    registerAction('projecten page visited', '/projecten');
   }
   render() {
 

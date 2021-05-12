@@ -13,6 +13,7 @@ import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
 import {LangSwitch} from "./utility/LangSwitch";
 import {metadata} from "./utility/Metadata";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
@@ -21,6 +22,7 @@ export default class HomePage extends Component {
     super(props);
     metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen','Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
     LangSwitch('nl');
+    registerAction('home page visited', '/');
   }
 
   // componentDidMount() {

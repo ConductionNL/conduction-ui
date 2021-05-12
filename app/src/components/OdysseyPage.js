@@ -12,6 +12,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class OdysseyPage extends Component {
   static contextType = ConfigContext;
@@ -20,6 +21,7 @@ export default class OdysseyPage extends Component {
     super(props);
     metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit now our website');
     LangSwitch('en');
+    registerAction('odyssey page visited', '/odyssey');
   }
 
   render() {
