@@ -112,7 +112,7 @@ export default class ProjectenPage extends Component {
 
                     <p>Samen met de Westfriese gemeenten zijn wij aan het ontwikkelen op de gebeurtenis overlijden.
                       Daar komt een hoop bij kijken, bijvoorbeeld de totale cyclus van een graf, van het plannen van de begrafenis tot het ruimen van een graf.
-                      Wij ondersteunen op de digitale ontwikkeling van dit proces, weer volgens het common ground principe: Data bij de bron, deelbaar en schaalbaar.</p>
+                      Wij ondersteunen op de digitale ontwikkeling van dit proces, weer volgens de Common Ground principes: Data bij de bron, deelbaar en schaalbaar.</p>
                     <br/>
                       <img src="/images/gemeentewestfriesland.png" width="110px"/>
                         <img src="/images/018-Logo-HTA.png" width="110px" style={{marginLeft: '30px'}}/>
