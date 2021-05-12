@@ -51,7 +51,7 @@ export default class ProjectenPage extends Component {
                   <br/>
                   <p>Nieuwsgierig wat Conduction voor jou kan betekenen?</p>
                   <br/>
-                  <Link to="/contact" className="custom-button">
+                  <Link to="/contact" hrefLang='nl' className="custom-button">
                     Neem contact op</Link>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export default class ProjectenPage extends Component {
                     <br/>
 
                       <br/>
-                        <Link to="/odyssey"
+                        <Link to="/odyssey" hrefLang='en'
                             className="custom-button color-bright-blue">
                           Read more</Link>
 

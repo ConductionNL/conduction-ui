@@ -58,7 +58,7 @@ export default class CommongroundPage extends Component {
                   <br/>
                   <p>Meer weten wat Conduction voor jouw gemeente kan betekenen? </p>
                   <br/>
-                  <Link to="/contact"
+                  <Link to="/contact" hrefLang='nl'
                         className="custom-button color-vivid-orange">Maak hier een afspraak</Link>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default class CommongroundPage extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    <Link to="/componenten"
+                    <Link to="/componenten" hrefLang='nl'
                        className="custom-button color-bright-blue">
                       Componenten overzicht</Link>
                     <br/>
@@ -156,7 +156,7 @@ export default class CommongroundPage extends Component {
                     om als organisatie te experimenteren met de kracht van Common Ground.</p>
                 </div>
                 <br/>
-                <Link to="/caas"
+                <Link to="/caas" hrefLang='nl'
                    className="custom-button color-bright-blue">
                   Lees meer</Link>
               </div>
@@ -201,7 +201,7 @@ export default class CommongroundPage extends Component {
                   <br/>
                   <p>Een afspraak voor een vrijblijvend gesprek is altijd mogelijk.</p>
                   <br/>
-                  <Link to="/contact"
+                  <Link to="/contact" hrefLang='nl'
                         className="custom-button color-bright-blue">Plan een afspraak</Link>
                 </div>
                 <br/>
@@ -267,7 +267,7 @@ export default class CommongroundPage extends Component {
                     </p>
                     <br/>
                     <br/>
-                    <Link to="/contact"
+                    <Link to="/contact" hrefLang='nl'
                           className="custom-button color-bright-blue">
                       Contact</Link>
                   </div>

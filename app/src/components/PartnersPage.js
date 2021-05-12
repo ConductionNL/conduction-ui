@@ -41,7 +41,7 @@ export default class ProjectenPage extends Component {
                     gemaakt (en vaak super specifiek) project.</p>
                   <p style={{marginBottom: 20}}>Benieuwd hoe open source een rol kan spelen binnen jouw organisatie?</p>
 
-                  <Link to="/contact"
+                  <Link to="/contact" hrefLang='nl'
                      style={{
                        fontWeight: 'bold',
                        textTransform: 'uppercase',
