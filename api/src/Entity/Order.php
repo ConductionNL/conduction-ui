@@ -54,7 +54,6 @@ class Order
      */
     private ?array $data;
 
-
     public function getId(): ?UuidInterface
     {
         return $this->id;
@@ -66,6 +65,7 @@ class Order
 
         return $this;
     }
+
     public function getData(): ?array
     {
         return $this->data;
