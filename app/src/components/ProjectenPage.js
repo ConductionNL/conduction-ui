@@ -36,8 +36,8 @@ export default class ProjectenPage extends Component {
                   <div className="post-heading-left-white header-heading">
                     <h1 style={{color: 'white'}}>Trouwen</h1>
                     <h4 style={{marginTop: '30px', color: 'white'}}>
-                      <a className="linkWhite custom-button"
-                         href="https://www.huwelijksplanner.online" target="_blank">Bezoek de Huwelijksplanner</a>
+                      {/*<a className="linkWhite custom-button"*/}
+                      {/*   href="https://www.huwelijksplanner.online" target="_blank">Bezoek de Huwelijksplanner</a>*/}
                     </h4>
                   </div>
                   <br/>

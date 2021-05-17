@@ -19,7 +19,7 @@ export default class OdysseyPage extends Component {
 
   constructor(props) {
     super(props);
-    metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit now our website');
+    metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit our website now');
     LangSwitch('en');
     registerAction('odyssey page visited', '/odyssey');
   }
