@@ -34,7 +34,7 @@ class AppFixtures extends Fixture
             ['href' => 'https://github.styleci.io/repos/198549517', 'img' => 'https://github.styleci.io/repos/198549517/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/adresservice/actions?query=workflow%3A"Docker+Image+CI"', 'img' => 'https://github.com/ConductionNL/adresservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
             ['href' => 'https://api-test.nl/server/4/e38e132a-ce39-4707-8fb8-8ab99f21cb62/e01ac8b2-7a08-417d-9be7-8a0bfa651390/latest/', 'img' => 'https://shields.api-test.nl/endpoint.svg?style=for-the-badge&url=https%3A//api-test.nl/api/v1/provider-latest-badge/e01ac8b2-7a08-417d-9be7-8a0bfa651390/'],
-            ['href' => 'https://artifacthub.io/packages/helm/adresservice/adresservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/adresservice']
+            ['href' => 'https://artifacthub.io/packages/helm/adresservice/adresservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/adresservice'],
         ]);
 
         $this->em->persist($component);
@@ -52,7 +52,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210271092', 'img' => 'https://github.styleci.io/repos/210271092/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoektypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoektypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/verzoektypecatalogus/verzoektypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoektypecatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/verzoektypecatalogus/verzoektypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoektypecatalogus'],
         ]);
 
         $this->em->persist($component);
@@ -70,7 +70,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549754', 'img' => 'https://github.styleci.io/repos/198549754/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/verzoekregistratiecomponent/verzoekregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoekregistratiecomponent']
+            ['href' => 'https://artifacthub.io/packages/helm/verzoekregistratiecomponent/verzoekregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoekregistratiecomponent'],
         ]);
 
         //memo-component
@@ -88,7 +88,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/259932857', 'img' => 'https://github.styleci.io/repos/259932857/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/memo-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/memo-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/memo-component/memo-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/memo-component']
+            ['href' => 'https://artifacthub.io/packages/helm/memo-component/memo-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/memo-component'],
         ]);
 
         //Queue Component
@@ -105,7 +105,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/262041492', 'img' => 'https://github.styleci.io/repos/262041492/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/Queue-Component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/Queue-Component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/queue-component/queue-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/queue-component']
+            ['href' => 'https://artifacthub.io/packages/helm/queue-component/queue-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/queue-component'],
         ]);
 
         $this->em->persist($component);
@@ -139,7 +139,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/262270870', 'img' => 'https://github.styleci.io/repos/262270870/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/ContactMoment-Component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/ContactMoment-Component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/contactmoment-component/contactmoment-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contactmoment-component']
+            ['href' => 'https://artifacthub.io/packages/helm/contactmoment-component/contactmoment-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contactmoment-component'],
         ]);
 
         $this->em->persist($component);
@@ -157,7 +157,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/222616116', 'img' => 'https://github.styleci.io/repos/222616116/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/user-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/user-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/user-component/user-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/user-component']
+            ['href' => 'https://artifacthub.io/packages/helm/user-component/user-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/user-component'],
         ]);
 
         $this->em->persist($component);
@@ -192,7 +192,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/260444947', 'img' => 'https://github.styleci.io/repos/260444947/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/taken-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/taken-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/taken-component/taken-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/taken-component']
+            ['href' => 'https://artifacthub.io/packages/helm/taken-component/taken-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/taken-component'],
         ]);
 
         $this->em->persist($component);
@@ -210,7 +210,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144502', 'img' => 'https://github.styleci.io/repos/206144502/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/berichtservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/berichtservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/berichtservice/berichtservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/berichtservice']
+            ['href' => 'https://artifacthub.io/packages/helm/berichtservice/berichtservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/berichtservice'],
         ]);
 
         $this->em->persist($component);
@@ -227,7 +227,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/235730570', 'img' => 'https://github.styleci.io/repos/235730570/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/docparser/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/docparser/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/docparser/docparser', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/docparser']
+            ['href' => 'https://artifacthub.io/packages/helm/docparser/docparser', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/docparser'],
         ]);
 
         $this->em->persist($component);
@@ -245,7 +245,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144416', 'img' => 'https://github.styleci.io/repos/206144416/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/orderregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/orderregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/orderregistratiecomponent/orderregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/orderregistratiecomponent']
+            ['href' => 'https://artifacthub.io/packages/helm/orderregistratiecomponent/orderregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/orderregistratiecomponent'],
         ]);
 
         $this->em->persist($component);
@@ -263,7 +263,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144508', 'img' => 'https://github.styleci.io/repos/206144508/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/agendaservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/agendaservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/agendaservice/agendaservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/agendaservice']
+            ['href' => 'https://artifacthub.io/packages/helm/agendaservice/agendaservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/agendaservice'],
         ]);
 
         $this->em->persist($component);
@@ -280,7 +280,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206148674', 'img' => 'https://github.styleci.io/repos/206148674/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/stufservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/stufservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/stufservice/stufservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/stufservice']
+            ['href' => 'https://artifacthub.io/packages/helm/stufservice/stufservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/stufservice'],
         ]);
 
         $this->em->persist($component);
@@ -298,7 +298,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144408', 'img' => 'https://github.styleci.io/repos/206144408/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/medewerkercatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/medewerkercatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/medewerkercatalogus/medewerkercatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/medewerkercatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/medewerkercatalogus/medewerkercatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/medewerkercatalogus'],
         ]);
 
         $this->em->persist($component);
@@ -316,7 +316,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145303', 'img' => 'https://github.styleci.io/repos/206145303/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/betaalservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/betaalservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/contacten-catalog/betaalservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/betaalservice']
+            ['href' => 'https://artifacthub.io/packages/helm/contacten-catalog/betaalservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/betaalservice'],
         ]);
 
         $this->em->persist($component);
@@ -352,7 +352,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210753780', 'img' => 'https://github.styleci.io/repos/210753780/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/instemming-registratie-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/instemming-registratie-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/instemmingservice/instemmingservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/instemmingservice']
+            ['href' => 'https://artifacthub.io/packages/helm/instemmingservice/instemmingservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/instemmingservice'],
         ]);
 
         $this->em->persist($component);
@@ -370,7 +370,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145398', 'img' => 'https://github.styleci.io/repos/206145398/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/contactcatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/contactcatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/contact-catalogus/contactcatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contact-catalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/contact-catalogus/contactcatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contact-catalogus'],
 
         ]);
 
@@ -389,7 +389,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/repoid', 'img' => 'https://github.styleci.io/repos/repoid/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/landelijketabellencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/landelijketabellencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/landelijketabellencatalogus/landelijketabellencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/landelijketabellencatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/landelijketabellencatalogus/landelijketabellencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/landelijketabellencatalogus'],
         ]);
 
         $this->em->persist($component);
@@ -407,7 +407,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/204954539', 'img' => 'https://github.styleci.io/repos/204954539/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/brpservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/brpservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/brpservice/brpservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/brpservice']
+            ['href' => 'https://artifacthub.io/packages/helm/brpservice/brpservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/brpservice'],
         ]);
 
         $this->em->persist($component);
@@ -425,7 +425,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/235730051', 'img' => 'https://github.styleci.io/repos/235730051/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/review-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/review-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/review-component/review-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/review-component']
+            ['href' => 'https://artifacthub.io/packages/helm/review-component/review-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/review-component'],
         ]);
 
         $this->em->persist($component);
@@ -443,7 +443,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145646', 'img' => 'https://github.styleci.io/repos/206145646/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/webresourcecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/webresourcecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/webresourcecatalogus/webresourcecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/webresourcecatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/webresourcecatalogus/webresourcecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/webresourcecatalogus'],
         ]);
 
         $this->em->persist($component);
@@ -460,7 +460,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/231819815', 'img' => 'https://github.styleci.io/repos/231819815/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/commonground-dashboard/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/commonground-dashboard/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/commonground-dashboard/commonground-dashboard', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/commonground-dashboard']
+            ['href' => 'https://artifacthub.io/packages/helm/commonground-dashboard/commonground-dashboard', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/commonground-dashboard'],
         ]);
 
         $this->em->persist($component);
@@ -478,7 +478,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/271184774', 'img' => 'https://github.styleci.io/repos/271184774/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/export-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/export-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/export-component/export-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/export-component']
+            ['href' => 'https://artifacthub.io/packages/helm/export-component/export-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/export-component'],
         ]);
 
         $this->em->persist($component);
@@ -495,7 +495,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/247883561', 'img' => 'https://github.styleci.io/repos/247883561/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/digispoof-interface/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/digispoof-interface/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/digispoof-interface/digispoof-interface', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/digispoof-interface']
+            ['href' => 'https://artifacthub.io/packages/helm/digispoof-interface/digispoof-interface', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/digispoof-interface'],
         ]);
 
         $this->em->persist($component);
@@ -513,7 +513,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210809809', 'img' => 'https://github.styleci.io/repos/210809809/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/productenendienstencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/productenendienstencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/productenendienstencatalogus/productenendienstencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/productenendienstencatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/productenendienstencatalogus/productenendienstencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/productenendienstencatalogus'],
         ]);
 
         $this->em->persist($component);
@@ -548,7 +548,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549944', 'img' => 'https://github.styleci.io/repos/198549944/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/procestypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/procestypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-            ['href' => 'https://artifacthub.io/packages/helm/procestypecatalogus/procestypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/procestypecatalogus']
+            ['href' => 'https://artifacthub.io/packages/helm/procestypecatalogus/procestypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/procestypecatalogus'],
         ]);
     }
 }
