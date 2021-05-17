@@ -21,7 +21,6 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-
         //adresservice
         $component = new Component();
         $component->setName('AdresService');
@@ -35,6 +34,7 @@ class AppFixtures extends Fixture
             ['href' => 'https://github.styleci.io/repos/198549517', 'img' => 'https://github.styleci.io/repos/198549517/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/adresservice/actions?query=workflow%3A"Docker+Image+CI"', 'img' => 'https://github.com/ConductionNL/adresservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
             ['href' => 'https://api-test.nl/server/4/e38e132a-ce39-4707-8fb8-8ab99f21cb62/e01ac8b2-7a08-417d-9be7-8a0bfa651390/latest/', 'img' => 'https://shields.api-test.nl/endpoint.svg?style=for-the-badge&url=https%3A//api-test.nl/api/v1/provider-latest-badge/e01ac8b2-7a08-417d-9be7-8a0bfa651390/'],
+            ['href' => 'https://artifacthub.io/packages/helm/adresservice/adresservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/adresservice']
         ]);
 
         $this->em->persist($component);
@@ -44,7 +44,7 @@ class AppFixtures extends Fixture
         $component = new Component();
         $component->setName('Verzoek Type Catalogus');
         $component->setShortDescription('De Verzoek Type Catalogus biedt een overzicht van de mogelijke te starten verzoeken door de gebruiker en de te verwachten afhandeling. Het component laat zich in deze het best vergelijken met een digitale beschrijving van een formulier, waarbij de Verzoek Type catalogus zich zuiver beperkt tot de definiëring van de eindwaarde. Het component bevat in deze dus een reeks van velden en voorwaarden waaraan het moet voldoen.');
-        $component->setlongDescription('De Verzoek Type Catalogus biedt een overzicht van de mogelijke te starten verzoeken door de gebruiker en de te verwachten afhandeling. Het component laat zich in deze het best vergelijken met een digitale beschrijving van een formulier, waarbij de Verzoek Type catalogus zich zuiver beperkt tot de definiëring van de eindwaarde. Het component bevat in deze dus een reeks van velden en voorwaarden waaraan het moet voldoen.');
+        $component->setlongDescription('De verzoektype Catalogus biedt een overzicht van mogelijke door de gebruiker te starten verzoeken en de te verwachten afhandeling. Het component laat zich in deze het best vergelijken met een digitale beschrijving van een formulier, waarbij de Verzoek Type Catalogus zich zuiver beperkt tot de definiëring van de eindwaarde. Het bevat in deze dus een reeks van velden en voorwaarden waaraan het moet voldoen. De door de gebruiker aan te leveren velden noemen we properties, en iedere property kan worden beschreven. Voor het omschrijven van de velden gebruiken we de OpenAPI Standaard als richtlijn, dat betekent dat alle daarin opgenomen typering voor velden mogen worden toegepast. Dit kan op een aantal manieren: Simpel: bijvoorbeeld een naam is een string van minimaal 5 en maximaal 255 teken. Abstract: bijvoorbeeld een link is een geldige URL Linked Data: en vanuit de Common Ground gedachte kan het ook in de trant van een linked data object beschrijving. In dat laatste geval wordt gebruik gemaakt van de OpenAPI 2 norm extensie voor types. Waarbij een type wordt gedefinieerd als componentCode/resource. Bijvoorbeeld een persoon is een cc/people (ofwel een persoon in het Contacten Component). Linked data bevindt zich per definitie in andere componenten die bronhouder zijn, dat wil zeggen dat in de dataset van een verzoek alleen de verwijzing naar de bron wordt opgeslagen. Er kan echter wel gebruik worden gemaakt van de in NL API strategie omschreven extend functionaliteit. Dat wil zeggen dat het mogelijk is om aan de VTC API te vragen om externe bronnen in te voegen als objecten in plaats van verwijzingen. Op deze manier is het mogelijk om een verzoek met onderliggende data in één keer op te halen. Omgekeerd is het ook mogelijk om onderliggende resources in andere componenten aan te maken (door in plaats van een verwijzing een object mee te geven, maar niet te voorzien van een id property) of deze bij te werken (door in plaats van een verwijzing een object mee te geven, maar wel te voorzien van een id property). Als laatste kan een verzoek type ook spelregels bevatten over wat er moet gebeuren als een verzoek van status verandert. Zo is het bijvoorbeeld mogelijk om bij het indienen van een verzoek, een zaak van een bepaald zaaktype te laten aanmaken in een API die de ZGW standaard ondersteunt of om bij bijvoorbeeld het opstarten van een verzoek een Camunda proces op te starten.');
         $component->setImage('images/content/Componenten/vtc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/verzoektypecatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/vtc');
@@ -52,7 +52,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210271092', 'img' => 'https://github.styleci.io/repos/210271092/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoektypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoektypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/verzoektypecatalogus/verzoektypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoektypecatalogus']
         ]);
 
         $this->em->persist($component);
@@ -70,7 +70,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549754', 'img' => 'https://github.styleci.io/repos/198549754/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/verzoekregistratiecomponent/verzoekregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/verzoekregistratiecomponent']
         ]);
 
         //memo-component
@@ -88,7 +88,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/259932857', 'img' => 'https://github.styleci.io/repos/259932857/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/memo-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/memo-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/memo-component/memo-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/memo-component']
         ]);
 
         //Queue Component
@@ -101,12 +101,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Queue Component bevat een lijst van later uit te voeren taken, dat wil zeggen in dit component kunnen taken worden aangemaakt die door andere componenten op een later tijdstip moeten worden uitgevoerd. Dit lijkt op het versturen van notificaties met een paar afwijkingen: De notificatie gaat altijd terug naar de indienende applicatie. De notificatie wordt op een later moment verzonden. De notificatie bevat een unieke id waarop de kan worden overschreven. Deze logica wordt gebruik om cronjobs en het analyseren van de database te voorkomen, voorbeeld: stel een gebruiker plaatst een bestelling en heeft de mogelijkheid om later te betalen, maar doet de gebruiker dit niet, dan wordt de bestelling na 30 dagen geannuleerd. Als we dit willen oplossen met een cronjob zouden we iedere dag een data bevraging moeten doen van alle bestellingen die aan de criteria voldoen en deze annuleren. Dat heeft een aantal nadelen: We moeten altijd een hele database analyseren, ook al hebben we maar één order nodig. We zijn op de dag nauwkeurig i.p.v. van op de minuut (en als we op de minuut nauwkeurig zouden willen zijn, moeten we iedere minuut de hele database bevragen). Een toename van business logica, voorwaarde en gevolgen (willen we bijvoorbeeld 5 dagen van te voren een herinneringsmail sturen?) leidt tot een scherpe toename van database bevragingen. Om dit te voorkomen willen we graag een gerichte vraag stellen die één keer na 30 dagen afgaat, deze vraag kunnen we aanmaken als de order wordt geplaatst, omdat in de tussentijd containers kunnen wisselen en we centraal beheer willen kunnen doen op deze wachtrij, brengen we de vragen gebundeld onder in een apart component. Dit is het Queue Component. Uitgangspunt hierbij is dat de queue andere componenten gericht notificeert (met de informatie waarmee specifiek kan worden gehandeld, bijvoorbeeld een order id), maar dat de afhandelende applicatie zelf controleert of de handeling nog nodig is als onderdeel van de uitvoering (oftewel is de order nog onbetaald). Op deze manier blijft de wachtrij verschoont van business logica, gecombineerd met het Processen Component (PC) biedt het echter de optie om microservices en BPMN processen in de wachtrij te zetten, waarbij het natuurlijk technisch mogelijk is om de uitvoering met 0 minuten te vertragen. Het maakt het mogelijk om processen asynchroon uit te voeren.');
         $component->setImage('images/content/Componenten/qc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/Queue-Component');
-        $component->setDocumentation('#');
         $component->setPlatforms(['overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/262041492', 'img' => 'https://github.styleci.io/repos/262041492/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/Queue-Component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/Queue-Component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/queue-component/queue-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/queue-component']
         ]);
 
         $this->em->persist($component);
@@ -119,7 +118,6 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Portfolio Component vormt een Common Ground implementatie van de e-portfolio norm (die op haar beurt weer voortkomt uit e-HRM) en stelt gebruikers (of contactpersonen) in staat om een portfolio op te bouwen. Hierbij kan een portfolio zowel een een HRM toepassing zijn, waarbij voor de medewerker vaardigheden en competenties worden bijgehouden (eventueel voorzien van bewijsstukken en gekoppeld aan ontwikkelingsdoelen en eventueel functies) als dat een portfolio een meer traditionele invulling kan hebben van gedaan werk, ofwel een showcase functie, zoals men die bij kunstenaars en andere zelfstandige vaak tegen komt. In het geval van een onderwijsinstelling kan het portfolio ook bijvoorbeeld beide bevatten en daarmee de basis zijn voor een leerling dossier.');
         $component->setImage('images/content/Componenten/pfc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/portfolio-component');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/260448733', 'img' => 'https://github.styleci.io/repos/260448733/shield?branch=master'],
@@ -137,12 +135,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Contact Moment Component biedt de generieke mogelijkheid om contactmomenten rondom resources, bijvoorbeeld Common Ground resources, vast te leggen. Deze functionaliteit is bewust abstract opgezet.');
         $component->setImage('images/content/Componenten/cmc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/ContactMoment-Component');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/262270870', 'img' => 'https://github.styleci.io/repos/262270870/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/ContactMoment-Component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/ContactMoment-Component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/contactmoment-component/contactmoment-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contactmoment-component']
         ]);
 
         $this->em->persist($component);
@@ -160,7 +157,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/222616116', 'img' => 'https://github.styleci.io/repos/222616116/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/user-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/user-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/user-component/user-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/user-component']
         ]);
 
         $this->em->persist($component);
@@ -173,7 +170,6 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Environment Component heeft als doel om Common Ground-omgevingen te beheren. Hierbij kan het kubernetes clusters inregelen, voorzien van de juiste en benodigde ondersteunende software, zoals ingres controllers, certificaten en installaties via Helm-bestanden. Het kan ook op afstand volledige kubernetes clusters opstarten wat werken in de cloud ten goede komt. Denk hierbij aan een Common ground-cluster bij populaire cloud-aanbieders Fuga, Cyso, Digital Ocean, Google en Amazon. Als tweede functionaliteit kan het component andere componenten installeren, configureren en implementeren. Het bevat met andere woorden alle noodzakelijke functionaliteiten die nodig zijn om een Common Ground omgeving te kunnen maken en te beheren zonder dat daarvoor kennis van Common Ground of de onderliggende infrastructuur nodig is.');
         $component->setImage('images/content/Componenten/evc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/environment-component');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/252478109', 'img' => 'https://github.styleci.io/repos/252478109/shield?branch=master'],
@@ -196,7 +192,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/260444947', 'img' => 'https://github.styleci.io/repos/260444947/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/taken-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/taken-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/taken-component/taken-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/taken-component']
         ]);
 
         $this->em->persist($component);
@@ -214,7 +210,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144502', 'img' => 'https://github.styleci.io/repos/206144502/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/berichtservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/berichtservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/berichtservice/berichtservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/berichtservice']
         ]);
 
         $this->em->persist($component);
@@ -227,12 +223,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('De DocParser is een developers tool die aan de hand van redoc documentatie (en optioneel API toegang) controleert tot in hoeverre een API zich aan de binnen Common Ground geldende standaarden houdt (zoals NL API\'s strategie).');
         $component->setImage('images/content/Componenten/dps/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/docparser');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/235730570', 'img' => 'https://github.styleci.io/repos/235730570/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/docparser/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/docparser/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/docparser/docparser', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/docparser']
         ]);
 
         $this->em->persist($component);
@@ -250,7 +245,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144416', 'img' => 'https://github.styleci.io/repos/206144416/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/orderregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/orderregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/orderregistratiecomponent/orderregistratiecomponent', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/orderregistratiecomponent']
         ]);
 
         $this->em->persist($component);
@@ -268,7 +263,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144508', 'img' => 'https://github.styleci.io/repos/206144508/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/agendaservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/agendaservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/agendaservice/agendaservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/agendaservice']
         ]);
 
         $this->em->persist($component);
@@ -281,12 +276,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het StuF component faciliteert een bidirectionele koppeling tussen Common Ground en “oude” StuF koppelingen. Het component doet dit door het vertalen van API-vragen naar StuF, de antwoorden op deze StuF-berichten indien nodig te verrijken met andere StuF-berichten en dit resultaat weer terug te geven als API-resultaat (bijvoorbeeld JSON). Op deze manier is het mogelijk om “oude” applicaties tijdelijk het Common Ground landschap in te trekken indien dit nodig is. Het component ondersteunt ook het bevragen van Common Ground API’s via StuF-berichten, in dat geval fungeert het als een soort van broker die tevens vertaalt.');
         $component->setImage('images/content/Componenten/stuf/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/stufservice');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206148674', 'img' => 'https://github.styleci.io/repos/206148674/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/stufservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/stufservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/stufservice/stufservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/stufservice']
         ]);
 
         $this->em->persist($component);
@@ -304,7 +298,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144408', 'img' => 'https://github.styleci.io/repos/206144408/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/medewerkercatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/medewerkercatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/medewerkercatalogus/medewerkercatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/medewerkercatalogus']
         ]);
 
         $this->em->persist($component);
@@ -322,7 +316,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145303', 'img' => 'https://github.styleci.io/repos/206145303/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/betaalservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/betaalservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/contacten-catalog/betaalservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/betaalservice']
         ]);
 
         $this->em->persist($component);
@@ -358,7 +352,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210753780', 'img' => 'https://github.styleci.io/repos/210753780/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/instemming-registratie-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/instemming-registratie-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/instemmingservice/instemmingservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/instemmingservice']
         ]);
 
         $this->em->persist($component);
@@ -376,6 +370,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145398', 'img' => 'https://github.styleci.io/repos/206145398/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/contactcatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/contactcatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
+            ['href' => 'https://artifacthub.io/packages/helm/contact-catalogus/contactcatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/contact-catalogus']
 
         ]);
 
@@ -394,7 +389,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/repoid', 'img' => 'https://github.styleci.io/repos/repoid/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/landelijketabellencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/landelijketabellencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/landelijketabellencatalogus/landelijketabellencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/landelijketabellencatalogus']
         ]);
 
         $this->em->persist($component);
@@ -412,7 +407,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/204954539', 'img' => 'https://github.styleci.io/repos/204954539/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/brpservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/brpservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/brpservice/brpservice', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/brpservice']
         ]);
 
         $this->em->persist($component);
@@ -430,7 +425,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/235730051', 'img' => 'https://github.styleci.io/repos/235730051/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/review-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/review-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/review-component/review-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/review-component']
         ]);
 
         $this->em->persist($component);
@@ -448,7 +443,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145646', 'img' => 'https://github.styleci.io/repos/206145646/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/webresourcecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/webresourcecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/webresourcecatalogus/webresourcecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/webresourcecatalogus']
         ]);
 
         $this->em->persist($component);
@@ -461,12 +456,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Common Ground Dashboard biedt basale beheer- en behandelmogelijkheden op Common Ground componenten en voegt vooral veel waarde toe in ontwikkel-context, waarbij data in componenten moet worden aangepast of moet worden ingezien voor testdoeleinden. In combinatie met het EVC component biedt het dashboard echter ook de mogelijkheid om Common Ground omgevingen in te richten en te beheren. Hierbij kan bijvoorbeeld worden gedacht aan het installeren en configureren van containers.');
         $component->setImage('images/content/Componenten/dash/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/commonground-dashboard');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/231819815', 'img' => 'https://github.styleci.io/repos/231819815/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/commonground-dashboard/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/commonground-dashboard/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/commonground-dashboard/commonground-dashboard', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/commonground-dashboard']
         ]);
 
         $this->em->persist($component);
@@ -484,7 +478,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/271184774', 'img' => 'https://github.styleci.io/repos/271184774/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/export-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/export-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/export-component/export-component', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/export-component']
         ]);
 
         $this->em->persist($component);
@@ -497,12 +491,11 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Digispoof is een SAML applicatie voor het testen van DigiD (en op termijn AIDAS) inlogmethodes. De gedachte hierbij is dat Digispoof technisch uitwisselbaar is met DigiD (dus exact hetzelfde werkt met betrekking tot API’s), maar doordat het gebruik maakt van het BRP (in mock-vorm) geen echte burgergegevens ontsluit. Het geeft echter wel een BSN nummer terug dat bestaat in het mock BRP. Dat betekent dat ontwikkelaars de mogelijkheid hebben om hun applicatie te testen met DigiD en BPR toegang zonder deze daadwerkelijk te hoeven aanvragen (waarvoor zelfs in demo-versies een PKI overheidscertificaat nodig is). Het is dan ook puur een development tool.');
         $component->setImage('images/content/Componenten/ds/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/digispoof-interface');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/247883561', 'img' => 'https://github.styleci.io/repos/247883561/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/digispoof-interface/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/digispoof-interface/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/digispoof-interface/digispoof-interface', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/digispoof-interface']
         ]);
 
         $this->em->persist($component);
@@ -520,7 +513,7 @@ class AppFixtures extends Fixture
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210809809', 'img' => 'https://github.styleci.io/repos/210809809/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/productenendienstencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/productenendienstencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://artifacthub.io/packages/helm/productenendienstencatalogus/productenendienstencatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/productenendienstencatalogus']
         ]);
 
         $this->em->persist($component);
@@ -533,7 +526,6 @@ class AppFixtures extends Fixture
         $component->setLongDescription('De Proto Applicatie levert een vooringerichte versie van het Symfony PHP framework, waarbij de NL Design System componenten zijn voorzien van template widgets. Oftewel het is mogelijk om vanuit je PHP/HTML templates direct gebruik te maken van NL Design Elementen. De business logica van de Proto Applicatie wordt geleverd door de generieke Common Ground Bundle. Framework De Proto Applicatie rust op het PHP Symfony Framework, daarbij importeert het de Common Ground Bundle, die het component als logica gebruikt (voor o.a. de VSBE) en NL Design System voor grafische vormgeving. Er is dus geen sprake van specifiek geschreven code, de applicatie wordt geheel vormgegeven door slim gebruik van dependency management en een klein beetje configuratie met betrekking tot hoe de applicatie zich authenticeert op Common Ground / NLX. Het dient dus als een voorbeeld voor de kracht van framework development en dependency management als methodiek, om een volledige applicatie puur te baseren op hergebruik van code en processen. NL Design System Tevens is er een widget library beschikbaar voor de Processen Catalogus, dat wil versimpeld zeggen dat er vooringerichte widgets zijn die zijn gekoppeld aan een specifieke (micro) service. Hiermee worden de grafische elementen uit NL Design System geoperationaliseerd. Voorbeelden hiervan zijn formulier-elementen zoals: ‘adres opgeven’, die gebruik maakt van de Adressen Service, om aan de hand van een huisnummer en postcode combinatie tot een BAG id te komen. En ‘bedrijf opgeven’, die aan de hand van een bedrijfsnaam een KVK-nummer suggereert. De Proto Applicatie geeft dus een invulling aan het verbinden van de door NL Design ontworpen UI en de door Common Ground Bundle geleverde componenten en API’s. Very Small Business Engine Onderdeel van de Proto Applicatie is de very small business engine, deze is oorspronkelijk bedacht voor het uitvoeren van simpele processen, maar heeft zich tegenwoordig gespecialiseerd in het ondersteunen van klantreizen. In de Common Ground zin wil dit dus zeggen dat het het Procestypen uit het PTC voorziet van de grafische elementen uit NL Design System (met indien nodig microservices uit het PC) en de resultaten van de klantreis als verzoek opslaat in het VRC. Met andere woorden de Proto Applicatie ondersteunt ‘out of the box’ klantreizen zoals gedefinieerd binnen Common Ground containers. Implementaties Er zijn momenteel een aantal voorbeeld implementaties van de Proto Applicatie beschikbaar vanuit de Huwelijksplanner, AdreswijzigingNL, Begraafplaatsen Registratie, COVID-19 formulieren, ROC Flevoland en Processen.');
         $component->setImage('images/content/Componenten/proto/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/Proto-application-NLDesign');
-        $component->setDocumentation('#');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/250502590', 'img' => 'https://github.styleci.io/repos/250502590/shield?branch=master'],
@@ -544,24 +536,19 @@ class AppFixtures extends Fixture
         $this->em->persist($component);
         $this->em->flush();
 
-        //Template
-        /**
+        //Proces type catalogus
         $component = new Component();
-        $component->setName('');
-        $component->setShortDescription('');
-        $component->setLongDescription('');
-        $component->setImage('images/content/Componenten/repro/1280w/Geel_Vlak.png');
-        $component->setRepository('https://github.com/ConductionNL/repro');
-        $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/repocode');
+        $component->setName('Proces Type Catalogus');
+        $component->setShortDescription('De Proces Type Catalogus beschrijft de gebruikersreis waarmee een verzoek tot stand komt. Of om het simpel te zeggen het neemt een verzoektype en deelt deze op in stappen en secties. Hierbij moet het eindresultaat van een proces een geldig verzoek zijn. Het is dus mogelijk om properties vanuit een verzoek niet uit te vragen (ofwel niet op te nemen in een stap of sectie), mits deze property vanuit het verzoek type niet verplicht is.');
+        $component->setlongDescription('De Proces Type Catalogus beschrijft de gebruikersreis waarmee een verzoek tot stand komt. Of om het simpel te zeggen het neemt een verzoektype en deelt deze op in stappen en secties. Hierbij moet het eindresultaat van een proces een geldig verzoek zijn. Het is dus mogelijk om properties vanuit een verzoek niet uit te vragen (ofwel niet op te nemen in een stap of sectie), mits deze property vanuit het verzoek type niet verplicht is. Een verzoektype kan in principe door meerdere procestypen worden gebruikt, sterker nog de wens hiertoe vormt de basis voor het uit elkaar trekken van deze twee componenten. Een denkbeeldig voorbeeld hiervan zou zijn, als een gemeente aanvullende vragen heeft bij een verhuizing vanuit het buitenland. Deze aanvullende vragen zouden dan als niet verplicht kunnen worden opgenomen in het verzoektype. Vervolgens zouden het twee processen kunnen zijn: één voor verhuizingen binnen Nederland, waarbij de aanvullende vragen niet zijn opgenomen en één voor verhuizing van buiten Nederland waarbij deze vragen wel worden gesteld. Het is bijvoorbeeld ook goed denkbaar dat verschillende kanalen gebruik maken van verschillende processen die tot hetzelfde verzoek leiden (bijvoorbeeld een webformulier en chatbot). In deze context is het wel belangrijk om te constateren dat de Proces Type Catalogus een gebruikers flow beschrijft voor het tot stand komen van een geldig verzoek, maar dat de Proces Type Catalogus op zich niet dwingend is. Sterker nog het VTC en VRC ondersteunen het opstarten van (bijvoorbeeld Camunda) BPMN processen bij status wijzigingen, zoals het opstarten van een verzoek. Dat betekent dat een BPMN-engine ook in staat is om aan de hand van een verzoektype een verzoek te maken en te valideren, mét of zonder menselijke tussenkomst.');
+        $component->setImage('images/content/Componenten/vtc/1280w/Geel_Vlak.png');
+        $component->setRepository('https://github.com/ConductionNL/procestypecatalogus');
+        $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/ptc');
         $component->setPlatforms(['zuid-drecht']);
         $component->setBadges([
-            ['href' => 'https://github.styleci.io/repos/repoid', 'img' => 'https://github.styleci.io/repos/repoid/shield?branch=master'],
-            ['href' => 'https://github.com/ConductionNL/repo/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/repro/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-
+            ['href' => 'https://github.styleci.io/repos/198549944', 'img' => 'https://github.styleci.io/repos/198549944/shield?branch=master'],
+            ['href' => 'https://github.com/ConductionNL/procestypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/procestypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
+            ['href' => 'https://artifacthub.io/packages/helm/procestypecatalogus/procestypecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/procestypecatalogus']
         ]);
-
-        $this->em->persist($component);
-        $this->em->flush();
-         **/
     }
 }
