@@ -39,14 +39,14 @@ export default class Menu extends Component {
             {/*Collect the nav links, forms, and other content for toggling */}
             <div className="collapse navbar-collapse" id="menu-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li><Link to={'/'} className="smooth-scroll">Home</Link></li>
-                <li><Link to={'/team'} className="smooth-scroll">Wie</Link></li>
-                <li><Link to={'/projecten'} className="smooth-scroll">Wat</Link></li>
-                <li><Link to={'/partners'} className="smooth-scroll">Hoe</Link></li>
-                <li><Link to={'/common-ground'} className="smooth-scroll">Common Ground</Link></li>
-                <li><Link to={'/caas'} className="smooth-scroll">CAAS</Link></li>
-                <li><Link to={'/odyssey'} className="smooth-scroll">Odyssey</Link></li>
-                <li><Link to={'/contact'} className="smooth-scroll">Contact</Link></li>
+                <li><Link hrefLang='nl' to={'/'} className="smooth-scroll">Home</Link></li>
+                <li><Link hrefLang='nl' to={'/team'} className="smooth-scroll">Wie</Link></li>
+                <li><Link hrefLang='nl' to={'/projecten'} className="smooth-scroll">Wat</Link></li>
+                <li><Link hrefLang='nl' to={'/partners'} className="smooth-scroll">Hoe</Link></li>
+                <li><Link hrefLang='nl' to={'/common-ground'} className="smooth-scroll">Common Ground</Link></li>
+                <li><Link hrefLang='nl' to={'/caas'} className="smooth-scroll">CAAS</Link></li>
+                <li><Link hrefLang='en' to={'/odyssey'} className="smooth-scroll">Odyssey</Link></li>
+                <li><Link hrefLang='nl' to={'/contact'} className="smooth-scroll">Contact</Link></li>
                 {/*<li><a href="/beveiliging" class="smooth-scroll">Beveiliging</a></li>*/}
                 {/*       <li><a href="https://www.conduction.nl/#features" class="smooth-scroll">Features</a></li> */}
               </ul>

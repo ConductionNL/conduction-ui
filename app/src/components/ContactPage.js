@@ -14,6 +14,7 @@ import ContactForm from "./widgets/ContactForm";
 import TwitterFeed from "./widgets/TwitterFeed";
 import {LangSwitch} from "./utility/LangSwitch";
 import {metadata} from "./utility/Metadata";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class ContactPage extends Component {
   static contextType = ConfigContext;
@@ -22,6 +23,7 @@ export default class ContactPage extends Component {
     super(props);
     metadata('Conduction | Contact')
     LangSwitch('nl');
+    registerAction('contact page visited', '/contact');
   }
 
   render() {
@@ -41,14 +43,16 @@ export default class ContactPage extends Component {
               <a href="mailto:  info@conduction.nl"
                  className="custom-button color-bright-blue"><i
                 className="fa fa-envelope"></i> Mail ons!</a>
-              <a href="mailto:  info@conduction.nl"
+              <a href="mailto:info@conduction.nl?subject=Telefoon/video gesprek inplannen"
                  className="custom-button color-bright-blue"
               style={{marginLeft: "30px"}}><i
                 className="fa fa-phone"
-                style={{marginRight: "10px", transform: "rotate(90deg)"}}></i>Telefoon gesprek / Video bellen</a>
+                style={{marginRight: "10px", transform: "rotate(90deg)"}}></i>Telefoon/video gesprek inplannen <i
+                className="fa fa-envelope"
+                style={{marginLeft: "10px"}}></i></a>
               <br/>
               <br/>
-              <p><h5>Wilt u snel een antwoord op uw vraag? Start nu de live chat!</h5></p>
+              <p><h5>Wilt u snel een antwoord op uw vraag? Start nu rechtsonderin deze pagina de live chat!</h5></p>
               <p><h5>Stuurt u een bericht buiten werktijden? Geen nood, we reageren zo snel mogelijk! </h5></p>
               </div>
           </div>

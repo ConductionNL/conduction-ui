@@ -12,14 +12,16 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class OdysseyPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-    metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit now our website');
+    metadata('Conduction | Odyssey hackaton | Public Tech','In 2020 we participated in the Odyssey Hackaton. We developed Open Source Software for municipalities. Curious about what we developed? Visit our website now');
     LangSwitch('en');
+    registerAction('odyssey page visited', '/odyssey');
   }
 
   render() {
@@ -52,7 +54,7 @@ export default class OdysseyPage extends Component {
                         All building blocks listed below are open source available. The building blocks shown here are
                         commonly used in the world of municipalities.</p>
                   <p style={{marginBottom: '15px'}}>If you are looking for something specific make an appointment, we can probably help you!</p>
-                  <Link to="/contact" className="custom-button">
+                  <Link to="/contact" hrefLang='nl' className="custom-button">
                     Get in touch</Link>
                   <br/>
                 </div>

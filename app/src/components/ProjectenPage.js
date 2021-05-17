@@ -13,6 +13,7 @@ import {
 // Import the context
 import ConfigContext from "./Context/Config";
 import ContactForm from "./widgets/ContactForm";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class ProjectenPage extends Component {
   static contextType = ConfigContext;
@@ -21,6 +22,7 @@ export default class ProjectenPage extends Component {
     super(props);
     metadata('Conduction | Onze prjecten')
     LangSwitch('nl');
+    registerAction('projecten page visited', '/projecten');
   }
   render() {
 
@@ -34,8 +36,8 @@ export default class ProjectenPage extends Component {
                   <div className="post-heading-left-white header-heading">
                     <h1 style={{color: 'white'}}>Trouwen</h1>
                     <h4 style={{marginTop: '30px', color: 'white'}}>
-                      <a className="linkWhite custom-button"
-                         href="https://www.huwelijksplanner.online" target="_blank">Bezoek de Huwelijksplanner</a>
+                      {/*<a className="linkWhite custom-button"*/}
+                      {/*   href="https://www.huwelijksplanner.online" target="_blank">Bezoek de Huwelijksplanner</a>*/}
                     </h4>
                   </div>
                   <br/>
@@ -51,7 +53,7 @@ export default class ProjectenPage extends Component {
                   <br/>
                   <p>Nieuwsgierig wat Conduction voor jou kan betekenen?</p>
                   <br/>
-                  <Link to="/contact" className="custom-button">
+                  <Link to="/contact" hrefLang='nl' className="custom-button">
                     Neem contact op</Link>
                 </div>
               </div>
@@ -110,7 +112,7 @@ export default class ProjectenPage extends Component {
 
                     <p>Samen met de Westfriese gemeenten zijn wij aan het ontwikkelen op de gebeurtenis overlijden.
                       Daar komt een hoop bij kijken, bijvoorbeeld de totale cyclus van een graf, van het plannen van de begrafenis tot het ruimen van een graf.
-                      Wij ondersteunen op de digitale ontwikkeling van dit proces, weer volgens het common ground principe: Data bij de bron, deelbaar en schaalbaar.</p>
+                      Wij ondersteunen op de digitale ontwikkeling van dit proces, weer volgens de Common Ground principes: Data bij de bron, deelbaar en schaalbaar.</p>
                     <br/>
                       <img src="/images/gemeentewestfriesland.png" width="110px"/>
                         <img src="/images/018-Logo-HTA.png" width="110px" style={{marginLeft: '30px'}}/>
@@ -302,7 +304,7 @@ export default class ProjectenPage extends Component {
                     <br/>
 
                       <br/>
-                        <Link to="/odyssey"
+                        <Link to="/odyssey" hrefLang='en'
                             className="custom-button color-bright-blue">
                           Read more</Link>
 

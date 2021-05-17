@@ -13,6 +13,7 @@ import ConfigContext from "./Context/Config";
 import TwitterFeed from "./widgets/TwitterFeed";
 import {LangSwitch} from "./utility/LangSwitch";
 import {metadata} from "./utility/Metadata";
+import {registerAction} from "./utility/GoogleAnalytic";
 
 export default class HomePage extends Component {
   static contextType = ConfigContext;
@@ -21,6 +22,7 @@ export default class HomePage extends Component {
     super(props);
     metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen','Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
     LangSwitch('nl');
+    registerAction('home page visited', '/');
   }
 
   // componentDidMount() {
@@ -45,7 +47,7 @@ export default class HomePage extends Component {
                   <p style={{marginTop: 15}}><b>‘Tech to serve people’.</b></p>
                   <p>Meer weten over ons bedrijf? Plan een afspraak.</p>
                   <br/>
-                  <Link to="/contact"
+                  <Link to="/contact" hrefLang='nl'
                         style={{
                           fontWeight: 'bold',
                           textTransform: 'uppercase',
@@ -159,7 +161,7 @@ export default class HomePage extends Component {
               <div className="col-xs-12" style={{textAlign: "left", marginTop: '30px'}}>
                 <p className='color-bright-blue'><b>Meer weten over wat wij doen?</b></p>
                 <br/>
-                <Link to="/contact" className="custom-button color-bright-blue">Neem contact op</Link>
+                <Link hrefLang='nl' to="/contact" className="custom-button color-bright-blue">Neem contact op</Link>
               </div>
             </div>
           </div>
@@ -302,7 +304,7 @@ export default class HomePage extends Component {
               <h2 style={{color: "#4386FB", display: "inline"}}>Met wie doen we wat</h2>
               <p style={{display: "inline"}} className="color-bright-blue"><b>Meer weten over onze producten en
                   wat dit voor jou kan betekenen? </b></p>
-                  <Link to="/contact"
+                  <Link to="/contact" hrefLang='nl'
                         className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
             </div>
             <div className="row">
