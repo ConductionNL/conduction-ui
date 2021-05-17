@@ -20,7 +20,7 @@ export default class CommongroundPage extends Component {
   constructor(props) {
     super(props);
     LangSwitch('nl');
-    metadata('Conduction | Common Ground | Open Source Componenten & Applicaties','Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus');
+    metadata('Conduction | Common Ground | Open Source Componenten & Applicaties','Wij ontwikkelen Open Source Componenten & Applicaties volgens de Common Ground principes. Nieuwsgierig? Ontdek dan onze uitgebreide componentencatalogus');
   }
 
   render() {
