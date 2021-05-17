@@ -82,7 +82,7 @@ export default class ComponentPage extends Component {
                           }
                           <p>
                             {
-                              this.state.component['shortDescription']
+                              this.state.component['longDescription']
                             }
                           </p>
                           <br />
@@ -116,9 +116,12 @@ export default class ComponentPage extends Component {
                           <a href={this.state.component['repository']}
                              style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                              target="_blank"> Bekijk repository</a>
-                          <a href={this.state.component['documentation']}
-                             style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
-                             target="_blank"> Bekijk documentatie</a>
+                          {
+                            this.state.component['documentation'] !== null && this.state.component['documentation'].length > 0 &&
+                            <a href={this.state.component['documentation']}
+                               style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
+                               target="_blank"> Bekijk documentatie</a>
+                          }
                         </div>
                       </div>
                     </div>
