@@ -60,7 +60,7 @@ export default class ComponentPage extends Component {
                 this.state.component == null &&
                 <div className="text-center" style={{marginTop: "10%", marginBottom: "10%"}}>
                   <HashLoader color={"#4376FC"} loading={true} css={this.state.override} size={50} />
-                  <h4 style={{color: "#4376FC", marginTop: '50px'}} className="mt-3 mb-3">Component aan het laden</h4>
+                  <h4 style={{color: "#4376FC", paddingTop: '50px'}} className="mt-3 mb-3">Component aan het laden</h4>
                 </div>
               }
               {
