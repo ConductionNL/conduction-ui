@@ -44,6 +44,19 @@ export default class ComponentPage extends Component {
     }
 
     this.setState({component: data['hydra:member'][0]});
+
+    let url = this.context.api + '/components?name=' + this.props.match.params.name;
+    fetch(url, {cache: "no-cache"})
+      .then(response => response.json())
+      .then(data => {
+        if (data['hydra:member'].length === 0 ) {
+          window.location = this.context.url = '/componenten';
+        }
+
+        this.setState({component: data['hydra:member'][0]});
+      })
+      .catch()
+
   }
 
   render() {
