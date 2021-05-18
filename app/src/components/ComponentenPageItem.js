@@ -73,9 +73,12 @@ export default class ComponentenPageItem extends Component {
                       <a href={this.props.component['repository']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk repository</a>
-                      <a href={this.props.component['documentation']}
+                    {
+                      this.state.component['documentation'] !== null && this.state.component['documentation'].length > 0 &&
+                      <a href={this.state.component['documentation']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk documentatie</a>
+                    }
                   </div>
                 </div>
               </div>
