@@ -37,12 +37,9 @@ export default class ComponentenPage extends Component {
   componentDidMount() {
     let url = this.context.api + '/components';
 
-    console.log(url);
-
     fetch(url, {cache: 'force-cache'})
       .then(response => response.json())
       .then(data => this.setState({components: data['hydra:member']}))
-      .then(data => console.log(this.state.components))
       .catch()
   }
 
@@ -81,7 +78,7 @@ export default class ComponentenPage extends Component {
           this.state.components === null &&
           <div className="text-center" style={{marginTop: "10%", marginBottom: "10%"}}>
             <HashLoader color={"#4376FC"} loading={true} css={this.state.override} size={50} />
-            <h4 style={{color: "#4376FC", marginTop: '50px'}} className="mt-3 mb-3">Componenten aan het laden</h4>
+            <h4 style={{color: "#4376FC", paddingTop: '50px'}} className="mt-3 mb-3">Componenten aan het laden</h4>
           </div>
         }
         {
