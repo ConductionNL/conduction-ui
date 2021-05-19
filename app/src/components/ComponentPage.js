@@ -93,11 +93,7 @@ export default class ComponentPage extends Component {
                               </>
                             ))
                           }
-                          <p>
-                            {
-                              this.state.component['longDescription']
-                            }
-                          </p>
+                          <p dangerouslySetInnerHTML={{__html:this.state.component['longDescription']}}/>
                           <br />
                           {
                             this.state.component['platforms'] !== null && this.state.component['platforms'].length > 0 &&
