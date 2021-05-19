@@ -286,7 +286,7 @@ class AppFixtures extends Fixture
         $this->em->persist($component);
         $this->em->flush();
 
-        //Mederwerker Registratie Component
+        //Medewerker Registratie Component
         $component = new Component();
         $component->setName('Medewerker Catalogus');
         $component->setShortDescription('Het Medewerker Registratie Component bevat medewerkers en de daarbij behorende HRM systematiek, hierbij kan bijvoorbeeld worden gedacht aan contractmanagement en functie of competentie overzichten. Deze functionaliteit wordt eigenlijk onttrokken aan de e-HRM-norm (ofwel de HR-XML standaard, in Nederland losjes geïmplementeerd als SETU), waarbij het stuk portfolio-opbouw is losgetrokken en in het Portfolio Component zit (om de e-portfolio norm te ondersteunen).');
