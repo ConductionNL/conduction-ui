@@ -7,7 +7,6 @@ export default class ComponentenPageItem extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props.component);
 
     LangSwitch('nl');
   }
@@ -74,7 +73,7 @@ export default class ComponentenPageItem extends Component {
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk repository</a>
                     {
-                      this.state.component['documentation'] !== null && this.state.component['documentation'].length > 0 &&
+                      this.props.component['documentation'] !== null && this.props.component['documentation'].length > 0 &&
                       <a href={this.props.component['documentation']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk documentatie</a>
