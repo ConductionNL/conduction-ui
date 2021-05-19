@@ -33,11 +33,7 @@ export default class ComponentenPageItem extends Component {
                         </>
                       ))
                     }
-                    <p>
-                      {
-                        this.props.component['shortDescription']
-                      }
-                    </p>
+                    <p dangerouslySetInnerHTML={{__html:this.props.component['shortDescription']}}/>
                     <br />
                     {
                       this.props.component['platforms'] !== null && this.props.component['platforms'].length > 0 &&
