@@ -29,7 +29,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/as/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/adresservice');
         $component->setDocumentation('https://zuid-drecht.nl/api/v1/as');
-        $component->setPlatforms(['verhuizen','overlijden']);
+        $component->setPlatforms(['verhuizen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549517', 'img' => 'https://github.styleci.io/repos/198549517/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/adresservice/actions?query=workflow%3A"Docker+Image+CI"', 'img' => 'https://github.com/ConductionNL/adresservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -48,7 +48,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/vtc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/verzoektypecatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/vtc');
-        $component->setPlatforms(['zuid-drecht','verhuizen','overlijden','trouwen']);
+        $component->setPlatforms(['zuid-drecht', 'verhuizen', 'overlijden', 'trouwen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210271092', 'img' => 'https://github.styleci.io/repos/210271092/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoektypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoektypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -66,7 +66,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/vrc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/verzoekregistratiecomponent');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/vrc');
-        $component->setPlatforms(['zuid-drecht','verhuizen','overlijden','trouwen']);
+        $component->setPlatforms(['zuid-drecht', 'verhuizen', 'overlijden', 'trouwen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549754', 'img' => 'https://github.styleci.io/repos/198549754/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/verzoekregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -153,7 +153,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/uc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/user-component');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/uc');
-        $component->setPlatforms(['zuid-drecht','verhuizen','overlijden','trouwen']);
+        $component->setPlatforms(['zuid-drecht', 'verhuizen', 'overlijden', 'trouwen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/222616116', 'img' => 'https://github.styleci.io/repos/222616116/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/user-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/user-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -206,7 +206,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/berichten/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/berichtservice');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/bs');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144502', 'img' => 'https://github.styleci.io/repos/206144502/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/berichtservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/berichtservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -241,7 +241,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/orc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/orderregistratiecomponent');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/orc');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144416', 'img' => 'https://github.styleci.io/repos/206144416/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/orderregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/orderregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -259,7 +259,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/ac/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/agendaservice');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/arc');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144508', 'img' => 'https://github.styleci.io/repos/206144508/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/agendaservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/agendaservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -312,7 +312,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/betalen/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/betaalservice');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/bc');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145303', 'img' => 'https://github.styleci.io/repos/206145303/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/betaalservice/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/betaalservice/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -348,7 +348,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/irc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/instemming-registratie-component');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/irc');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210753780', 'img' => 'https://github.styleci.io/repos/210753780/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/instemming-registratie-component/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/instemming-registratie-component/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -366,7 +366,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/cc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/contactcatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/cc');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145398', 'img' => 'https://github.styleci.io/repos/206145398/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/contactcatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/contactcatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -385,7 +385,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/ltc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/landelijketabellencatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/ltc');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/repoid', 'img' => 'https://github.styleci.io/repos/repoid/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/landelijketabellencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/landelijketabellencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -439,7 +439,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/wrc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/webresourcecatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/wrc');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen','zuid-drecht']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen', 'zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206145646', 'img' => 'https://github.styleci.io/repos/206145646/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/webresourcecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/webresourcecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -456,7 +456,7 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Het Common Ground Dashboard biedt basale beheer- en behandelmogelijkheden op Common Ground componenten en voegt vooral veel waarde toe in ontwikkel-context, waarbij data in componenten moet worden aangepast of moet worden ingezien voor testdoeleinden. In combinatie met het EVC Component biedt het dashboard echter ook de mogelijkheid om Common Ground omgevingen in te richten en te beheren. Hierbij kan bijvoorbeeld worden gedacht aan het installeren en configureren van containers.');
         $component->setImage('images/content/Componenten/dash/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/commonground-dashboard');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/231819815', 'img' => 'https://github.styleci.io/repos/231819815/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/commonground-dashboard/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/commonground-dashboard/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -491,7 +491,7 @@ class AppFixtures extends Fixture
         $component->setLongDescription('Digispoof is een SAML applicatie voor het testen van DigiD (en op termijn AIDAS) inlogmethodes. De gedachte hierbij is dat Digispoof technisch uitwisselbaar is met DigiD (dus exact hetzelfde werkt met betrekking tot API’s), maar doordat het gebruik maakt van het BRP (in mock-vorm) geen echte burgergegevens ontsluit.<br> Het geeft echter wel een BSN nummer terug dat bestaat in het mock BRP. Dat betekent dat ontwikkelaars de mogelijkheid hebben om hun applicatie te testen met DigiD en BPR toegang zonder deze daadwerkelijk te hoeven aanvragen (waarvoor zelfs in demo-versies een PKI overheidscertificaat nodig is). Het is dan ook puur een development tool.');
         $component->setImage('images/content/Componenten/ds/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/digispoof-interface');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/247883561', 'img' => 'https://github.styleci.io/repos/247883561/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/digispoof-interface/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/digispoof-interface/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -509,7 +509,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/pdc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/productenendienstencatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/pdc');
-        $component->setPlatforms(['trouwen','overlijden']);
+        $component->setPlatforms(['trouwen', 'overlijden']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/210809809', 'img' => 'https://github.styleci.io/repos/210809809/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/productenendienstencatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/productenendienstencatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -544,7 +544,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/vtc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/procestypecatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/ptc');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen','zuid-drecht']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen', 'zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/198549944', 'img' => 'https://github.styleci.io/repos/198549944/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/procestypecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/procestypecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
