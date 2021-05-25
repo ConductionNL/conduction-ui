@@ -183,8 +183,8 @@ class AppFixtures extends Fixture
         //Taken component
         $component = new Component();
         $component->setName('Taken Component');
-        $component->setShortDescription("Het Taken Component biedt de generieke mogelijkheid om taken te registreren van de ene resource op een andere resource (bijvoorbeeld Common Ground resources). Deze functionaliteit is bewust abstract opgezet. In de meest voorkomende vorm zal bijvoorbeeld een medewerker of gebruiker (resource) een taak hebben op een zaak of order (resource), maar in abstracte vorm kan ook een burger (BRP resource) een taak hebben of kunnen zelfs applicaties of processen (zoals opgenomen in het PC) een taak hebben.<br> Het Taken Component geeft in die zin zowel invulling aan taken, als in het agenda calendar concept “todo”, als het bpmn concept “task”. Echter moeten zowel het onderwerp van de taak, als de uitvoerder van de taak identificeerbaar zijn aan de hand van een URL.");
-        $component->setLongDescription("Het Taken Component biedt de generieke mogelijkheid om taken te registreren van de ene resource op een andere resource (bijvoorbeeld Common Ground resources). Deze functionaliteit is bewust abstract opgezet. In de meest voorkomende vorm zal bijvoorbeeld een medewerker of gebruiker (resource) een taak hebben op een zaak of order (resource), maar in abstracte vorm kan ook een burger (BRP resource) een taak hebben of kunnen zelfs applicaties of processen (zoals opgenomen in het PC) een taak hebben. <br> Het Taken Component geeft in die zin zowel invulling aan taken, als in het agenda calendar concept “todo”, als het bpmn concept “task”. Echter moeten zowel het onderwerp van de taak, als de uitvoerder van de taak identificeerbaar zijn aan de hand van een URL.");
+        $component->setShortDescription('Het Taken Component biedt de generieke mogelijkheid om taken te registreren van de ene resource op een andere resource (bijvoorbeeld Common Ground resources). Deze functionaliteit is bewust abstract opgezet. In de meest voorkomende vorm zal bijvoorbeeld een medewerker of gebruiker (resource) een taak hebben op een zaak of order (resource), maar in abstracte vorm kan ook een burger (BRP resource) een taak hebben of kunnen zelfs applicaties of processen (zoals opgenomen in het PC) een taak hebben.<br> Het Taken Component geeft in die zin zowel invulling aan taken, als in het agenda calendar concept “todo”, als het bpmn concept “task”. Echter moeten zowel het onderwerp van de taak, als de uitvoerder van de taak identificeerbaar zijn aan de hand van een URL.');
+        $component->setLongDescription('Het Taken Component biedt de generieke mogelijkheid om taken te registreren van de ene resource op een andere resource (bijvoorbeeld Common Ground resources). Deze functionaliteit is bewust abstract opgezet. In de meest voorkomende vorm zal bijvoorbeeld een medewerker of gebruiker (resource) een taak hebben op een zaak of order (resource), maar in abstracte vorm kan ook een burger (BRP resource) een taak hebben of kunnen zelfs applicaties of processen (zoals opgenomen in het PC) een taak hebben. <br> Het Taken Component geeft in die zin zowel invulling aan taken, als in het agenda calendar concept “todo”, als het bpmn concept “task”. Echter moeten zowel het onderwerp van de taak, als de uitvoerder van de taak identificeerbaar zijn aan de hand van een URL.');
         $component->setImage('images/content/Componenten/tc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/taken-component');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/tc');
@@ -553,9 +553,9 @@ class AppFixtures extends Fixture
 
         $this->em->persist($component);
         $this->em->flush();
-/*
- * todo: LC, PC & CGRC need text written for them
- */
+        /*
+         * todo: LC, PC & CGRC need text written for them
+         */
 //        //Locatie component
 //        $component = new Component();
 //        $component->setName('Locatie component');
