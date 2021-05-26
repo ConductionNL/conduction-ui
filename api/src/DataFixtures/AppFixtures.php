@@ -553,9 +553,7 @@ class AppFixtures extends Fixture
 
         $this->em->persist($component);
         $this->em->flush();
-        /*
-         * todo: LC, PC & CGRC need text written for them
-         */
+        
         //Locatie component
         $component = new Component();
         $component->setName('Locatie component');
