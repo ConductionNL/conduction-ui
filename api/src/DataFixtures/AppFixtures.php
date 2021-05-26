@@ -556,55 +556,38 @@ class AppFixtures extends Fixture
         /*
          * todo: LC, PC & CGRC need text written for them
          */
-//        //Locatie component
-//        $component = new Component();
-//        $component->setName('Locatie component');
-//        $component->setShortDescription('');
-//        $component->setlongDescription('');
-//        $component->setImage('images/content/Componenten/lc/1280w/Geel_Vlak.png');
-//        $component->setRepository('https://github.com/ConductionNL/locatiecatalogus');
-//        $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/lc');
-//        $component->setPlatforms(['trouwen','overlijden','verhuizen','zuid-drecht']);
-//        $component->setBadges([
-//            ['href' => 'https://github.styleci.io/repos/206144429', 'img' => 'https://github.styleci.io/repos/206144429/shield?branch=master'],
-//            ['href' => 'https://github.com/ConductionNL/locatiecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/locatiecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-//            ['href' => 'https://artifacthub.io/packages/helm/ocatiecatalogus/ocatiecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/locatiecatalogus'],
-//        ]);
-//
-//        $this->em->persist($component);
-//        $this->em->flush();
-//
-//        //Common Ground Registratie Component
-//        $component = new Component();
-//        $component->setName('Common Ground Registratie Component');
-//        $component->setShortDescription('');
-//        $component->setlongDescription('');
-//        $component->setImage('images/content/Componenten/cgrc/1280w/Geel_Vlak.png');
-//        $component->setRepository('https://github.com/ConductionNL/Commongroundregistratiecomponent');
-//        $component->setBadges([
-//            ['href' => 'https://github.styleci.io/repos/211273661', 'img' => 'https://github.styleci.io/repos/211273661/shield?branch=master'],
-//            ['href' => 'https://github.com/ConductionNL/Commongroundregistratiecomponent/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/Commongroundregistratiecomponent/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-//            ['href' => 'https://artifacthub.io/packages/helm/commongroundregistratiecomponent/cgrc', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/commongroundregistratiecomponent'],
-//        ]);
-//
-//        $this->em->persist($component);
-//        $this->em->flush();
-//
-//
-//        //Proto component Common Ground
-//        $component = new Component();
-//        $component->setName('Proto-component Common Ground');
-//        $component->setShortDescription('');
-//        $component->setlongDescription('');
-//        $component->setImage('images/content/Componenten/pc/1280w/Geel_Vlak.png');
-//        $component->setRepository('https://github.com/ConductionNL/Proto-component-commonground');
-//        $component->setBadges([
-//            ['href' => 'https://github.styleci.io/repos/198371552', 'img' => 'https://github.styleci.io/repos/198371552/shield?branch=master'],
-//            ['href' => 'https://github.com/ConductionNL/Proto-component-commonground/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/Proto-component-commonground/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
-//            ['href' => 'https://artifacthub.io/packages/helm/proto-component-commonground/proto-component-commonground', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/proto-component-commonground'],
-//        ]);
-//
-//        $this->em->persist($component);
-//        $this->em->flush();
+        //Locatie component
+        $component = new Component();
+        $component->setName('Locatie component');
+        $component->setShortDescription('Het Locatie Component implementeert de places en accommodations strategie vanuit schema.org. Het vormt daarmee de basis voor het bijhouden en verhuren van ruimtes en kan in de meest simpele configuratie worden gebruikt voor planningsvraagstukken. <br><br> Bijvoorbeeld bij gebouwen rondom te reserveren ruimtes zoals (vergader)zalen. <br> Dit component is nadrukkelijk ontworpen om samen met het PDC het commercieel verhuren van gehele gebouwen, of ruimtes daarin te faciliteren. Hiermee kan het de technische basis vormen voor appartementen/kamerverhuur platforms, hotel-software of zelfs camping-software.');
+        $component->setlongDescription('Het Locatie Component implementeert de places en accommodations strategie vanuit schema.org. Het vormt daarmee de basis voor het bijhouden en verhuren van ruimtes en kan in de meest simpele configuratie worden gebruikt voor planningsvraagstukken. <br><br> Bijvoorbeeld bij gebouwen rondom te reserveren ruimtes zoals (vergader)zalen. <br> Dit component is nadrukkelijk ontworpen om samen met het PDC het commercieel verhuren van gehele gebouwen, of ruimtes daarin te faciliteren. Hiermee kan het de technische basis vormen voor appartementen/kamerverhuur platforms, hotel-software of zelfs camping-software.');
+        $component->setImage('images/content/Componenten/lc/1280w/Geel_Vlak.png');
+        $component->setRepository('https://github.com/ConductionNL/locatiecatalogus');
+        $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/lc');
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen', 'zuid-drecht']);
+        $component->setBadges([
+            ['href' => 'https://github.styleci.io/repos/206144429', 'img' => 'https://github.styleci.io/repos/206144429/shield?branch=master'],
+            ['href' => 'https://github.com/ConductionNL/locatiecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/locatiecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
+            ['href' => 'https://artifacthub.io/packages/helm/ocatiecatalogus/ocatiecatalogus', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/locatiecatalogus'],
+        ]);
+
+        $this->em->persist($component);
+        $this->em->flush();
+
+        //Proto component Common Ground
+        $component = new Component();
+        $component->setName('Proto-component Common Ground');
+        $component->setShortDescription('Het Proto Component vormt zowel de gemeenschappelijke basis onder alle componenten, als een “template” voor het maken van nieuwe componenten.');
+        $component->setlongDescription('Het Proto Component vormt zowel de gemeenschappelijke basis onder alle componenten, als een “template” voor het maken van nieuwe componenten.');
+        $component->setImage('images/content/Componenten/pc/1280w/Geel_Vlak.png');
+        $component->setRepository('https://github.com/ConductionNL/Proto-component-commonground');
+        $component->setBadges([
+            ['href' => 'https://github.styleci.io/repos/198371552', 'img' => 'https://github.styleci.io/repos/198371552/shield?branch=master'],
+            ['href' => 'https://github.com/ConductionNL/Proto-component-commonground/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/Proto-component-commonground/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
+            ['href' => 'https://artifacthub.io/packages/helm/proto-component-commonground/proto-component-commonground', 'img' => 'https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/proto-component-commonground'],
+        ]);
+
+        $this->em->persist($component);
+        $this->em->flush();
     }
 }
