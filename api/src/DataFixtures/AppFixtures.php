@@ -564,7 +564,7 @@ class AppFixtures extends Fixture
         $component->setImage('images/content/Componenten/lc/1280w/Geel_Vlak.png');
         $component->setRepository('https://github.com/ConductionNL/locatiecatalogus');
         $component->setDocumentation('https://dev.zuid-drecht.nl/api/v1/lc');
-        $component->setPlatforms(['trouwen','overlijden','verhuizen','zuid-drecht']);
+        $component->setPlatforms(['trouwen', 'overlijden', 'verhuizen', 'zuid-drecht']);
         $component->setBadges([
             ['href' => 'https://github.styleci.io/repos/206144429', 'img' => 'https://github.styleci.io/repos/206144429/shield?branch=master'],
             ['href' => 'https://github.com/ConductionNL/locatiecatalogus/actions?query=workflow%3ADocker+Image+CI', 'img' => 'https://github.com/ConductionNL/locatiecatalogus/workflows/Docker%20Image%20CI/badge.svg?branch=master'],
@@ -573,8 +573,6 @@ class AppFixtures extends Fixture
 
         $this->em->persist($component);
         $this->em->flush();
-
-
 
         //Proto component Common Ground
         $component = new Component();
