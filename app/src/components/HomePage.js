@@ -20,7 +20,7 @@ export default class HomePage extends Component {
 
   constructor(props) {
     super(props);
-    metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen','Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
+    metadata('Conduction | Faciliteren van Open Source Digitale Ecosystemen', 'Conduction is een Public Tech bedrijf in Amsterdam. Wij faciliteren Open Source Ecosystemen en ontwikkelen techniek waarbij mens en community centraal staan')
     LangSwitch('nl');
     registerAction('home page visited', '/');
   }
@@ -42,8 +42,10 @@ export default class HomePage extends Component {
                     <h1 style={{color: 'white'}}>Public Tech.</h1>
                   </div>
                   <p>Wij zijn wat je zou kunnen noemen Digital Socials,
-                    wij ontwikkelen techniek volgens de Common Ground principes, waarbij mens en community centraal staan.
-                    Graag dragen we dan ook bij aan het ontwikkelen van digitale oplossingen voor maatschappelijke vraagstukken:</p>
+                    wij ontwikkelen techniek volgens de Common Ground principes, waarbij mens en community centraal
+                    staan.
+                    Graag dragen we dan ook bij aan het ontwikkelen van digitale oplossingen voor maatschappelijke
+                    vraagstukken:</p>
                   <p style={{marginTop: 15}}><b>‘Tech to serve people’.</b></p>
                   <p>Meer weten over ons bedrijf? Plan een afspraak.</p>
                   <br/>
@@ -63,7 +65,8 @@ export default class HomePage extends Component {
               <div className="col-sm-6">
                 <div className="hovereffect">
                   <div className="header-img">
-                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png" alt="Maak kennis met het team"/></div>
+                    <img className="img-responsive" src="/images/Conduction_HOME_0000_afb1.png"
+                         alt="Maak kennis met het team"/></div>
                   <div className="overlay">
                     <h5>Het team</h5>
                     <a className="info2" href="/team">Maak kennis met het team</a>
@@ -81,7 +84,8 @@ export default class HomePage extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-6">
-                <img src="images/Conduction-website_losgeknipt_0023_afb24.png" alt="Open source software ontwikkelen voor digitale ecosytemen" width="100%"/>
+                <img style={{marginTop: "40px"}} src="images/Conduction-website_losgeknipt_0023_afb24.png"
+                     alt="Open source software ontwikkelen voor digitale ecosytemen" width="100%"/>
               </div>
               <div className="col-sm-12 col-md-6">
                 <div className="col-text20 margin-bottom20">
@@ -90,25 +94,28 @@ export default class HomePage extends Component {
                       <div className="col-sm-6">
                         <h5 style={{color: "#4386FB"}}>Bouwen</h5>
                         <p>Wij ontwikkelen open source software ter ondersteuning van maatschappelijke vraagstukken voor
-                          de
-                          publieke, maar ook voor de commerciële sector.</p>
+                          de publieke, maar ook voor de commerciële sector. Bekijk onze <Link to="/projecten"
+                                                                                              hrefLang='nl'>
+                            projecten</Link> hier.</p>
                       </div>
                       <div className="col-sm-6">
-                        <h5 style={{color: "#4386FB"}}>Verbinden</h5>
-                        <p>Wij doen dit allemaal het liefst in samenwerking/verbinding met alle andere betrokkenen
-                          binnen
-                          een digitaal ecosysteem.</p>
+                        <h5 style={{color: "#4386FB"}}>Implementatie en beheer</h5>
+                        <p>Wij kunnen als gewenst op verschillende manieren deze software voor u beheren en
+                          ondersteuning bieden, ook bij het implementeren. Meer weten? Klik <Link to="/caas"
+                                                                                                  hrefLang='nl'>hier</Link>.
+                        </p>
                       </div>
                     </div>
                     <div className="row" style={{marginTop: "55px"}}>
                       <div className="col-sm-6">
-                        <h5 style={{color: "#4386FB"}}>Beheren</h5>
-                        <p>Wij kunnen als gewenst op verschillende manieren deze software voor u beheren en ook
-                          ondersteuning bieden.</p>
+                        <h5 style={{color: "#4386FB"}}>Dashkube</h5>
+                        <p>Ons DashKube dashboard maakt het mogelijk en eenvoudig om uw eigen omgevingen te beheren.
+                          Bekijk <a href="https://www.dashkube.com">DashKube</a> hier.</p>
                       </div>
                       <div className="col-sm-6">
-                        <h5 style={{color: "#4386FB"}}>Faciliteren</h5>
-                        <p>Wij ondersteunen digitale ecosystemen. Wij zien graag dat de dingen doorgang vinden.</p>
+                        <h5 style={{color: "#4386FB"}}>Consultancy</h5>
+                        <p>Wij ontwikkelen al geruime tijd volgens het Common Ground principe en deze ervaring delen wij
+                          graag. Benieuwd? Klik <Link to="/caas" hrefLang='nl'>hier</Link>.</p>
                       </div>
                     </div>
                   </div>
@@ -140,7 +147,8 @@ export default class HomePage extends Component {
                 </div>
               </div>
               <div className="col-sm-12 col-md-6" style={{textAlign: "left"}}>
-                <img src="images/Conduction_HOME_0006_afb7.png" alt="Duurzame en innovatieve software ontwikkeling" width="100%"/>
+                <img src="images/Conduction_HOME_0006_afb7.png" alt="Duurzame en innovatieve software ontwikkeling"
+                     width="100%"/>
                 <div style={{padding: "20px 60px 0 40px"}}>
                   <h5 style={{color: "#4386FB"}}>Duurzaam en innovatief</h5>
                   <p>Alles wat wij maken sluit aan op de behoefte van nu, maar is voorbereid op de toekomst, dat
@@ -303,13 +311,14 @@ export default class HomePage extends Component {
                  style={{display: "inline !important", verticalAlign: 'top', lineHeight: '22px'}}>
               <h2 style={{color: "#4386FB", display: "inline"}}>Met wie doen we wat</h2>
               <p style={{display: "inline"}} className="color-bright-blue"><b>Meer weten over onze producten en
-                  wat dit voor jou kan betekenen? </b></p>
-                  <Link to="/contact" hrefLang='nl'
-                        className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
+                wat dit voor jou kan betekenen? </b></p>
+              <Link to="/contact" hrefLang='nl'
+                    className="custom-button color-bright-blue">Plan een (video) bel afspraak in</Link>
             </div>
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-4">
-                <a href="/projecten"> <img style={{maxWidth: "300px;"}} src="images/trouwen.png" alt="Wat doet de trouwen applicatie"
+                <a href="/projecten"> <img style={{maxWidth: "300px;"}} src="images/trouwen.png"
+                                           alt="Wat doet de trouwen applicatie"
                                            height="300px"
                                            width="100%"/></a>
               </div>
@@ -319,7 +328,8 @@ export default class HomePage extends Component {
                                                      width="100%"/></a>
               </div>
               <div className="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-4">
-                <a href="/projecten#overlijden"> <img style={{maxWidth: "300px"}} alt="Wat doet de overlijden applicatie"
+                <a href="/projecten#overlijden"> <img style={{maxWidth: "300px"}}
+                                                      alt="Wat doet de overlijden applicatie"
                                                       src="images/overlijden.png"
                                                       height="300px"
                                                       width="100%"/>
@@ -329,7 +339,7 @@ export default class HomePage extends Component {
           </div>
         </div>
 
-        <TwitterFeed />
+        <TwitterFeed/>
 
         <div id="features3" className="wrap-container8040 hidden">
           <div className="container">
