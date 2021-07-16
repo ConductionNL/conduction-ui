@@ -115,7 +115,7 @@ export default class HomePage extends Component {
                       <div className="col-sm-6">
                         <h5 style={{color: "#4386FB"}}>Consultancy</h5>
                         <p>Wij ontwikkelen al geruime tijd volgens het Common Ground principe en deze ervaring delen wij
-                          graag. Benieuwd? Klik <Link to="/caas" hrefLang='nl'>hier</Link>.</p>
+                          graag. Benieuwd? Klik <Link to="/contact" hrefLang='nl'>hier</Link>.</p>
                       </div>
                     </div>
                   </div>
