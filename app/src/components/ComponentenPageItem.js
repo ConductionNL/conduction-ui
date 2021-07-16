@@ -7,7 +7,6 @@ export default class ComponentenPageItem extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props.component);
 
     LangSwitch('nl');
   }
@@ -34,11 +33,7 @@ export default class ComponentenPageItem extends Component {
                         </>
                       ))
                     }
-                    <p>
-                      {
-                        this.props.component['shortDescription']
-                      }
-                    </p>
+                    <p dangerouslySetInnerHTML={{__html:this.props.component['shortDescription']}}/>
                     <br />
                     {
                       this.props.component['platforms'] !== null && this.props.component['platforms'].length > 0 &&
@@ -52,15 +47,15 @@ export default class ComponentenPageItem extends Component {
                             }
                             {
                               item === 'trouwen' &&
-                              <img alt={""} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de trouwen applicatie"} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                             {
                               item === 'verhuizen' &&
-                              <img alt={""} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de verhuizem applicatie"} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                             {
                               item === 'overlijden' &&
-                              <img alt={""} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
+                              <img alt={"Wat doet de overlijden applicatie"} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
                             }
                           </>
                           ))
@@ -73,9 +68,12 @@ export default class ComponentenPageItem extends Component {
                       <a href={this.props.component['repository']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk repository</a>
+                    {
+                      this.props.component['documentation'] !== null && this.props.component['documentation'].length > 0 &&
                       <a href={this.props.component['documentation']}
                          style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                          target="_blank"> Bekijk documentatie</a>
+                    }
                   </div>
                 </div>
               </div>

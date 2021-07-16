@@ -6,13 +6,14 @@ import ContactForm from "./widgets/ContactForm";
 import {HashLoader} from "react-spinners";
 import { css } from "@emotion/css";
 import {LangSwitch} from "./utility/LangSwitch";
+import {metadata} from "./utility/Metadata";
 
 export default class ComponentPage extends Component {
   static contextType = ConfigContext;
 
   constructor(props) {
     super(props);
-
+    metadata('Conduction | Onze Componenten');
     this.state = {
       component: null,
       override: css`
@@ -43,6 +44,19 @@ export default class ComponentPage extends Component {
     }
 
     this.setState({component: data['hydra:member'][0]});
+
+    let url = this.context.api + '/components?name=' + this.props.match.params.name;
+    fetch(url, {cache: "no-cache"})
+      .then(response => response.json())
+      .then(data => {
+        if (data['hydra:member'].length === 0 ) {
+          window.location = this.context.url = '/componenten';
+        }
+
+        this.setState({component: data['hydra:member'][0]});
+      })
+      .catch()
+
   }
 
   render() {
@@ -59,7 +73,7 @@ export default class ComponentPage extends Component {
                 this.state.component == null &&
                 <div className="text-center" style={{marginTop: "10%", marginBottom: "10%"}}>
                   <HashLoader color={"#4376FC"} loading={true} css={this.state.override} size={50} />
-                  <h4 style={{color: "#4376FC", marginTop: '50px'}} className="mt-3 mb-3">Component aan het laden</h4>
+                  <h4 style={{color: "#4376FC", paddingTop: '50px'}} className="mt-3 mb-3">Component aan het laden</h4>
                 </div>
               }
               {
@@ -79,11 +93,7 @@ export default class ComponentPage extends Component {
                               </>
                             ))
                           }
-                          <p>
-                            {
-                              this.state.component['shortDescription']
-                            }
-                          </p>
+                          <p dangerouslySetInnerHTML={{__html:this.state.component['longDescription']}}/>
                           <br />
                           {
                             this.state.component['platforms'] !== null && this.state.component['platforms'].length > 0 &&
@@ -97,15 +107,15 @@ export default class ComponentPage extends Component {
                                 }
                                 {
                                   item === 'trouwen' &&
-                                  <img alt={""} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
+                                  <img alt={"Wat doet de trouwen applicatie"} src="/images/trouwen.png" width="110px" style={{marginLeft: "30px"}} />
                                 }
                                 {
                                   item === 'verhuizen' &&
-                                  <img alt={""} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
+                                  <img alt={"Wat doet de verhuizen applicatie"} src="/images/verhuizen.png" width="110px" style={{marginLeft: "30px"}} />
                                 }
                                 {
                                   item === 'overlijden' &&
-                                  <img alt={""} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
+                                  <img alt={"Wat doet de overlijden applicatie"} src="/images/overlijden.png" width="110px" style={{marginLeft: "30px"}} />
                                 }
                               </>
                             ))
@@ -115,9 +125,12 @@ export default class ComponentPage extends Component {
                           <a href={this.state.component['repository']}
                              style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
                              target="_blank"> Bekijk repository</a>
-                          <a href={this.state.component['documentation']}
-                             style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
-                             target="_blank"> Bekijk documentatie</a>
+                          {
+                            this.state.component['documentation'] !== null && this.state.component['documentation'].length > 0 &&
+                            <a href={this.state.component['documentation']}
+                               style={{marginRight: "20px", fontWeight: "bold", textTransform: "uppercase", fontSize: "15px", color: "#4376FC", padding: "7.5px 15px 7.5px 15px", borderRadius: "25px", border: "2.5px solid #4376FC"}}
+                               target="_blank"> Bekijk documentatie</a>
+                          }
                         </div>
                       </div>
                     </div>

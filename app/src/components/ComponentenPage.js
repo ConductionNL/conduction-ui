@@ -37,12 +37,9 @@ export default class ComponentenPage extends Component {
   componentDidMount() {
     let url = this.context.api + '/components';
 
-    console.log(url);
-
     fetch(url, {cache: 'force-cache'})
       .then(response => response.json())
       .then(data => this.setState({components: data['hydra:member']}))
-      .then(data => console.log(this.state.components))
       .catch()
   }
 
@@ -61,19 +58,11 @@ export default class ComponentenPage extends Component {
                     <h1 style={{color: 'white'}}>Componenten</h1>
                   </div>
                   <p style={{color: 'white'}}>
-                    De kracht van de architecturale principes van Common Ground zit hem in kleine microservices verdeeld
-                    over vijf lagen.
-                    Hierbij is herbruikbaarheid en schaalbaarheid een belangrijk uitgangspunt.
-                    Dit leidt ertoe dat er sprake is van een steep dependency curve.
-                    Kleine applicaties hebben van start af aan een divers ecosysteem aan componenten nodig om te kunnen
-                    functioneren,
-                    maar het toevoegen van extra applicaties leidt niet tot een sterke toename van componenten.
-                    Dit beeld zien we terug bij de melding verhuizen en huwelijksplanner.
-                    Afhankelijk van de inrichtings- en functionaliteit keuzes worden voor deze processen tussen de 12 en
-                    26 componenten gebruikt.
-                    Waarbij alle componenten vanuit verhuizen worden hergebruikt bij de melding huwelijk.
-                    Hieronder een overzicht van de componenten die voor beide applicaties worden gebruikt en hun doel
-                    binnen het ecosysteem.
+                    De kracht van de architecturale principes van Common Ground zit hem in kleine microservices verdeeld over vijf lagen.
+                    Hierbij is herbruikbaarheid en schaalbaarheid een belangrijk uitgangspunt. Dit leidt ertoe dat er sprake is van een steep dependency curve.
+                    Kleine applicaties hebben van start af aan een divers ecosysteem aan componenten nodig om te kunnen functioneren, maar het toevoegen van extra applicaties leidt niet tot een sterke toename van componenten.
+                    Dit beeld zien we terug bij de melding verhuizen en huwelijksplanner. Afhankelijk van de inrichtings- en functionaliteit keuzes worden voor deze processen tussen de 12 en 26 componenten gebruikt.
+                    Waarbij alle componenten vanuit verhuizen worden hergebruikt bij de melding huwelijk. Hieronder een overzicht van de componenten die voor beide applicaties worden gebruikt en hun doel binnen het ecosysteem.
                   </p>
                 </div>
               </div>
@@ -89,7 +78,7 @@ export default class ComponentenPage extends Component {
           this.state.components === null &&
           <div className="text-center" style={{marginTop: "10%", marginBottom: "10%"}}>
             <HashLoader color={"#4376FC"} loading={true} css={this.state.override} size={50} />
-            <h4 style={{color: "#4376FC", marginTop: '50px'}} className="mt-3 mb-3">Componenten aan het laden</h4>
+            <h4 style={{color: "#4376FC", paddingTop: '50px'}} className="mt-3 mb-3">Componenten aan het laden</h4>
           </div>
         }
         {

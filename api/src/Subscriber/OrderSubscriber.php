@@ -2,14 +2,11 @@
 
 namespace App\Subscriber;
 
-use App\Entity\Order;
-use Symfony\Component\Cache\Adapter\AdapterInterface as CacheInterface;
 use ApiPlatform\Core\EventListener\EventPriorities;
+use App\Entity\Order;
 use Conduction\CommonGroundBundle\Service\CommonGroundService;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -19,8 +16,7 @@ class OrderSubscriber implements EventSubscriberInterface
 
     public function __construct(
         CommonGroundService $commonGroundService
-    )
-    {
+    ) {
         $this->commonGroundService = $commonGroundService;
     }
 
@@ -39,8 +35,7 @@ class OrderSubscriber implements EventSubscriberInterface
         $result = [];
 
         // Let limit the subscriber
-        if
-        (
+        if (
             $route != 'api_orders_get_collection' &&
             $route != 'api_orders_get_order_collection' &&
             $route != 'api_orders_delete_order_collection' &&
@@ -82,7 +77,6 @@ class OrderSubscriber implements EventSubscriberInterface
         );
 
         $event->setResponse($response);
-
     }
 
     public function createOrder(Order $order)
@@ -115,7 +109,7 @@ class OrderSubscriber implements EventSubscriberInterface
             return false;
         }
         $order = $this->commonGroundService->createResource($resource, ['component' => 'orc', 'type' => 'orders']);
+
         return $order;
     }
-
 }
